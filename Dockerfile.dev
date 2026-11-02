@@ -1,8 +1,0 @@
-# Dev image for the dev desktop (spec 9.2). node:20-bookworm is enough for install/typecheck/test/build/preview; this
-# derived image adds the OS libraries Playwright browsers need (e2e, screenshots, asset tools), built once:
-#   docker build -f Dockerfile.dev -t wedding-site-pw .
-#   DVD_IMAGE=wedding-site-pw scripts/dvd.sh npx playwright install chromium   (browsers go to /cache/ms-playwright)
-FROM node:20-bookworm
-RUN npx -y playwright@1.49.1 install-deps chromium webkit firefox && rm -rf /var/lib/apt/lists/* /root/.npm
-ENV npm_config_update_notifier=false
-WORKDIR /app
