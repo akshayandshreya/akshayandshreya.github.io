@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OG card (asset time only)</title>
+<!-- tools/og/og.mjs opens og.html?lang=en|hi|mai|bn&variant=G1|B1|G0|B0&mode=og|icon through request interception
+     and screenshots #card. Text comes from the site's generated copy (/i18n/<lang>.json = src/i18n, variants[key]: the
+     heading, the pair in that side's order, the dateline with or without the Reception; SPEC 6.2, QA r1 T1); plate,
+     Ganesh, fonts and monogram are the site's own generated assets (/assets/ = src/assets/). -->
+<style>
+  html, body { margin: 0; background: #222; }
+  #card { position: relative; width: 1200px; height: 630px; overflow: hidden; background: #f2e8d8; font-synthesis: none; }
+  #card .plate, #card .gold { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 26%; }
+  .frame { position: absolute; border: 1px solid #bf9644; pointer-events: none; }
+  .frame.o { inset: 20px; }
+  .frame.i { inset: 28px; opacity: 0.6; }
+  .dia { position: absolute; width: 7px; height: 7px; background: #bf9644; transform: translate(-50%, -50%) rotate(45deg); }
+  .col { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  /* the glaze is positioned, so it would paint over the in-flow text (washing the pair and dateline out to ~2:1 on
+     the plate): every column child but the glaze is positioned too and, coming later in the DOM, paints above it */
+  .col > :not(.glaze) { position: relative; }
+  .ganesh { position: relative; width: 136px; height: 132px; margin-top: -10px; }
+  .ganesh img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+  .glaze { position: absolute; left: 50%; top: 55%; width: 820px; height: 380px; transform: translate(-50%, -50%);
+    background: radial-gradient(closest-side, rgba(253, 248, 239, 0.62) 0%, rgba(253, 248, 239, 0.4) 62%, rgba(253, 248, 239, 0) 100%); }
+  .hero { margin-top: 2px; line-height: 1.15; font-size: 104px; padding: 0 30px;
+    background-image: linear-gradient(100deg, #7e5a22 0%, #8c6526 34%, #9a7232 42%, #c9a457 50%, #9a7232 58%, #8c6526 66%, #7e5a22 100%), url(/assets/textures/gold-leaf-256.webp);
+    background-size: 100% 100%, 256px 256px; background-blend-mode: multiply; -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .rule { width: 190px; height: 14px; margin: 2px 0 10px; }
+  .pair { font-size: 50px; line-height: 1.2; color: #6f4f22; }
+  .pair .j { color: #8c6526; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: 0.82em; padding: 0 0.22em; }
+  .date { margin-top: 14px; font-size: 21px; color: #7e5a22; line-height: 1.5; }
+  :root[lang=en] .hero, :root[lang=en] .pair { font-family: 'Pinyon Script', cursive; }
+  :root[lang=en] .date { font-family: 'Marcellus', serif; text-transform: uppercase; letter-spacing: 0.16em; }
+  :root[lang=hi] .hero, :root[lang=mai] .hero, :root[lang=hi] .pair, :root[lang=mai] .pair { font-family: 'Amita', serif; }
+  :root[lang=hi] .hero, :root[lang=mai] .hero { font-size: 92px; line-height: 1.38; }
+  :root[lang=hi] .pair, :root[lang=mai] .pair { font-size: 44px; line-height: 1.4; }
+  :root[lang=hi] .date, :root[lang=mai] .date { font-family: 'Sahitya', serif; font-weight: 700; font-size: 23px; }
+  :root[lang=bn] .hero, :root[lang=bn] .pair { font-family: 'Atma', serif; font-weight: 500; }
+  :root[lang=bn] .hero { font-size: 96px; line-height: 1.38; }
+  :root[lang=bn] .pair { font-size: 46px; line-height: 1.4; }
+  :root[lang=bn] .pair .j { font-family: 'Atma', serif; font-style: normal; font-size: 1em; }
+  :root[lang=bn] .date { font-family: 'Tiro Bangla', serif; font-size: 23px; }
+  /* icon mode: a square ivory medallion with the gold ring and monogram */
+  #icon { position: relative; width: 512px; height: 512px; overflow: hidden; background: #f2e8d8; }
+  #icon .plate { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 26%; }
+  #icon svg { position: absolute; inset: 0; }
+</style>
+</head>
+<body>
+<script>
+(async () => {
+  const Q = new URLSearchParams(location.search);
+  const lang = Q.get('lang') || 'en', mode = Q.get('mode') || 'og', variant = Q.get('variant') || 'G1';
+  document.documentElement.lang = lang;
+  const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = `/assets/fonts/fonts.${lang === 'mai' ? 'mai' : lang}.css`;
+  document.head.append(css);
+  await new Promise((r) => { css.onload = r; css.onerror = r; });
+  const plates = await (await fetch('/assets/plates.json')).json();
+  const sprites = await (await fetch('/assets/sprites.json')).json();
+  const wide = plates.plates.opening.frames.wide;
+  const h = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+  const img = (src, cls) => { const i = h('img', cls); i.src = src; i.alt = ''; return i; };
+  const ring = (cx, cy, r, w) => {
+    // the card's gold ring: two arcs from the bottom to a 14 degree gap at the top, a bindu in the gap
+    const gap = 14, a0 = 90, a1 = 270 - gap / 2, pt = (a) => [cx + r * Math.cos((a * Math.PI) / 180), cy + r * Math.sin((a * Math.PI) / 180)];
+    const [x0, y0] = pt(a0), [xl, yl] = pt(a1), [xr, yr] = pt(-90 + gap / 2);
+    return `<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8c6526"/><stop offset=".45" stop-color="#bf9644"/><stop offset=".7" stop-color="#e6cb86"/><stop offset="1" stop-color="#8c6526"/></linearGradient>
+      <radialGradient id="b"><stop offset="0" stop-color="#fff3d1"/><stop offset=".45" stop-color="#e6cb86"/><stop offset=".85" stop-color="#bf9644"/><stop offset="1" stop-color="#8c6526" stop-opacity="0"/></radialGradient></defs>
+      <path d="M${x0} ${y0} A${r} ${r} 0 0 1 ${xl} ${yl}" fill="none" stroke="url(#g)" stroke-width="${w}" stroke-linecap="round"/>
+      <path d="M${x0} ${y0} A${r} ${r} 0 0 0 ${xr} ${yr}" fill="none" stroke="url(#g)" stroke-width="${w}" stroke-linecap="round"/>
+      <circle cx="${cx}" cy="${cy - r}" r="${w * 1.6}" fill="url(#b)"/>`;
+  };
+  if (mode === 'icon') {
+    const box = h('div'); box.id = 'icon';
+    box.append(img('/assets/' + wide.avif[1280], 'plate'));
+    const mono = await (await fetch('/assets/glyphs/monogram-AS.svg')).text();
+    const vb = mono.match(/viewBox="([^"]+)"/)[1].split(' ').map(Number);
+    const inner = mono.replace(/^[\s\S]*?<g fill="currentColor">/, '').replace(/<\/g><\/svg>\s*$/, '');
+    const s = 300 / Math.max(vb[2], vb[3] * 1.1);
+    box.insertAdjacentHTML('beforeend', `<svg viewBox="0 0 512 512" width="512" height="512">
+      <circle cx="256" cy="256" r="236" fill="rgba(253,248,239,.55)"/>${ring(256, 256, 200, 9)}
+      <g transform="translate(${256 - (vb[0] + vb[2] / 2) * s} ${262 - (vb[1] + vb[3] / 2) * s}) scale(${s})" fill="#8c6526">${inner}</g></svg>`);
+    document.body.append(box);
+  } else {
+    const file = await (await fetch(`/i18n/${lang}.json`)).json();
+    const V = file.variants[variant];
+    const card = h('div'); card.id = 'card';
+    card.append(img('/assets/' + wide.avif[1280], 'plate'), img('/assets/' + wide.gold, 'gold'));
+    card.append(h('div', 'frame o'), h('div', 'frame i'));
+    for (const [x, y] of [[24, 24], [1176, 24], [24, 606], [1176, 606]]) { const d = h('div', 'dia'); d.style.left = x + 'px'; d.style.top = y + 'px'; card.append(d); }
+    const col = h('div', 'col');
+    col.append(h('div', 'glaze'));
+    const g = h('div', 'ganesh');
+    g.append(img('/assets/' + sprites.motifs['opening-ganesh'].webp[320]));
+    const gl = h('div', 'line'); gl.style.cssText = 'position:absolute;inset:0;opacity:.45;--m-ink:#a07a34';
+    gl.innerHTML = (await (await fetch('/assets/motifs/ganesh.svg')).text()).replace('<svg ', '<svg width="100%" height="100%" ');
+    g.append(gl);
+    const hero = h('div', 'hero', V.heading);
+    const rule = h('div', 'rule');
+    rule.innerHTML = `<svg viewBox="0 0 190 14" width="190" height="14"><defs><linearGradient id="r" x1="0" x2="1"><stop offset="0" stop-color="#bf9644" stop-opacity="0"/><stop offset=".5" stop-color="#9a7232"/><stop offset="1" stop-color="#bf9644" stop-opacity="0"/></linearGradient><radialGradient id="rb"><stop offset="0" stop-color="#fff3d1"/><stop offset=".45" stop-color="#e6cb86"/><stop offset=".85" stop-color="#bf9644"/><stop offset="1" stop-color="#8c6526" stop-opacity="0"/></radialGradient></defs>
+      <path d="M8 7.6 Q 50 5.4 87 7" stroke="url(#r)" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M103 7 Q 140 5.4 182 7.6" stroke="url(#r)" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="95" cy="7" r="4.2" fill="url(#rb)"/></svg>`;
+    const pair = h('div', 'pair');
+    pair.append(document.createTextNode(V.pair.first), h('span', 'j', V.pair.joiner), document.createTextNode(V.pair.second));
+    const date = h('div', 'date');
+    date.append(h('div', null, V.dateline.dates));
+    if (V.dateline.cities) date.append(h('div', null, V.dateline.cities));
+    col.append(g, hero, rule, pair, date);
+    card.append(col);
+    document.body.append(card);
+  }
+  await Promise.all([...document.images].map((i) => i.decode().catch(() => {})));
+  await document.fonts.ready;
+  window.__READY = true;
+})();
+</script>
+</body>
+</html>

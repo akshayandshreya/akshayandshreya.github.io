@@ -1,0 +1,251 @@
+/* The seven palette classes (spec 1.2): one colour family per section, as on the card (one canvas = one colour family).
+   Values: paint.js PALETTES, card.js BLUSH / TEAL (evening), the video's phone inks (_theme.css). Small gold-toned text
+   uses --gold-ink, a step deeper than the video's gold so it meets WCAG AA at 13-16 px (spec 1.2.1; every ratio is
+   asserted by tests/unit/visual-tokens.test.ts):
+
+   | class         | ink/paper | ink/ground-2 | gold-ink/paper | gold-ink/ground-2 |
+   | pal-ivory     | 6.1       | 5.5          | 5.1            | 4.6               |
+   | pal-blush     | 9.4       | 8.6          | 5.1            | 4.7               |
+   | pal-sage      | 6.8       | 5.6          | 5.4            | 4.6               |
+   | pal-rose      | 7.9       | 6.5          | 5.5            | 4.5               |
+   | pal-turmeric  | 6.4       | 5.5          | 5.6            | 4.8               |
+   | pal-vermilion | 6.5       | 6.8          | 5.5            | 5.8               |
+   | pal-teal      | 8.2       | 8.2          | 6.6            | 6.6               |
+
+   Every class sets: --paper, --ground-1..3 (light, mid, deep), --ink, --ink-soft, --gold-ink, --sep, --rule,
+   --gold-0..3 (deep, base, light, glint), --lights-1 (the palette's lightest stroke), --deep, --halo, --halo2, --glaze,
+   --glaze-75, --gl-0..2 + --gl-glint (gold-leaf text), --bar-ink, --btn-*, --focus-ink, --sweep-*, --vignette-alpha,
+   --mood and the motif tints --m-* (1.7). */
+
+/* ------------------------------------------------------------------------------------------------ light palettes */
+.pal-ivory {
+  /* opening, cultures, closing, ivory paper bands, footer */
+  --paper: #f2e8d8;
+  --ground-1: #f7f0e4;
+  --ground-2: #ebdcc3;
+  --ground-3: #d9c3a0;
+  --lights-1: #fdf8ef;
+  --ink: #6f4f22;
+  --ink-soft: #785d33;
+  --gold-ink: #7e5a22;
+  --sep: #bf9644;
+  --gold-0: #8c6526;
+  --gold-1: #bf9644;
+  --gold-2: #e6cb86;
+  --gold-3: #fff3d1;
+  /* motif tints: ivory sections draw their line art in old gold; cultures splits Mithila / Bengal / the lotus seam */
+  --m-ink: #a07a34;
+  --m-mithila: #7a2e22;
+  --m-bengal: #7a3326;
+  --m-lotus: #a07a34;
+}
+.pal-blush {
+  /* invitation, venues band (card.js BLUSH) */
+  --paper: #f3e6dc;
+  --ground-1: #f8eee6;
+  --ground-2: #eedbd0;
+  --ground-3: #dcc0ae;
+  --lights-1: #fdf8f3;
+  --ink: #5e2a24;
+  --ink-soft: #6e3d33;
+  --gold-ink: #7e5a22;
+  --sep: #bf9644;
+  --gold-0: #8c6526;
+  --gold-1: #bf9644;
+  --gold-2: #e6cb86;
+  --gold-3: #fff3d1;
+  --m-ink: #a07a34;
+}
+.pal-sage {
+  /* mehndi */
+  --paper: #e3e7d4;
+  --ground-1: #eef0e1;
+  --ground-2: #cdd6b8;
+  --ground-3: #a7b78c;
+  --lights-1: #f6f5ea;
+  --ink: #3f5233;
+  --ink-soft: #495c3c;
+  --gold-ink: #715623;
+  --sep: #b9984a;
+  --gold-0: #86662a;
+  --gold-1: #b9984a;
+  --gold-2: #e1cc8c;
+  --gold-3: #fbf1cf;
+  --m-ink: #4f5b3c;
+  --m-marigold: #d39a4f;
+  --m-marigold-hi: #e9c27f;
+  --m-marigold-sh: #a46a35;
+  --m-leaf: #8b9a6b;
+  --m-leaf-hi: #b9c398;
+  --m-leaf-sh: #5d6b47;
+  --m-thread: #9a5a40;
+}
+.pal-rose {
+  /* engagement */
+  --paper: #eee0df;
+  --ground-1: #f6ecea;
+  --ground-2: #e3c8cc;
+  --ground-3: #c9a8b9;
+  --lights-1: #fbf5f2;
+  --ink: #5a3553;
+  --ink-soft: #6a4563;
+  --gold-ink: #6e542a;
+  --sep: #bd9a57;
+  --gold-0: #8a6a35;
+  --gold-1: #bd9a57;
+  --gold-2: #e5cf98;
+  --gold-3: #fff4dc;
+  --m-ink: #5e3a4a;
+  --m-petal: #c9a2b4;
+  --m-leaf: #9ba68c;
+  --m-leaf-hi: #c4cab2;
+  --m-leaf-sh: #6f7a64;
+  /* the toran's flowers in dusty rose */
+  --m-marigold: #cf9d92;
+  --m-marigold-hi: #ead0c7;
+  --m-marigold-sh: #a3716c;
+  --m-thread: #9b6a7e;
+}
+.pal-turmeric {
+  /* haldi */
+  --paper: #f2deaa;
+  --ground-1: #f8ebc6;
+  --ground-2: #eccb78;
+  --ground-3: #d9a547;
+  --lights-1: #fff5da;
+  --ink: #8a2c18;
+  --ink-soft: #7d3a1e;
+  --gold-ink: #724e19;
+  --sep: #a3341f;
+  --gold-0: #8f6220;
+  --gold-1: #c4952f;
+  --gold-2: #ecd07e;
+  --gold-3: #fff3c9;
+  --m-ink: #7a4a1c;
+  --m-gold: #c99a3a;
+  --m-leaf: #b0a465;
+  --m-leaf-hi: #d8cc98;
+  --m-leaf-sh: #867845;
+}
+
+/* ------------------------------------------------------------------------- deep palettes: cream ink, gold accents */
+.pal-vermilion {
+  /* wedding */
+  --paper: #a02024;
+  --ground-1: #b8352c;
+  --ground-2: #9a1e23;
+  --ground-3: #741320;
+  --lights-1: #d96d4f;
+  --ink: #f7ead0;
+  --ink-soft: #f0dcc0;
+  --gold-ink: #f0d88e;
+  --sep: #e2b15a;
+  --gold-0: #9a6a24;
+  --gold-1: #d1a24a;
+  --gold-2: #f0d88e;
+  --gold-3: #fff6d6;
+  --m-ink: #6e231e;
+  --m-gold: #d1a24a;
+  --m-gold-hi: #f0d88e;
+  --m-gold-sh: #9a6a24;
+  --m-leaf: #7f8c5b;
+  --m-leaf-hi: #a9b382;
+  --m-leaf-sh: #56603c;
+  --m-thread: #e2b15a;
+  --m-red: #c0473a;
+  /* shade(ground-3, -0.35) of paint.js, the card's glaze tone on deep pages */
+  --glaze-tone: #510a13;
+  --halo: rgba(104, 14, 24, 0.55);
+  --halo2: rgba(84, 12, 23, 0.35);
+}
+.pal-teal {
+  /* reception (card.js TEAL, the calmer evening teal) */
+  --paper: #21484a;
+  --ground-1: #2e5a59;
+  --ground-2: #21484a;
+  --ground-3: #153537;
+  --lights-1: #4a7a76;
+  --ink: #f3e7c6;
+  --ink-soft: #e6dbbc;
+  --gold-ink: #e8cf8a;
+  --sep: #d8b468;
+  --gold-0: #8f6c2f;
+  --gold-1: #c9a457;
+  --gold-2: #ecd593;
+  --gold-3: #fff6d8;
+  /* line art on teal is the gold line; rice paste for the aripan ring */
+  --m-ink: #d8b468;
+  --m-gold-line: #d8b468;
+  --m-gold-line-hi: #e8cf8a;
+  --m-gold-line-sh: #b8964f;
+  --m-rice: #efe6d2;
+  --m-petal: #dfbca4;
+  --m-petal-hi: #ecd6c2;
+  --m-petal-sh: #ad8572;
+  --m-leaf: #6f8f80;
+  --m-leaf-hi: #93ab9c;
+  --m-leaf-sh: #4a675d;
+  --glaze-tone: #0c2325;
+  --halo: rgba(12, 36, 38, 0.62);
+  --halo2: rgba(12, 36, 38, 0.42);
+}
+
+/* ------------------------------------------------------------------- derived per mood (the same rules as card.js) */
+.pal-ivory,
+.pal-blush,
+.pal-sage,
+.pal-rose,
+.pal-turmeric {
+  --mood: light;
+  --deep: var(--ground-3);
+  --rule: var(--sep);
+  /* text halo: the paper at .80 / .55 */
+  --halo: color-mix(in srgb, var(--paper) 80%, transparent);
+  --halo2: color-mix(in srgb, var(--paper) 55%, transparent);
+  /* glaze: the palette's lightest stroke (lights[1]) at .42, .75 of that at 62% */
+  --glaze: color-mix(in srgb, var(--lights-1) 42%, transparent);
+  --glaze-75: color-mix(in srgb, var(--lights-1) 31.5%, transparent);
+  /* gold-leaf text body stays >= 3:1 on paper (5.1 / 4.3 / 3.6 on ivory); only the moving glint reaches #c9a457 */
+  --gl-0: #7e5a22;
+  --gl-1: #8c6526;
+  --gl-2: #9a7232;
+  --gl-glint: #c9a457;
+  --bar-ink: var(--ink);
+  --btn-ink: var(--ink);
+  --btn-bg: color-mix(in srgb, var(--paper) 72%, transparent);
+  --btn-bg-hover: color-mix(in srgb, var(--paper) 90%, transparent);
+  --btn-bg-solid: color-mix(in srgb, var(--paper) 90%, white);
+  --btn-border: var(--gold-ink);
+  --btn-border-hover: var(--gold-1);
+  --focus-ink: var(--gold-ink);
+  /* light sweep (3.6): warm white in screen */
+  --sweep-color: rgba(255, 250, 243, 0.2);
+  --sweep-blend: screen;
+  --vignette-alpha: 0.14;
+}
+.pal-vermilion,
+.pal-teal {
+  --mood: deep;
+  --deep: var(--ground-3);
+  --rule: var(--sep);
+  --glaze: color-mix(in srgb, var(--glaze-tone) 34%, transparent);
+  --glaze-75: color-mix(in srgb, var(--glaze-tone) 25.5%, transparent);
+  /* gold-leaf text on deep pages: the body starts halfway between gold-1 and gold-2 (vermilion 4.3:1 on the paper,
+     3.3:1 on the lightest ground; gold-1 alone would be 2.5:1 there), then gold-2, the glint gold-3 */
+  --gl-0: color-mix(in srgb, var(--gold-1) 50%, var(--gold-2));
+  --gl-1: var(--gold-2);
+  --gl-2: color-mix(in srgb, var(--gold-2) 50%, var(--gold-3));
+  --gl-glint: var(--gold-3);
+  --bar-ink: var(--ink);
+  --btn-ink: var(--ink);
+  --btn-bg: color-mix(in srgb, var(--ground-3) 45%, transparent);
+  --btn-bg-hover: color-mix(in srgb, var(--ground-3) 70%, transparent);
+  --btn-bg-solid: var(--ground-3);
+  --btn-border: color-mix(in srgb, var(--ink) 85%, transparent);
+  --btn-border-hover: var(--gold-2);
+  --focus-ink: var(--ink);
+  /* light sweep (3.6): warm amber in soft-light */
+  --sweep-color: rgba(255, 217, 168, 0.42);
+  --sweep-blend: soft-light;
+  --vignette-alpha: 0.22;
+}

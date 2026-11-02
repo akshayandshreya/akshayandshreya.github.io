@@ -1,0 +1,57 @@
+{
+ "schema": 1,
+ "note": "shaped with harfbuzzjs at asset time; fill=currentColor",
+ "glyphs": {
+  "tirhuta-mithila": {
+   "bytes": 2579,
+   "glyphIds": [
+    59,
+    49,
+    59,
+    41,
+    52,
+    58
+   ],
+   "viewBox": [
+    -69,
+    -977,
+    2715,
+    1037
+   ],
+   "codepoints": [
+    "U+114A7",
+    "U+114B1",
+    "U+1149F",
+    "U+114B1",
+    "U+114AA",
+    "U+114B0"
+   ]
+  },
+  "monogram-AS": {
+   "bytes": 2950,
+   "glyphIds": [
+    1,
+    49
+   ],
+   "viewBox": [
+    -82,
+    -1486,
+    3612,
+    1573
+   ]
+  },
+  "monogram-SA": {
+   "bytes": 2950,
+   "glyphIds": [
+    49,
+    1
+   ],
+   "viewBox": [
+    -82,
+    -1486,
+    3425,
+    1573
+   ]
+  }
+ }
+}

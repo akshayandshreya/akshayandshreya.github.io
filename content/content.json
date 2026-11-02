@@ -1,0 +1,4826 @@
+{
+ "schema": "WeddingInvite copy v2 (2026-11-01). variants[lang][order] is self-contained. v1 fields kept (multi-page card); new: video.canvases (one title + 1-2 lines each), single_page, salutation, names.pair_*, events[e].date_time. Notes: assets/copy/NOTES.md Reception (2026-11-01): five events by default; reception=0 applies variants[l][o].without_reception (see facts.reception_toggle). reception_only (2026-11-02): self-contained copy for the one-page Reception-only card; see NOTES.md.",
+ "languages": [
+  "en",
+  "hi",
+  "bn",
+  "mai"
+ ],
+ "orders": [
+  "G",
+  "B"
+ ],
+ "facts": {
+  "groom": {
+   "name": "Akshay Anand",
+   "family": "Jha"
+  },
+  "bride": {
+   "name": "Shreya Sil",
+   "family": "Sil"
+  },
+  "year_inferred": "2026",
+  "year_note": "The original shows no year; brief is dated 2026-11-01 so these dates are Nov 2026. Date strings below omit the year (as the original does). Add it only if the owner wants it.",
+  "events": {
+   "mehndi": {
+    "date_iso": "2026-11-25",
+    "time_24h": "11:00",
+    "venue_key": "agora",
+    "bg": "sage"
+   },
+   "engagement": {
+    "date_iso": "2026-11-25",
+    "time_24h": "18:00",
+    "venue_key": "agora",
+    "bg": "dusty rose/lilac"
+   },
+   "haldi": {
+    "date_iso": "2026-11-26",
+    "time_24h": "10:00",
+    "venue_key": "roybari",
+    "bg": "turmeric/ochre"
+   },
+   "wedding": {
+    "date_iso": "2026-11-26",
+    "time_24h": "18:00",
+    "venue_key": "roybari",
+    "bg": "vermilion/red"
+   },
+   "reception": {
+    "date_iso": "2026-11-29",
+    "time_24h": "19:00",
+    "venue_key": "devresort",
+    "bg": "peacock teal with soft gold"
+   }
+  },
+  "venues_original_text": {
+   "agora": "Agora Banquets, 67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+   "roybari": "Roy Bari Events Gate No.2, 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+   "devresort": "Dev Resort, Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201"
+  },
+  "do_not_invent": "No parents' names, no phone numbers, no RSVP, no hashtags, no tithi/Bengali-calendar date (unverified).",
+  "palette_v2": {
+   "opening": "ivory/cream with gold",
+   "invitation": "ivory/cream",
+   "mehndi": "sage",
+   "engagement": "dusty rose/lilac",
+   "haldi": "turmeric/ochre",
+   "wedding": "vermilion/red",
+   "reception": "peacock teal with soft gold",
+   "closing": "ivory/cream with gold",
+   "end": "ivory/cream with gold"
+  },
+  "do_not_use": "No fish / matsya motif or word in any language or artwork (owner direction, v2).",
+  "reception_toggle": {
+   "param": "reception=1|0, default 1",
+   "reception_1": "use variants[lang][order] as stored: five events (Reception, 29 November, Saharsa, after the Wedding).",
+   "reception_0": "deep-merge variants[lang][order].without_reception over the variant: objects merge key by key, arrays and strings replace, a null value deletes the key. The result is the reviewed four-event copy exactly (as it was before the Reception was added)."
+  }
+ },
+ "variants": {
+  "en": {
+   "G": {
+    "variant_id": "en_G",
+    "lang": "en",
+    "order": "G",
+    "order_desc": "groom side first, Jha family hosts",
+    "meta": {
+     "lang_tag": "en",
+     "script": "Latn",
+     "numerals": "latin",
+     "direction": "ltr",
+     "font_hint": "Serif display/calligraphic Latin (original used a script face for names + a serif for body)"
+    },
+    "invocation": "Shri Ganeshaya Namah",
+    "invocation_secondary": null,
+    "shloka": null,
+    "heading": "Shubh Vivah",
+    "blessing_line": "With the blessings of God and their loved ones,",
+    "host_line": "the Jha family warmly invites you to the wedding of their son",
+    "names": {
+     "first": "Akshay Anand",
+     "second": "Shreya Sil",
+     "first_short": "Akshay",
+     "second_short": "Shreya",
+     "first_honorific": null,
+     "second_honorific": null,
+     "first_role": "groom",
+     "second_role": "bride",
+     "pair_full": "Akshay Anand & Shreya Sil",
+     "pair_short": "Akshay & Shreya"
+    },
+    "joiner_symbol": "&",
+    "joiner_word": "with",
+    "card_paragraph": "With the blessings of God and their loved ones, the Jha family is delighted to invite you to the wedding celebrations of their son Akshay Anand with Shreya Sil.",
+    "monogram": {
+     "latin": "AS",
+     "native": null,
+     "recommended": "latin"
+    },
+    "labels": {
+     "date": "Date",
+     "time": "Time",
+     "venue": "Venue",
+     "at": "At",
+     "schedule": "Wedding Festivities",
+     "map_label": "Location"
+    },
+    "city": "Kolkata · Saharsa",
+    "events_order": [
+     "mehndi",
+     "engagement",
+     "haldi",
+     "wedding",
+     "reception"
+    ],
+    "events": {
+     "mehndi": {
+      "title": "Mehndi",
+      "title_full": "Mehndi Ceremony",
+      "tagline": "Henna, music and laughter",
+      "day": "25",
+      "date": "25 November",
+      "time": "11:00 AM",
+      "time_label_style": "AT: 11:00 AM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Agora Banquets",
+      "venue_gate": null,
+      "venue_name_full": "Agora Banquets",
+      "venue_address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "25 November · 11:00 AM"
+     },
+     "engagement": {
+      "title": "Engagement",
+      "title_full": "Engagement Ceremony",
+      "tagline": "Two hearts, one promise",
+      "day": "25",
+      "date": "25 November",
+      "time": "6:00 PM",
+      "time_label_style": "AT: 6:00 PM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Agora Banquets",
+      "venue_gate": null,
+      "venue_name_full": "Agora Banquets",
+      "venue_address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "25 November · 6:00 PM"
+     },
+     "haldi": {
+      "title": "Haldi",
+      "title_full": "Haldi Ceremony",
+      "tagline": "A morning touched with turmeric gold",
+      "day": "26",
+      "date": "26 November",
+      "time": "10:00 AM",
+      "time_label_style": "AT: 10:00 AM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Roy Bari Events",
+      "venue_gate": "Gate No.2",
+      "venue_name_full": "Roy Bari Events, Gate No.2",
+      "venue_address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "26 November · 10:00 AM"
+     },
+     "wedding": {
+      "title": "Wedding",
+      "title_full": "Wedding Ceremony",
+      "tagline": "Seven vows, a lifetime together",
+      "day": "26",
+      "date": "26 November",
+      "time": "6:00 PM",
+      "time_label_style": "AT: 6:00 PM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Roy Bari Events",
+      "venue_gate": "Gate No.2",
+      "venue_name_full": "Roy Bari Events, Gate No.2",
+      "venue_address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "26 November · 6:00 PM"
+     },
+     "reception": {
+      "title": "Reception",
+      "title_full": "Wedding Reception",
+      "tagline": "An evening of blessings in Mithila",
+      "day": "29",
+      "date": "29 November",
+      "time": "7:00 PM",
+      "time_label_style": "AT: 7:00 PM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Dev Resort",
+      "venue_gate": null,
+      "venue_name_full": "Dev Resort",
+      "venue_address": "Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29",
+      "date_time": "29 November · 7:00 PM"
+     }
+    },
+    "closing_big": "We look forward to your presence",
+    "closing_small": "to bless the couple as they begin their new journey.",
+    "regards": "Warm Regards,",
+    "regards_families": "Jha Family & Sil Family",
+    "regards_families_lines": [
+     "Jha Family",
+     "&",
+     "Sil Family"
+    ],
+    "save_the_date": {
+     "title": "Save the Date",
+     "line": "25, 26 & 29 November · Kolkata · Saharsa"
+    },
+    "blank_name": {
+     "prefix": "Dear",
+     "suffix": ",",
+     "line": "Dear ______________________,",
+     "sub": "You and your family are cordially invited."
+    },
+    "video": {
+     "canvases": [
+      {
+       "id": "opening",
+       "palette": "ivory/cream with gold",
+       "kicker": "Shri Ganeshaya Namah",
+       "kicker_secondary": null,
+       "title": "Shubh Vivah",
+       "lines": [
+        "25, 26 & 29 November · Kolkata · Saharsa"
+       ]
+      },
+      {
+       "id": "invitation",
+       "palette": "ivory/cream",
+       "title": "Akshay Anand & Shreya Sil",
+       "title_honorifics": [
+        null,
+        null
+       ],
+       "lines": [
+        "With the blessings of God and their loved ones,",
+        "the Jha family warmly invites you to the wedding of their son"
+       ],
+       "lines_position": "before_title"
+      },
+      {
+       "id": "mehndi",
+       "palette": "sage",
+       "title": "Mehndi",
+       "lines": [
+        "Henna, music and laughter"
+       ],
+       "facts": {
+        "date_time": "25 November · 11:00 AM",
+        "venue": "Agora Banquets",
+        "address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata"
+       }
+      },
+      {
+       "id": "engagement",
+       "palette": "dusty rose/lilac",
+       "title": "Engagement",
+       "lines": [
+        "Two hearts, one promise"
+       ],
+       "facts": {
+        "date_time": "25 November · 6:00 PM",
+        "venue": "Agora Banquets",
+        "address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata"
+       }
+      },
+      {
+       "id": "haldi",
+       "palette": "turmeric/ochre",
+       "title": "Haldi",
+       "lines": [
+        "A morning touched with turmeric gold"
+       ],
+       "facts": {
+        "date_time": "26 November · 10:00 AM",
+        "venue": "Roy Bari Events, Gate No.2",
+        "address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata"
+       }
+      },
+      {
+       "id": "wedding",
+       "palette": "vermilion/red",
+       "title": "Wedding",
+       "lines": [
+        "Seven vows, a lifetime together"
+       ],
+       "facts": {
+        "date_time": "26 November · 6:00 PM",
+        "venue": "Roy Bari Events, Gate No.2",
+        "address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata"
+       }
+      },
+      {
+       "id": "reception",
+       "palette": "peacock teal with soft gold",
+       "title": "Reception",
+       "lines": [
+        "An evening of blessings in Mithila"
+       ],
+       "facts": {
+        "date_time": "29 November · 7:00 PM",
+        "venue": "Dev Resort",
+        "address": "Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201"
+       }
+      },
+      {
+       "id": "closing",
+       "palette": "ivory/cream with gold",
+       "title": "We look forward to your presence",
+       "lines": [
+        "to bless the couple as they begin their new journey."
+       ]
+      },
+      {
+       "id": "end",
+       "palette": "ivory/cream with gold",
+       "title": "Akshay & Shreya",
+       "monogram": "AS",
+       "lines": [
+        "Warm Regards,",
+        "Jha Family & Sil Family"
+       ]
+      }
+     ]
+    },
+    "single_page": {
+     "invocation": "Shri Ganeshaya Namah",
+     "invocation_secondary": null,
+     "heading": "Shubh Vivah",
+     "names": "Akshay Anand & Shreya Sil",
+     "invitation_paragraph": "With the blessings of God and their loved ones, the Jha family warmly invites you and your family to the wedding of their son Akshay Anand with Shreya Sil, and to bless the couple as they begin their new journey.",
+     "events_heading": "Celebrations",
+     "days": [
+      {
+       "heading": "25 November",
+       "date_iso": "2026-11-25",
+       "venue_name_full": "Agora Banquets",
+       "venue_address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "events": [
+        {
+         "key": "mehndi",
+         "title": "Mehndi",
+         "time": "11:00 AM",
+         "line": "Mehndi · 11:00 AM"
+        },
+        {
+         "key": "engagement",
+         "title": "Engagement",
+         "time": "6:00 PM",
+         "line": "Engagement · 6:00 PM"
+        }
+       ]
+      },
+      {
+       "heading": "26 November",
+       "date_iso": "2026-11-26",
+       "venue_name_full": "Roy Bari Events, Gate No.2",
+       "venue_address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "events": [
+        {
+         "key": "haldi",
+         "title": "Haldi",
+         "time": "10:00 AM",
+         "line": "Haldi · 10:00 AM"
+        },
+        {
+         "key": "wedding",
+         "title": "Wedding",
+         "time": "6:00 PM",
+         "line": "Wedding · 6:00 PM"
+        }
+       ]
+      },
+      {
+       "heading": "29 November",
+       "date_iso": "2026-11-29",
+       "venue_name_full": "Dev Resort",
+       "venue_address": "Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201",
+       "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+       "events": [
+        {
+         "key": "reception",
+         "title": "Reception",
+         "time": "7:00 PM",
+         "line": "Reception · 7:00 PM"
+        }
+       ]
+      }
+     ],
+     "regards": "Warm Regards,",
+     "regards_families": "Jha Family & Sil Family",
+     "city": "Kolkata · Saharsa"
+    },
+    "salutation": {
+     "multi_page": {
+      "prefix": "Dear",
+      "suffix": ",",
+      "line": "Dear ______________________,",
+      "sub": "You and your family are cordially invited."
+     },
+     "single_page": {
+      "prefix": "Dear",
+      "suffix": ",",
+      "line": "Dear ______________________,",
+      "sub": null,
+      "note": "sub omitted: invitation_paragraph already invites the reader's family"
+     }
+    },
+    "reception_only": {
+     "invocation": "Shri Ganeshaya Namah",
+     "invocation_secondary": null,
+     "heading": "Reception",
+     "heading_short": "Reception",
+     "tagline": "An evening of blessings in Mithila",
+     "blessing_line": "With the blessings of God and their loved ones,",
+     "host_line": "the Jha family warmly invites you to the wedding reception of their son and his bride",
+     "names": {
+      "first": "Akshay Anand",
+      "second": "Shreya Sil",
+      "first_short": "Akshay",
+      "second_short": "Shreya",
+      "first_honorific": null,
+      "second_honorific": null,
+      "first_role": "groom",
+      "second_role": "bride",
+      "joiner_symbol": "&",
+      "pair_full": "Akshay Anand & Shreya Sil",
+      "pair_short": "Akshay & Shreya"
+     },
+     "venue_note": null,
+     "invitation_paragraph": "With the blessings of God and their loved ones, the Jha family warmly invites you and your family to the wedding reception of their son Akshay Anand and his bride Shreya Sil, to bless the couple as they begin their new journey.",
+     "event": {
+      "key": "reception",
+      "title": "Reception",
+      "title_full": "Wedding Reception",
+      "tagline": "An evening of blessings in Mithila",
+      "day": "29",
+      "date": "29 November",
+      "month": "November",
+      "time": "7:00 PM",
+      "time_label_style": "AT: 7:00 PM",
+      "date_time": "29 November · 7:00 PM",
+      "venue_name": "Dev Resort",
+      "venue_gate": null,
+      "venue_name_full": "Dev Resort",
+      "venue_address": "Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201",
+      "map_line_en": null,
+      "date_iso": "2026-11-29"
+     },
+     "labels": {
+      "date": "Date",
+      "time": "Time",
+      "venue": "Venue",
+      "map_label": "Location"
+     },
+     "closing_big": "We look forward to your presence",
+     "closing_small": "to bless the couple as they begin their new journey.",
+     "regards": "Warm Regards,",
+     "regards_families": "Jha Family & Sil Family",
+     "regards_families_lines": [
+      "Jha Family",
+      "&",
+      "Sil Family"
+     ],
+     "monogram": {
+      "latin": "AS",
+      "native": null,
+      "recommended": "latin"
+     },
+     "city": "Saharsa",
+     "salutation": {
+      "prefix": "Dear",
+      "suffix": ",",
+      "line": "Dear ______________________,",
+      "sub": null
+     }
+    },
+    "without_reception": {
+     "events_order": [
+      "mehndi",
+      "engagement",
+      "haldi",
+      "wedding"
+     ],
+     "events": {
+      "reception": null
+     },
+     "city": "Kolkata",
+     "save_the_date": {
+      "title": "Save the Date",
+      "line": "25–26 November · Kolkata"
+     },
+     "video": {
+      "canvases": [
+       {
+        "id": "opening",
+        "palette": "ivory/cream with gold",
+        "kicker": "Shri Ganeshaya Namah",
+        "kicker_secondary": null,
+        "title": "Shubh Vivah",
+        "lines": [
+         "25–26 November · Kolkata"
+        ]
+       },
+       {
+        "id": "invitation",
+        "palette": "ivory/cream",
+        "title": "Akshay Anand & Shreya Sil",
+        "title_honorifics": [
+         null,
+         null
+        ],
+        "lines": [
+         "With the blessings of God and their loved ones,",
+         "the Jha family warmly invites you to the wedding of their son"
+        ],
+        "lines_position": "before_title"
+       },
+       {
+        "id": "mehndi",
+        "palette": "sage",
+        "title": "Mehndi",
+        "lines": [
+         "Henna, music and laughter"
+        ],
+        "facts": {
+         "date_time": "25 November · 11:00 AM",
+         "venue": "Agora Banquets",
+         "address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata"
+        }
+       },
+       {
+        "id": "engagement",
+        "palette": "dusty rose/lilac",
+        "title": "Engagement",
+        "lines": [
+         "Two hearts, one promise"
+        ],
+        "facts": {
+         "date_time": "25 November · 6:00 PM",
+         "venue": "Agora Banquets",
+         "address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata"
+        }
+       },
+       {
+        "id": "haldi",
+        "palette": "turmeric/ochre",
+        "title": "Haldi",
+        "lines": [
+         "A morning touched with turmeric gold"
+        ],
+        "facts": {
+         "date_time": "26 November · 10:00 AM",
+         "venue": "Roy Bari Events, Gate No.2",
+         "address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata"
+        }
+       },
+       {
+        "id": "wedding",
+        "palette": "vermilion/red",
+        "title": "Wedding",
+        "lines": [
+         "Seven vows, a lifetime together"
+        ],
+        "facts": {
+         "date_time": "26 November · 6:00 PM",
+         "venue": "Roy Bari Events, Gate No.2",
+         "address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata"
+        }
+       },
+       {
+        "id": "closing",
+        "palette": "ivory/cream with gold",
+        "title": "We look forward to your presence",
+        "lines": [
+         "to bless the couple as they begin their new journey."
+        ]
+       },
+       {
+        "id": "end",
+        "palette": "ivory/cream with gold",
+        "title": "Akshay & Shreya",
+        "monogram": "AS",
+        "lines": [
+         "Warm Regards,",
+         "Jha Family & Sil Family"
+        ]
+       }
+      ]
+     },
+     "single_page": {
+      "days": [
+       {
+        "heading": "25 November",
+        "date_iso": "2026-11-25",
+        "venue_name_full": "Agora Banquets",
+        "venue_address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "events": [
+         {
+          "key": "mehndi",
+          "title": "Mehndi",
+          "time": "11:00 AM",
+          "line": "Mehndi · 11:00 AM"
+         },
+         {
+          "key": "engagement",
+          "title": "Engagement",
+          "time": "6:00 PM",
+          "line": "Engagement · 6:00 PM"
+         }
+        ]
+       },
+       {
+        "heading": "26 November",
+        "date_iso": "2026-11-26",
+        "venue_name_full": "Roy Bari Events, Gate No.2",
+        "venue_address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "events": [
+         {
+          "key": "haldi",
+          "title": "Haldi",
+          "time": "10:00 AM",
+          "line": "Haldi · 10:00 AM"
+         },
+         {
+          "key": "wedding",
+          "title": "Wedding",
+          "time": "6:00 PM",
+          "line": "Wedding · 6:00 PM"
+         }
+        ]
+       }
+      ],
+      "city": "Kolkata"
+     }
+    }
+   },
+   "B": {
+    "variant_id": "en_B",
+    "lang": "en",
+    "order": "B",
+    "order_desc": "bride side first, Sil family hosts",
+    "meta": {
+     "lang_tag": "en",
+     "script": "Latn",
+     "numerals": "latin",
+     "direction": "ltr",
+     "font_hint": "Serif display/calligraphic Latin (original used a script face for names + a serif for body)"
+    },
+    "invocation": "Shri Ganeshaya Namah",
+    "invocation_secondary": "Sri Sri Prajapataye Namah",
+    "shloka": null,
+    "heading": "Shubh Vivah",
+    "blessing_line": "With the blessings of God and their loved ones,",
+    "host_line": "the Sil family warmly invites you to the wedding of their daughter",
+    "names": {
+     "first": "Shreya Sil",
+     "second": "Akshay Anand",
+     "first_short": "Shreya",
+     "second_short": "Akshay",
+     "first_honorific": null,
+     "second_honorific": null,
+     "first_role": "bride",
+     "second_role": "groom",
+     "pair_full": "Shreya Sil & Akshay Anand",
+     "pair_short": "Shreya & Akshay"
+    },
+    "joiner_symbol": "&",
+    "joiner_word": "with",
+    "card_paragraph": "With the blessings of God and their loved ones, the Sil family is delighted to invite you to the wedding celebrations of their daughter Shreya Sil with Akshay Anand.",
+    "monogram": {
+     "latin": "SA",
+     "native": null,
+     "recommended": "latin"
+    },
+    "labels": {
+     "date": "Date",
+     "time": "Time",
+     "venue": "Venue",
+     "at": "At",
+     "schedule": "Wedding Festivities",
+     "map_label": "Location"
+    },
+    "city": "Kolkata · Saharsa",
+    "events_order": [
+     "mehndi",
+     "engagement",
+     "haldi",
+     "wedding",
+     "reception"
+    ],
+    "events": {
+     "mehndi": {
+      "title": "Mehndi",
+      "title_full": "Mehndi Ceremony",
+      "tagline": "Henna, music and laughter",
+      "day": "25",
+      "date": "25 November",
+      "time": "11:00 AM",
+      "time_label_style": "AT: 11:00 AM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Agora Banquets",
+      "venue_gate": null,
+      "venue_name_full": "Agora Banquets",
+      "venue_address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "25 November · 11:00 AM"
+     },
+     "engagement": {
+      "title": "Engagement",
+      "title_full": "Engagement Ceremony",
+      "tagline": "Two hearts, one promise",
+      "day": "25",
+      "date": "25 November",
+      "time": "6:00 PM",
+      "time_label_style": "AT: 6:00 PM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Agora Banquets",
+      "venue_gate": null,
+      "venue_name_full": "Agora Banquets",
+      "venue_address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "25 November · 6:00 PM"
+     },
+     "haldi": {
+      "title": "Haldi",
+      "title_full": "Haldi Ceremony",
+      "tagline": "A morning touched with turmeric gold",
+      "day": "26",
+      "date": "26 November",
+      "time": "10:00 AM",
+      "time_label_style": "AT: 10:00 AM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Roy Bari Events",
+      "venue_gate": "Gate No.2",
+      "venue_name_full": "Roy Bari Events, Gate No.2",
+      "venue_address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "26 November · 10:00 AM"
+     },
+     "wedding": {
+      "title": "Wedding",
+      "title_full": "Wedding Ceremony",
+      "tagline": "Seven vows, a lifetime together",
+      "day": "26",
+      "date": "26 November",
+      "time": "6:00 PM",
+      "time_label_style": "AT: 6:00 PM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Roy Bari Events",
+      "venue_gate": "Gate No.2",
+      "venue_name_full": "Roy Bari Events, Gate No.2",
+      "venue_address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "26 November · 6:00 PM"
+     },
+     "reception": {
+      "title": "Reception",
+      "title_full": "Wedding Reception",
+      "tagline": "An evening of blessings in Mithila",
+      "day": "29",
+      "date": "29 November",
+      "time": "7:00 PM",
+      "time_label_style": "AT: 7:00 PM",
+      "month": "November",
+      "month_upper": "NOVEMBER",
+      "venue_name": "Dev Resort",
+      "venue_gate": null,
+      "venue_name_full": "Dev Resort",
+      "venue_address": "Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29",
+      "date_time": "29 November · 7:00 PM"
+     }
+    },
+    "closing_big": "We look forward to your presence",
+    "closing_small": "to bless the couple as they begin their new journey.",
+    "regards": "Warm Regards,",
+    "regards_families": "Sil Family & Jha Family",
+    "regards_families_lines": [
+     "Sil Family",
+     "&",
+     "Jha Family"
+    ],
+    "save_the_date": {
+     "title": "Save the Date",
+     "line": "25, 26 & 29 November · Kolkata · Saharsa"
+    },
+    "blank_name": {
+     "prefix": "Dear",
+     "suffix": ",",
+     "line": "Dear ______________________,",
+     "sub": "You and your family are cordially invited."
+    },
+    "video": {
+     "canvases": [
+      {
+       "id": "opening",
+       "palette": "ivory/cream with gold",
+       "kicker": "Shri Ganeshaya Namah",
+       "kicker_secondary": "Sri Sri Prajapataye Namah",
+       "title": "Shubh Vivah",
+       "lines": [
+        "25, 26 & 29 November · Kolkata · Saharsa"
+       ]
+      },
+      {
+       "id": "invitation",
+       "palette": "ivory/cream",
+       "title": "Shreya Sil & Akshay Anand",
+       "title_honorifics": [
+        null,
+        null
+       ],
+       "lines": [
+        "With the blessings of God and their loved ones,",
+        "the Sil family warmly invites you to the wedding of their daughter"
+       ],
+       "lines_position": "before_title"
+      },
+      {
+       "id": "mehndi",
+       "palette": "sage",
+       "title": "Mehndi",
+       "lines": [
+        "Henna, music and laughter"
+       ],
+       "facts": {
+        "date_time": "25 November · 11:00 AM",
+        "venue": "Agora Banquets",
+        "address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata"
+       }
+      },
+      {
+       "id": "engagement",
+       "palette": "dusty rose/lilac",
+       "title": "Engagement",
+       "lines": [
+        "Two hearts, one promise"
+       ],
+       "facts": {
+        "date_time": "25 November · 6:00 PM",
+        "venue": "Agora Banquets",
+        "address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata"
+       }
+      },
+      {
+       "id": "haldi",
+       "palette": "turmeric/ochre",
+       "title": "Haldi",
+       "lines": [
+        "A morning touched with turmeric gold"
+       ],
+       "facts": {
+        "date_time": "26 November · 10:00 AM",
+        "venue": "Roy Bari Events, Gate No.2",
+        "address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata"
+       }
+      },
+      {
+       "id": "wedding",
+       "palette": "vermilion/red",
+       "title": "Wedding",
+       "lines": [
+        "Seven vows, a lifetime together"
+       ],
+       "facts": {
+        "date_time": "26 November · 6:00 PM",
+        "venue": "Roy Bari Events, Gate No.2",
+        "address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata"
+       }
+      },
+      {
+       "id": "reception",
+       "palette": "peacock teal with soft gold",
+       "title": "Reception",
+       "lines": [
+        "An evening of blessings in Mithila"
+       ],
+       "facts": {
+        "date_time": "29 November · 7:00 PM",
+        "venue": "Dev Resort",
+        "address": "Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201"
+       }
+      },
+      {
+       "id": "closing",
+       "palette": "ivory/cream with gold",
+       "title": "We look forward to your presence",
+       "lines": [
+        "to bless the couple as they begin their new journey."
+       ]
+      },
+      {
+       "id": "end",
+       "palette": "ivory/cream with gold",
+       "title": "Shreya & Akshay",
+       "monogram": "SA",
+       "lines": [
+        "Warm Regards,",
+        "Sil Family & Jha Family"
+       ]
+      }
+     ]
+    },
+    "single_page": {
+     "invocation": "Shri Ganeshaya Namah",
+     "invocation_secondary": "Sri Sri Prajapataye Namah",
+     "heading": "Shubh Vivah",
+     "names": "Shreya Sil & Akshay Anand",
+     "invitation_paragraph": "With the blessings of God and their loved ones, the Sil family warmly invites you and your family to the wedding of their daughter Shreya Sil with Akshay Anand, and to bless the couple as they begin their new journey.",
+     "events_heading": "Celebrations",
+     "days": [
+      {
+       "heading": "25 November",
+       "date_iso": "2026-11-25",
+       "venue_name_full": "Agora Banquets",
+       "venue_address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "events": [
+        {
+         "key": "mehndi",
+         "title": "Mehndi",
+         "time": "11:00 AM",
+         "line": "Mehndi · 11:00 AM"
+        },
+        {
+         "key": "engagement",
+         "title": "Engagement",
+         "time": "6:00 PM",
+         "line": "Engagement · 6:00 PM"
+        }
+       ]
+      },
+      {
+       "heading": "26 November",
+       "date_iso": "2026-11-26",
+       "venue_name_full": "Roy Bari Events, Gate No.2",
+       "venue_address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "events": [
+        {
+         "key": "haldi",
+         "title": "Haldi",
+         "time": "10:00 AM",
+         "line": "Haldi · 10:00 AM"
+        },
+        {
+         "key": "wedding",
+         "title": "Wedding",
+         "time": "6:00 PM",
+         "line": "Wedding · 6:00 PM"
+        }
+       ]
+      },
+      {
+       "heading": "29 November",
+       "date_iso": "2026-11-29",
+       "venue_name_full": "Dev Resort",
+       "venue_address": "Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201",
+       "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+       "events": [
+        {
+         "key": "reception",
+         "title": "Reception",
+         "time": "7:00 PM",
+         "line": "Reception · 7:00 PM"
+        }
+       ]
+      }
+     ],
+     "regards": "Warm Regards,",
+     "regards_families": "Sil Family & Jha Family",
+     "city": "Kolkata · Saharsa"
+    },
+    "salutation": {
+     "multi_page": {
+      "prefix": "Dear",
+      "suffix": ",",
+      "line": "Dear ______________________,",
+      "sub": "You and your family are cordially invited."
+     },
+     "single_page": {
+      "prefix": "Dear",
+      "suffix": ",",
+      "line": "Dear ______________________,",
+      "sub": null,
+      "note": "sub omitted: invitation_paragraph already invites the reader's family"
+     }
+    },
+    "reception_only": {
+     "invocation": "Shri Ganeshaya Namah",
+     "invocation_secondary": "Sri Sri Prajapataye Namah",
+     "heading": "Reception",
+     "heading_short": "Reception",
+     "tagline": "An evening of blessings in Mithila",
+     "blessing_line": "With the blessings of God and their loved ones,",
+     "host_line": "the Sil family warmly invites you to the wedding reception of their daughter and son-in-law",
+     "names": {
+      "first": "Shreya Sil",
+      "second": "Akshay Anand",
+      "first_short": "Shreya",
+      "second_short": "Akshay",
+      "first_honorific": null,
+      "second_honorific": null,
+      "first_role": "bride",
+      "second_role": "groom",
+      "joiner_symbol": "&",
+      "pair_full": "Shreya Sil & Akshay Anand",
+      "pair_short": "Shreya & Akshay"
+     },
+     "venue_note": "held in the groom's home town, Saharsa",
+     "invitation_paragraph": "With the blessings of God and their loved ones, the Sil family warmly invites you and your family to the wedding reception of their daughter Shreya Sil and Akshay Anand, held in the groom's home town of Saharsa, to bless the couple as they begin their new journey.",
+     "event": {
+      "key": "reception",
+      "title": "Reception",
+      "title_full": "Wedding Reception",
+      "tagline": "An evening of blessings in Mithila",
+      "day": "29",
+      "date": "29 November",
+      "month": "November",
+      "time": "7:00 PM",
+      "time_label_style": "AT: 7:00 PM",
+      "date_time": "29 November · 7:00 PM",
+      "venue_name": "Dev Resort",
+      "venue_gate": null,
+      "venue_name_full": "Dev Resort",
+      "venue_address": "Gangjala Chowk Dhala, near the bus stand, Sant Nagar, Saharsa, Bihar 852201",
+      "map_line_en": null,
+      "date_iso": "2026-11-29"
+     },
+     "labels": {
+      "date": "Date",
+      "time": "Time",
+      "venue": "Venue",
+      "map_label": "Location"
+     },
+     "closing_big": "We look forward to your presence",
+     "closing_small": "to bless the couple as they begin their new journey.",
+     "regards": "Warm Regards,",
+     "regards_families": "Sil Family & Jha Family",
+     "regards_families_lines": [
+      "Sil Family",
+      "&",
+      "Jha Family"
+     ],
+     "monogram": {
+      "latin": "SA",
+      "native": null,
+      "recommended": "latin"
+     },
+     "city": "Saharsa",
+     "salutation": {
+      "prefix": "Dear",
+      "suffix": ",",
+      "line": "Dear ______________________,",
+      "sub": null
+     }
+    },
+    "without_reception": {
+     "events_order": [
+      "mehndi",
+      "engagement",
+      "haldi",
+      "wedding"
+     ],
+     "events": {
+      "reception": null
+     },
+     "city": "Kolkata",
+     "save_the_date": {
+      "title": "Save the Date",
+      "line": "25–26 November · Kolkata"
+     },
+     "video": {
+      "canvases": [
+       {
+        "id": "opening",
+        "palette": "ivory/cream with gold",
+        "kicker": "Shri Ganeshaya Namah",
+        "kicker_secondary": "Sri Sri Prajapataye Namah",
+        "title": "Shubh Vivah",
+        "lines": [
+         "25–26 November · Kolkata"
+        ]
+       },
+       {
+        "id": "invitation",
+        "palette": "ivory/cream",
+        "title": "Shreya Sil & Akshay Anand",
+        "title_honorifics": [
+         null,
+         null
+        ],
+        "lines": [
+         "With the blessings of God and their loved ones,",
+         "the Sil family warmly invites you to the wedding of their daughter"
+        ],
+        "lines_position": "before_title"
+       },
+       {
+        "id": "mehndi",
+        "palette": "sage",
+        "title": "Mehndi",
+        "lines": [
+         "Henna, music and laughter"
+        ],
+        "facts": {
+         "date_time": "25 November · 11:00 AM",
+         "venue": "Agora Banquets",
+         "address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata"
+        }
+       },
+       {
+        "id": "engagement",
+        "palette": "dusty rose/lilac",
+        "title": "Engagement",
+        "lines": [
+         "Two hearts, one promise"
+        ],
+        "facts": {
+         "date_time": "25 November · 6:00 PM",
+         "venue": "Agora Banquets",
+         "address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata"
+        }
+       },
+       {
+        "id": "haldi",
+        "palette": "turmeric/ochre",
+        "title": "Haldi",
+        "lines": [
+         "A morning touched with turmeric gold"
+        ],
+        "facts": {
+         "date_time": "26 November · 10:00 AM",
+         "venue": "Roy Bari Events, Gate No.2",
+         "address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata"
+        }
+       },
+       {
+        "id": "wedding",
+        "palette": "vermilion/red",
+        "title": "Wedding",
+        "lines": [
+         "Seven vows, a lifetime together"
+        ],
+        "facts": {
+         "date_time": "26 November · 6:00 PM",
+         "venue": "Roy Bari Events, Gate No.2",
+         "address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata"
+        }
+       },
+       {
+        "id": "closing",
+        "palette": "ivory/cream with gold",
+        "title": "We look forward to your presence",
+        "lines": [
+         "to bless the couple as they begin their new journey."
+        ]
+       },
+       {
+        "id": "end",
+        "palette": "ivory/cream with gold",
+        "title": "Shreya & Akshay",
+        "monogram": "SA",
+        "lines": [
+         "Warm Regards,",
+         "Sil Family & Jha Family"
+        ]
+       }
+      ]
+     },
+     "single_page": {
+      "days": [
+       {
+        "heading": "25 November",
+        "date_iso": "2026-11-25",
+        "venue_name_full": "Agora Banquets",
+        "venue_address": "67, Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "events": [
+         {
+          "key": "mehndi",
+          "title": "Mehndi",
+          "time": "11:00 AM",
+          "line": "Mehndi · 11:00 AM"
+         },
+         {
+          "key": "engagement",
+          "title": "Engagement",
+          "time": "6:00 PM",
+          "line": "Engagement · 6:00 PM"
+         }
+        ]
+       },
+       {
+        "heading": "26 November",
+        "date_iso": "2026-11-26",
+        "venue_name_full": "Roy Bari Events, Gate No.2",
+        "venue_address": "192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "events": [
+         {
+          "key": "haldi",
+          "title": "Haldi",
+          "time": "10:00 AM",
+          "line": "Haldi · 10:00 AM"
+         },
+         {
+          "key": "wedding",
+          "title": "Wedding",
+          "time": "6:00 PM",
+          "line": "Wedding · 6:00 PM"
+         }
+        ]
+       }
+      ],
+      "city": "Kolkata"
+     }
+    }
+   }
+  },
+  "hi": {
+   "G": {
+    "variant_id": "hi_G",
+    "lang": "hi",
+    "order": "G",
+    "order_desc": "groom side first, Jha family hosts",
+    "meta": {
+     "lang_tag": "hi",
+     "script": "Deva",
+     "numerals": "devanagari",
+     "direction": "ltr",
+     "font_hint": "Devanagari serif with good conjunct support (e.g. Tiro Devanagari Hindi / Noto Serif Devanagari / Martel)"
+    },
+    "invocation": "॥ श्री गणेशाय नमः ॥",
+    "invocation_secondary": null,
+    "shloka": "मङ्गलं भगवान् विष्णुः मङ्गलं गरुडध्वजः। मङ्गलं पुण्डरीकाक्षः मङ्गलायतनो हरिः॥",
+    "heading": "शुभ विवाह",
+    "blessing_line": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से",
+    "host_line": "झा परिवार अपने सुपुत्र के शुभ विवाह में आपको सपरिवार सादर आमंत्रित करता है।",
+    "names": {
+     "first": "अक्षय आनंद",
+     "second": "श्रेया सील",
+     "first_short": "अक्षय",
+     "second_short": "श्रेया",
+     "first_honorific": "चि.",
+     "second_honorific": "सौ. कां.",
+     "first_role": "groom",
+     "second_role": "bride",
+     "pair_full": "अक्षय आनंद & श्रेया सील",
+     "pair_short": "अक्षय & श्रेया"
+    },
+    "joiner_symbol": "&",
+    "joiner_word": "संग",
+    "card_paragraph": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से झा परिवार अपने सुपुत्र चि. अक्षय आनंद संग सौ. कां. श्रेया सील के शुभ विवाह के मंगल अवसर पर आपको सपरिवार सादर आमंत्रित करता है।",
+    "monogram": {
+     "latin": "AS",
+     "native": "अ · श्रे",
+     "recommended": "latin"
+    },
+    "labels": {
+     "date": "दिनांक",
+     "time": "समय",
+     "venue": "स्थान",
+     "at": "समय",
+     "schedule": "मांगलिक कार्यक्रम",
+     "map_label": "मैप पर देखें"
+    },
+    "city": "कोलकाता · सहरसा",
+    "events_order": [
+     "mehndi",
+     "engagement",
+     "haldi",
+     "wedding",
+     "reception"
+    ],
+    "events": {
+     "mehndi": {
+      "title": "मेहंदी",
+      "title_full": "मेहंदी की रस्म",
+      "tagline": "मेहंदी, संगीत और हँसी",
+      "day": "२५",
+      "date": "२५ नवंबर",
+      "time": "सुबह ११ बजे",
+      "time_label_style": "समय: सुबह ११ बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "अगोरा बैंक्वेट्स",
+      "venue_gate": null,
+      "venue_name_full": "अगोरा बैंक्वेट्स",
+      "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "२५ नवंबर · सुबह ११ बजे"
+     },
+     "engagement": {
+      "title": "सगाई",
+      "title_full": "सगाई समारोह",
+      "tagline": "दो दिल, एक वचन",
+      "day": "२५",
+      "date": "२५ नवंबर",
+      "time": "संध्या ६ बजे",
+      "time_label_style": "समय: संध्या ६ बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "अगोरा बैंक्वेट्स",
+      "venue_gate": null,
+      "venue_name_full": "अगोरा बैंक्वेट्स",
+      "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "२५ नवंबर · संध्या ६ बजे"
+     },
+     "haldi": {
+      "title": "हल्दी",
+      "title_full": "हल्दी की रस्म",
+      "tagline": "हल्दी के रंग में रंगी सुबह",
+      "day": "२६",
+      "date": "२६ नवंबर",
+      "time": "सुबह १० बजे",
+      "time_label_style": "समय: सुबह १० बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "रॉय बाड़ी इवेंट्स",
+      "venue_gate": "गेट नं. २",
+      "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+      "venue_address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "२६ नवंबर · सुबह १० बजे"
+     },
+     "wedding": {
+      "title": "शुभ विवाह",
+      "title_full": "शुभ विवाह",
+      "tagline": "सात फेरे, सात वचन, जन्मों का साथ",
+      "day": "२६",
+      "date": "२६ नवंबर",
+      "time": "संध्या ६ बजे",
+      "time_label_style": "समय: संध्या ६ बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "रॉय बाड़ी इवेंट्स",
+      "venue_gate": "गेट नं. २",
+      "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+      "venue_address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "२६ नवंबर · संध्या ६ बजे"
+     },
+     "reception": {
+      "title": "स्वागत समारोह",
+      "title_full": "स्वागत समारोह",
+      "tagline": "मिथिला में आशीर्वाद भरी संध्या",
+      "day": "२९",
+      "date": "२९ नवंबर",
+      "time": "संध्या ७ बजे",
+      "time_label_style": "समय: संध्या ७ बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "देव रिसॉर्ट",
+      "venue_gate": null,
+      "venue_name_full": "देव रिसॉर्ट",
+      "venue_address": "गंगजला चौक ढाला, बस स्टैंड के पास, संत नगर, सहरसा, बिहार ८५२२०१",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29",
+      "date_time": "२९ नवंबर · संध्या ७ बजे"
+     }
+    },
+    "closing_big": "आपकी शुभ उपस्थिति की प्रतीक्षा रहेगी",
+    "closing_small": "नवदंपती को नव जीवन के शुभारंभ पर अपना आशीर्वाद देने अवश्य पधारें।",
+    "regards": "दर्शनाभिलाषी",
+    "regards_families": "झा परिवार एवं सील परिवार",
+    "regards_families_lines": [
+     "झा परिवार",
+     "एवं",
+     "सील परिवार"
+    ],
+    "save_the_date": {
+     "title": "शुभ तिथि याद रखिएगा",
+     "line": "२५, २६ एवं २९ नवंबर · कोलकाता · सहरसा"
+    },
+    "blank_name": {
+     "prefix": "श्रीमान / श्रीमती",
+     "suffix": "",
+     "line": "श्रीमान / श्रीमती ______________________",
+     "sub": "सपरिवार सादर आमंत्रित"
+    },
+    "video": {
+     "canvases": [
+      {
+       "id": "opening",
+       "palette": "ivory/cream with gold",
+       "kicker": "॥ श्री गणेशाय नमः ॥",
+       "kicker_secondary": null,
+       "title": "शुभ विवाह",
+       "lines": [
+        "२५, २६ एवं २९ नवंबर · कोलकाता · सहरसा"
+       ]
+      },
+      {
+       "id": "invitation",
+       "palette": "ivory/cream",
+       "title": "अक्षय आनंद & श्रेया सील",
+       "title_honorifics": [
+        "चि.",
+        "सौ. कां."
+       ],
+       "lines": [
+        "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से",
+        "झा परिवार अपने सुपुत्र के शुभ विवाह में आपको सपरिवार सादर आमंत्रित करता है।"
+       ],
+       "lines_position": "before_title"
+      },
+      {
+       "id": "mehndi",
+       "palette": "sage",
+       "title": "मेहंदी",
+       "lines": [
+        "मेहंदी, संगीत और हँसी"
+       ],
+       "facts": {
+        "date_time": "२५ नवंबर · सुबह ११ बजे",
+        "venue": "अगोरा बैंक्वेट्स",
+        "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+       }
+      },
+      {
+       "id": "engagement",
+       "palette": "dusty rose/lilac",
+       "title": "सगाई",
+       "lines": [
+        "दो दिल, एक वचन"
+       ],
+       "facts": {
+        "date_time": "२५ नवंबर · संध्या ६ बजे",
+        "venue": "अगोरा बैंक्वेट्स",
+        "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+       }
+      },
+      {
+       "id": "haldi",
+       "palette": "turmeric/ochre",
+       "title": "हल्दी",
+       "lines": [
+        "हल्दी के रंग में रंगी सुबह"
+       ],
+       "facts": {
+        "date_time": "२६ नवंबर · सुबह १० बजे",
+        "venue": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+        "address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+       }
+      },
+      {
+       "id": "wedding",
+       "palette": "vermilion/red",
+       "title": "शुभ विवाह",
+       "lines": [
+        "सात फेरे, सात वचन, जन्मों का साथ"
+       ],
+       "facts": {
+        "date_time": "२६ नवंबर · संध्या ६ बजे",
+        "venue": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+        "address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+       }
+      },
+      {
+       "id": "reception",
+       "palette": "peacock teal with soft gold",
+       "title": "स्वागत समारोह",
+       "lines": [
+        "मिथिला में आशीर्वाद भरी संध्या"
+       ],
+       "facts": {
+        "date_time": "२९ नवंबर · संध्या ७ बजे",
+        "venue": "देव रिसॉर्ट",
+        "address": "गंगजला चौक ढाला, बस स्टैंड के पास, संत नगर, सहरसा, बिहार ८५२२०१"
+       }
+      },
+      {
+       "id": "closing",
+       "palette": "ivory/cream with gold",
+       "title": "आपकी शुभ उपस्थिति की प्रतीक्षा रहेगी",
+       "lines": [
+        "नवदंपती को नव जीवन के शुभारंभ पर अपना आशीर्वाद देने अवश्य पधारें।"
+       ]
+      },
+      {
+       "id": "end",
+       "palette": "ivory/cream with gold",
+       "title": "अक्षय & श्रेया",
+       "monogram": "AS",
+       "lines": [
+        "दर्शनाभिलाषी",
+        "झा परिवार एवं सील परिवार"
+       ]
+      }
+     ]
+    },
+    "single_page": {
+     "invocation": "॥ श्री गणेशाय नमः ॥",
+     "invocation_secondary": null,
+     "heading": "शुभ विवाह",
+     "names": "अक्षय आनंद & श्रेया सील",
+     "invitation_paragraph": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से झा परिवार अपने सुपुत्र चि. अक्षय आनंद संग सौ. कां. श्रेया सील के शुभ विवाह के मंगल अवसर पर आपको सपरिवार सादर आमंत्रित करता है। कृपया पधारकर वर-वधू को अपना आशीर्वाद प्रदान करें।",
+     "events_heading": "मांगलिक कार्यक्रम",
+     "days": [
+      {
+       "heading": "२५ नवंबर",
+       "date_iso": "2026-11-25",
+       "venue_name_full": "अगोरा बैंक्वेट्स",
+       "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+       "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "events": [
+        {
+         "key": "mehndi",
+         "title": "मेहंदी",
+         "time": "सुबह ११ बजे",
+         "line": "मेहंदी · सुबह ११ बजे"
+        },
+        {
+         "key": "engagement",
+         "title": "सगाई",
+         "time": "संध्या ६ बजे",
+         "line": "सगाई · संध्या ६ बजे"
+        }
+       ]
+      },
+      {
+       "heading": "२६ नवंबर",
+       "date_iso": "2026-11-26",
+       "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+       "venue_address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+       "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "events": [
+        {
+         "key": "haldi",
+         "title": "हल्दी",
+         "time": "सुबह १० बजे",
+         "line": "हल्दी · सुबह १० बजे"
+        },
+        {
+         "key": "wedding",
+         "title": "शुभ विवाह",
+         "time": "संध्या ६ बजे",
+         "line": "शुभ विवाह · संध्या ६ बजे"
+        }
+       ]
+      },
+      {
+       "heading": "२९ नवंबर",
+       "date_iso": "2026-11-29",
+       "venue_name_full": "देव रिसॉर्ट",
+       "venue_address": "गंगजला चौक ढाला, बस स्टैंड के पास, संत नगर, सहरसा, बिहार ८५२२०१",
+       "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+       "events": [
+        {
+         "key": "reception",
+         "title": "स्वागत समारोह",
+         "time": "संध्या ७ बजे",
+         "line": "स्वागत समारोह · संध्या ७ बजे"
+        }
+       ]
+      }
+     ],
+     "regards": "दर्शनाभिलाषी",
+     "regards_families": "झा परिवार एवं सील परिवार",
+     "city": "कोलकाता · सहरसा"
+    },
+    "salutation": {
+     "multi_page": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": "सपरिवार सादर आमंत्रित"
+     },
+     "single_page": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": null,
+      "note": "sub omitted: invitation_paragraph already invites the reader's family"
+     }
+    },
+    "reception_only": {
+     "invocation": "॥ श्री गणेशाय नमः ॥",
+     "invocation_secondary": null,
+     "heading": "स्वागत समारोह",
+     "heading_short": "स्वागत समारोह",
+     "tagline": "मिथिला में आशीर्वाद भरी संध्या",
+     "blessing_line": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से",
+     "host_line": "झा परिवार अपने सुपुत्र एवं पुत्रवधू के स्वागत समारोह में आपको सपरिवार सादर आमंत्रित करता है।",
+     "names": {
+      "first": "अक्षय आनंद",
+      "second": "श्रेया सील",
+      "first_short": "अक्षय",
+      "second_short": "श्रेया",
+      "first_honorific": "चि.",
+      "second_honorific": "सौ.",
+      "first_role": "groom",
+      "second_role": "bride",
+      "joiner_symbol": "&",
+      "pair_full": "अक्षय आनंद & श्रेया सील",
+      "pair_short": "अक्षय & श्रेया"
+     },
+     "venue_note": null,
+     "invitation_paragraph": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से झा परिवार अपने सुपुत्र चि. अक्षय आनंद एवं पुत्रवधू सौ. श्रेया सील के शुभ विवाह के उपलक्ष्य में आयोजित स्वागत समारोह में आपको सपरिवार सादर आमंत्रित करता है। कृपया पधारकर वर-वधू को अपना आशीर्वाद प्रदान करें।",
+     "event": {
+      "key": "reception",
+      "title": "स्वागत समारोह",
+      "title_full": "स्वागत समारोह",
+      "tagline": "मिथिला में आशीर्वाद भरी संध्या",
+      "day": "२९",
+      "date": "२९ नवंबर",
+      "month": "नवंबर",
+      "time": "संध्या ७ बजे",
+      "time_label_style": "समय: संध्या ७ बजे",
+      "date_time": "२९ नवंबर · संध्या ७ बजे",
+      "venue_name": "देव रिसॉर्ट",
+      "venue_gate": null,
+      "venue_name_full": "देव रिसॉर्ट",
+      "venue_address": "गंगजला चौक ढाला, बस स्टैंड के पास, संत नगर, सहरसा, बिहार ८५२२०१",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29"
+     },
+     "labels": {
+      "date": "दिनांक",
+      "time": "समय",
+      "venue": "स्थान",
+      "map_label": "मैप पर देखें"
+     },
+     "closing_big": "आपकी शुभ उपस्थिति की प्रतीक्षा रहेगी",
+     "closing_small": "नवदंपती को नव जीवन के शुभारंभ पर अपना आशीर्वाद देने अवश्य पधारें।",
+     "regards": "दर्शनाभिलाषी",
+     "regards_families": "झा परिवार एवं सील परिवार",
+     "regards_families_lines": [
+      "झा परिवार",
+      "एवं",
+      "सील परिवार"
+     ],
+     "monogram": {
+      "latin": "AS",
+      "native": "अ · श्रे",
+      "recommended": "latin"
+     },
+     "city": "सहरसा",
+     "salutation": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": null
+     }
+    },
+    "without_reception": {
+     "events_order": [
+      "mehndi",
+      "engagement",
+      "haldi",
+      "wedding"
+     ],
+     "events": {
+      "reception": null
+     },
+     "city": "कोलकाता",
+     "save_the_date": {
+      "title": "शुभ तिथि याद रखिएगा",
+      "line": "२५–२६ नवंबर · कोलकाता"
+     },
+     "video": {
+      "canvases": [
+       {
+        "id": "opening",
+        "palette": "ivory/cream with gold",
+        "kicker": "॥ श्री गणेशाय नमः ॥",
+        "kicker_secondary": null,
+        "title": "शुभ विवाह",
+        "lines": [
+         "२५–२६ नवंबर · कोलकाता"
+        ]
+       },
+       {
+        "id": "invitation",
+        "palette": "ivory/cream",
+        "title": "अक्षय आनंद & श्रेया सील",
+        "title_honorifics": [
+         "चि.",
+         "सौ. कां."
+        ],
+        "lines": [
+         "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से",
+         "झा परिवार अपने सुपुत्र के शुभ विवाह में आपको सपरिवार सादर आमंत्रित करता है।"
+        ],
+        "lines_position": "before_title"
+       },
+       {
+        "id": "mehndi",
+        "palette": "sage",
+        "title": "मेहंदी",
+        "lines": [
+         "मेहंदी, संगीत और हँसी"
+        ],
+        "facts": {
+         "date_time": "२५ नवंबर · सुबह ११ बजे",
+         "venue": "अगोरा बैंक्वेट्स",
+         "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+        }
+       },
+       {
+        "id": "engagement",
+        "palette": "dusty rose/lilac",
+        "title": "सगाई",
+        "lines": [
+         "दो दिल, एक वचन"
+        ],
+        "facts": {
+         "date_time": "२५ नवंबर · संध्या ६ बजे",
+         "venue": "अगोरा बैंक्वेट्स",
+         "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+        }
+       },
+       {
+        "id": "haldi",
+        "palette": "turmeric/ochre",
+        "title": "हल्दी",
+        "lines": [
+         "हल्दी के रंग में रंगी सुबह"
+        ],
+        "facts": {
+         "date_time": "२६ नवंबर · सुबह १० बजे",
+         "venue": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+         "address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+        }
+       },
+       {
+        "id": "wedding",
+        "palette": "vermilion/red",
+        "title": "शुभ विवाह",
+        "lines": [
+         "सात फेरे, सात वचन, जन्मों का साथ"
+        ],
+        "facts": {
+         "date_time": "२६ नवंबर · संध्या ६ बजे",
+         "venue": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+         "address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+        }
+       },
+       {
+        "id": "closing",
+        "palette": "ivory/cream with gold",
+        "title": "आपकी शुभ उपस्थिति की प्रतीक्षा रहेगी",
+        "lines": [
+         "नवदंपती को नव जीवन के शुभारंभ पर अपना आशीर्वाद देने अवश्य पधारें।"
+        ]
+       },
+       {
+        "id": "end",
+        "palette": "ivory/cream with gold",
+        "title": "अक्षय & श्रेया",
+        "monogram": "AS",
+        "lines": [
+         "दर्शनाभिलाषी",
+         "झा परिवार एवं सील परिवार"
+        ]
+       }
+      ]
+     },
+     "single_page": {
+      "days": [
+       {
+        "heading": "२५ नवंबर",
+        "date_iso": "2026-11-25",
+        "venue_name_full": "अगोरा बैंक्वेट्स",
+        "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+        "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "events": [
+         {
+          "key": "mehndi",
+          "title": "मेहंदी",
+          "time": "सुबह ११ बजे",
+          "line": "मेहंदी · सुबह ११ बजे"
+         },
+         {
+          "key": "engagement",
+          "title": "सगाई",
+          "time": "संध्या ६ बजे",
+          "line": "सगाई · संध्या ६ बजे"
+         }
+        ]
+       },
+       {
+        "heading": "२६ नवंबर",
+        "date_iso": "2026-11-26",
+        "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+        "venue_address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+        "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "events": [
+         {
+          "key": "haldi",
+          "title": "हल्दी",
+          "time": "सुबह १० बजे",
+          "line": "हल्दी · सुबह १० बजे"
+         },
+         {
+          "key": "wedding",
+          "title": "शुभ विवाह",
+          "time": "संध्या ६ बजे",
+          "line": "शुभ विवाह · संध्या ६ बजे"
+         }
+        ]
+       }
+      ],
+      "city": "कोलकाता"
+     }
+    }
+   },
+   "B": {
+    "variant_id": "hi_B",
+    "lang": "hi",
+    "order": "B",
+    "order_desc": "bride side first, Sil family hosts",
+    "meta": {
+     "lang_tag": "hi",
+     "script": "Deva",
+     "numerals": "devanagari",
+     "direction": "ltr",
+     "font_hint": "Devanagari serif with good conjunct support (e.g. Tiro Devanagari Hindi / Noto Serif Devanagari / Martel)"
+    },
+    "invocation": "॥ श्री गणेशाय नमः ॥",
+    "invocation_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+    "shloka": "मङ्गलं भगवान् विष्णुः मङ्गलं गरुडध्वजः। मङ्गलं पुण्डरीकाक्षः मङ्गलायतनो हरिः॥",
+    "heading": "शुभ विवाह",
+    "blessing_line": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से",
+    "host_line": "सील परिवार अपनी सुपुत्री के शुभ विवाह में आपको सपरिवार सादर आमंत्रित करता है।",
+    "names": {
+     "first": "श्रेया सील",
+     "second": "अक्षय आनंद",
+     "first_short": "श्रेया",
+     "second_short": "अक्षय",
+     "first_honorific": "सौ. कां.",
+     "second_honorific": "चि.",
+     "first_role": "bride",
+     "second_role": "groom",
+     "pair_full": "श्रेया सील & अक्षय आनंद",
+     "pair_short": "श्रेया & अक्षय"
+    },
+    "joiner_symbol": "&",
+    "joiner_word": "संग",
+    "card_paragraph": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से सील परिवार अपनी सुपुत्री सौ. कां. श्रेया सील संग चि. अक्षय आनंद के शुभ विवाह के मंगल अवसर पर आपको सपरिवार सादर आमंत्रित करता है।",
+    "monogram": {
+     "latin": "SA",
+     "native": "श्रे · अ",
+     "recommended": "latin"
+    },
+    "labels": {
+     "date": "दिनांक",
+     "time": "समय",
+     "venue": "स्थान",
+     "at": "समय",
+     "schedule": "मांगलिक कार्यक्रम",
+     "map_label": "मैप पर देखें"
+    },
+    "city": "कोलकाता · सहरसा",
+    "events_order": [
+     "mehndi",
+     "engagement",
+     "haldi",
+     "wedding",
+     "reception"
+    ],
+    "events": {
+     "mehndi": {
+      "title": "मेहंदी",
+      "title_full": "मेहंदी की रस्म",
+      "tagline": "मेहंदी, संगीत और हँसी",
+      "day": "२५",
+      "date": "२५ नवंबर",
+      "time": "सुबह ११ बजे",
+      "time_label_style": "समय: सुबह ११ बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "अगोरा बैंक्वेट्स",
+      "venue_gate": null,
+      "venue_name_full": "अगोरा बैंक्वेट्स",
+      "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "२५ नवंबर · सुबह ११ बजे"
+     },
+     "engagement": {
+      "title": "सगाई",
+      "title_full": "सगाई समारोह",
+      "tagline": "दो दिल, एक वचन",
+      "day": "२५",
+      "date": "२५ नवंबर",
+      "time": "संध्या ६ बजे",
+      "time_label_style": "समय: संध्या ६ बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "अगोरा बैंक्वेट्स",
+      "venue_gate": null,
+      "venue_name_full": "अगोरा बैंक्वेट्स",
+      "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "२५ नवंबर · संध्या ६ बजे"
+     },
+     "haldi": {
+      "title": "हल्दी",
+      "title_full": "हल्दी की रस्म",
+      "tagline": "हल्दी के रंग में रंगी सुबह",
+      "day": "२६",
+      "date": "२६ नवंबर",
+      "time": "सुबह १० बजे",
+      "time_label_style": "समय: सुबह १० बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "रॉय बाड़ी इवेंट्स",
+      "venue_gate": "गेट नं. २",
+      "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+      "venue_address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "२६ नवंबर · सुबह १० बजे"
+     },
+     "wedding": {
+      "title": "शुभ विवाह",
+      "title_full": "शुभ विवाह",
+      "tagline": "सात फेरे, सात वचन, जन्मों का साथ",
+      "day": "२६",
+      "date": "२६ नवंबर",
+      "time": "संध्या ६ बजे",
+      "time_label_style": "समय: संध्या ६ बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "रॉय बाड़ी इवेंट्स",
+      "venue_gate": "गेट नं. २",
+      "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+      "venue_address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "२६ नवंबर · संध्या ६ बजे"
+     },
+     "reception": {
+      "title": "स्वागत समारोह",
+      "title_full": "स्वागत समारोह",
+      "tagline": "मिथिला में आशीर्वाद भरी संध्या",
+      "day": "२९",
+      "date": "२९ नवंबर",
+      "time": "संध्या ७ बजे",
+      "time_label_style": "समय: संध्या ७ बजे",
+      "month": "नवंबर",
+      "month_upper": "नवंबर",
+      "venue_name": "देव रिसॉर्ट",
+      "venue_gate": null,
+      "venue_name_full": "देव रिसॉर्ट",
+      "venue_address": "गंगजला चौक ढाला, बस स्टैंड के पास, संत नगर, सहरसा, बिहार ८५२२०१",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29",
+      "date_time": "२९ नवंबर · संध्या ७ बजे"
+     }
+    },
+    "closing_big": "आपकी शुभ उपस्थिति की प्रतीक्षा रहेगी",
+    "closing_small": "नवदंपती को नव जीवन के शुभारंभ पर अपना आशीर्वाद देने अवश्य पधारें।",
+    "regards": "दर्शनाभिलाषी",
+    "regards_families": "सील परिवार एवं झा परिवार",
+    "regards_families_lines": [
+     "सील परिवार",
+     "एवं",
+     "झा परिवार"
+    ],
+    "save_the_date": {
+     "title": "शुभ तिथि याद रखिएगा",
+     "line": "२५, २६ एवं २९ नवंबर · कोलकाता · सहरसा"
+    },
+    "blank_name": {
+     "prefix": "श्रीमान / श्रीमती",
+     "suffix": "",
+     "line": "श्रीमान / श्रीमती ______________________",
+     "sub": "सपरिवार सादर आमंत्रित"
+    },
+    "video": {
+     "canvases": [
+      {
+       "id": "opening",
+       "palette": "ivory/cream with gold",
+       "kicker": "॥ श्री गणेशाय नमः ॥",
+       "kicker_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+       "title": "शुभ विवाह",
+       "lines": [
+        "२५, २६ एवं २९ नवंबर · कोलकाता · सहरसा"
+       ]
+      },
+      {
+       "id": "invitation",
+       "palette": "ivory/cream",
+       "title": "श्रेया सील & अक्षय आनंद",
+       "title_honorifics": [
+        "सौ. कां.",
+        "चि."
+       ],
+       "lines": [
+        "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से",
+        "सील परिवार अपनी सुपुत्री के शुभ विवाह में आपको सपरिवार सादर आमंत्रित करता है।"
+       ],
+       "lines_position": "before_title"
+      },
+      {
+       "id": "mehndi",
+       "palette": "sage",
+       "title": "मेहंदी",
+       "lines": [
+        "मेहंदी, संगीत और हँसी"
+       ],
+       "facts": {
+        "date_time": "२५ नवंबर · सुबह ११ बजे",
+        "venue": "अगोरा बैंक्वेट्स",
+        "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+       }
+      },
+      {
+       "id": "engagement",
+       "palette": "dusty rose/lilac",
+       "title": "सगाई",
+       "lines": [
+        "दो दिल, एक वचन"
+       ],
+       "facts": {
+        "date_time": "२५ नवंबर · संध्या ६ बजे",
+        "venue": "अगोरा बैंक्वेट्स",
+        "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+       }
+      },
+      {
+       "id": "haldi",
+       "palette": "turmeric/ochre",
+       "title": "हल्दी",
+       "lines": [
+        "हल्दी के रंग में रंगी सुबह"
+       ],
+       "facts": {
+        "date_time": "२६ नवंबर · सुबह १० बजे",
+        "venue": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+        "address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+       }
+      },
+      {
+       "id": "wedding",
+       "palette": "vermilion/red",
+       "title": "शुभ विवाह",
+       "lines": [
+        "सात फेरे, सात वचन, जन्मों का साथ"
+       ],
+       "facts": {
+        "date_time": "२६ नवंबर · संध्या ६ बजे",
+        "venue": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+        "address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+       }
+      },
+      {
+       "id": "reception",
+       "palette": "peacock teal with soft gold",
+       "title": "स्वागत समारोह",
+       "lines": [
+        "मिथिला में आशीर्वाद भरी संध्या"
+       ],
+       "facts": {
+        "date_time": "२९ नवंबर · संध्या ७ बजे",
+        "venue": "देव रिसॉर्ट",
+        "address": "गंगजला चौक ढाला, बस स्टैंड के पास, संत नगर, सहरसा, बिहार ८५२२०१"
+       }
+      },
+      {
+       "id": "closing",
+       "palette": "ivory/cream with gold",
+       "title": "आपकी शुभ उपस्थिति की प्रतीक्षा रहेगी",
+       "lines": [
+        "नवदंपती को नव जीवन के शुभारंभ पर अपना आशीर्वाद देने अवश्य पधारें।"
+       ]
+      },
+      {
+       "id": "end",
+       "palette": "ivory/cream with gold",
+       "title": "श्रेया & अक्षय",
+       "monogram": "SA",
+       "lines": [
+        "दर्शनाभिलाषी",
+        "सील परिवार एवं झा परिवार"
+       ]
+      }
+     ]
+    },
+    "single_page": {
+     "invocation": "॥ श्री गणेशाय नमः ॥",
+     "invocation_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+     "heading": "शुभ विवाह",
+     "names": "श्रेया सील & अक्षय आनंद",
+     "invitation_paragraph": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से सील परिवार अपनी सुपुत्री सौ. कां. श्रेया सील संग चि. अक्षय आनंद के शुभ विवाह के मंगल अवसर पर आपको सपरिवार सादर आमंत्रित करता है। कृपया पधारकर वर-वधू को अपना आशीर्वाद प्रदान करें।",
+     "events_heading": "मांगलिक कार्यक्रम",
+     "days": [
+      {
+       "heading": "२५ नवंबर",
+       "date_iso": "2026-11-25",
+       "venue_name_full": "अगोरा बैंक्वेट्स",
+       "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+       "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "events": [
+        {
+         "key": "mehndi",
+         "title": "मेहंदी",
+         "time": "सुबह ११ बजे",
+         "line": "मेहंदी · सुबह ११ बजे"
+        },
+        {
+         "key": "engagement",
+         "title": "सगाई",
+         "time": "संध्या ६ बजे",
+         "line": "सगाई · संध्या ६ बजे"
+        }
+       ]
+      },
+      {
+       "heading": "२६ नवंबर",
+       "date_iso": "2026-11-26",
+       "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+       "venue_address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+       "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "events": [
+        {
+         "key": "haldi",
+         "title": "हल्दी",
+         "time": "सुबह १० बजे",
+         "line": "हल्दी · सुबह १० बजे"
+        },
+        {
+         "key": "wedding",
+         "title": "शुभ विवाह",
+         "time": "संध्या ६ बजे",
+         "line": "शुभ विवाह · संध्या ६ बजे"
+        }
+       ]
+      },
+      {
+       "heading": "२९ नवंबर",
+       "date_iso": "2026-11-29",
+       "venue_name_full": "देव रिसॉर्ट",
+       "venue_address": "गंगजला चौक ढाला, बस स्टैंड के पास, संत नगर, सहरसा, बिहार ८५२२०१",
+       "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+       "events": [
+        {
+         "key": "reception",
+         "title": "स्वागत समारोह",
+         "time": "संध्या ७ बजे",
+         "line": "स्वागत समारोह · संध्या ७ बजे"
+        }
+       ]
+      }
+     ],
+     "regards": "दर्शनाभिलाषी",
+     "regards_families": "सील परिवार एवं झा परिवार",
+     "city": "कोलकाता · सहरसा"
+    },
+    "salutation": {
+     "multi_page": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": "सपरिवार सादर आमंत्रित"
+     },
+     "single_page": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": null,
+      "note": "sub omitted: invitation_paragraph already invites the reader's family"
+     }
+    },
+    "reception_only": {
+     "invocation": "॥ श्री गणेशाय नमः ॥",
+     "invocation_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+     "heading": "स्वागत समारोह",
+     "heading_short": "स्वागत समारोह",
+     "tagline": "मिथिला में आशीर्वाद भरी संध्या",
+     "blessing_line": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से",
+     "host_line": "सील परिवार अपनी सुपुत्री एवं जामाता के स्वागत समारोह में आपको सपरिवार सादर आमंत्रित करता है।",
+     "names": {
+      "first": "श्रेया सील",
+      "second": "अक्षय आनंद",
+      "first_short": "श्रेया",
+      "second_short": "अक्षय",
+      "first_honorific": "सौ.",
+      "second_honorific": "चि.",
+      "first_role": "bride",
+      "second_role": "groom",
+      "joiner_symbol": "&",
+      "pair_full": "श्रेया सील & अक्षय आनंद",
+      "pair_short": "श्रेया & अक्षय"
+     },
+     "venue_note": "वर के गृहनगर सहरसा में",
+     "invitation_paragraph": "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से सील परिवार अपनी सुपुत्री सौ. श्रेया सील एवं जामाता चि. अक्षय आनंद के शुभ विवाह के उपलक्ष्य में, वर के गृहनगर सहरसा में आयोजित स्वागत समारोह में आपको सपरिवार सादर आमंत्रित करता है। कृपया पधारकर वर-वधू को अपना आशीर्वाद प्रदान करें।",
+     "event": {
+      "key": "reception",
+      "title": "स्वागत समारोह",
+      "title_full": "स्वागत समारोह",
+      "tagline": "मिथिला में आशीर्वाद भरी संध्या",
+      "day": "२९",
+      "date": "२९ नवंबर",
+      "month": "नवंबर",
+      "time": "संध्या ७ बजे",
+      "time_label_style": "समय: संध्या ७ बजे",
+      "date_time": "२९ नवंबर · संध्या ७ बजे",
+      "venue_name": "देव रिसॉर्ट",
+      "venue_gate": null,
+      "venue_name_full": "देव रिसॉर्ट",
+      "venue_address": "गंगजला चौक ढाला, बस स्टैंड के पास, संत नगर, सहरसा, बिहार ८५२२०१",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29"
+     },
+     "labels": {
+      "date": "दिनांक",
+      "time": "समय",
+      "venue": "स्थान",
+      "map_label": "मैप पर देखें"
+     },
+     "closing_big": "आपकी शुभ उपस्थिति की प्रतीक्षा रहेगी",
+     "closing_small": "नवदंपती को नव जीवन के शुभारंभ पर अपना आशीर्वाद देने अवश्य पधारें।",
+     "regards": "दर्शनाभिलाषी",
+     "regards_families": "सील परिवार एवं झा परिवार",
+     "regards_families_lines": [
+      "सील परिवार",
+      "एवं",
+      "झा परिवार"
+     ],
+     "monogram": {
+      "latin": "SA",
+      "native": "श्रे · अ",
+      "recommended": "latin"
+     },
+     "city": "सहरसा",
+     "salutation": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": null
+     }
+    },
+    "without_reception": {
+     "events_order": [
+      "mehndi",
+      "engagement",
+      "haldi",
+      "wedding"
+     ],
+     "events": {
+      "reception": null
+     },
+     "city": "कोलकाता",
+     "save_the_date": {
+      "title": "शुभ तिथि याद रखिएगा",
+      "line": "२५–२६ नवंबर · कोलकाता"
+     },
+     "video": {
+      "canvases": [
+       {
+        "id": "opening",
+        "palette": "ivory/cream with gold",
+        "kicker": "॥ श्री गणेशाय नमः ॥",
+        "kicker_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+        "title": "शुभ विवाह",
+        "lines": [
+         "२५–२६ नवंबर · कोलकाता"
+        ]
+       },
+       {
+        "id": "invitation",
+        "palette": "ivory/cream",
+        "title": "श्रेया सील & अक्षय आनंद",
+        "title_honorifics": [
+         "सौ. कां.",
+         "चि."
+        ],
+        "lines": [
+         "ईश्वर की असीम कृपा एवं स्वजनों के आशीर्वाद से",
+         "सील परिवार अपनी सुपुत्री के शुभ विवाह में आपको सपरिवार सादर आमंत्रित करता है।"
+        ],
+        "lines_position": "before_title"
+       },
+       {
+        "id": "mehndi",
+        "palette": "sage",
+        "title": "मेहंदी",
+        "lines": [
+         "मेहंदी, संगीत और हँसी"
+        ],
+        "facts": {
+         "date_time": "२५ नवंबर · सुबह ११ बजे",
+         "venue": "अगोरा बैंक्वेट्स",
+         "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+        }
+       },
+       {
+        "id": "engagement",
+        "palette": "dusty rose/lilac",
+        "title": "सगाई",
+        "lines": [
+         "दो दिल, एक वचन"
+        ],
+        "facts": {
+         "date_time": "२५ नवंबर · संध्या ६ बजे",
+         "venue": "अगोरा बैंक्वेट्स",
+         "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+        }
+       },
+       {
+        "id": "haldi",
+        "palette": "turmeric/ochre",
+        "title": "हल्दी",
+        "lines": [
+         "हल्दी के रंग में रंगी सुबह"
+        ],
+        "facts": {
+         "date_time": "२६ नवंबर · सुबह १० बजे",
+         "venue": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+         "address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+        }
+       },
+       {
+        "id": "wedding",
+        "palette": "vermilion/red",
+        "title": "शुभ विवाह",
+        "lines": [
+         "सात फेरे, सात वचन, जन्मों का साथ"
+        ],
+        "facts": {
+         "date_time": "२६ नवंबर · संध्या ६ बजे",
+         "venue": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+         "address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+        }
+       },
+       {
+        "id": "closing",
+        "palette": "ivory/cream with gold",
+        "title": "आपकी शुभ उपस्थिति की प्रतीक्षा रहेगी",
+        "lines": [
+         "नवदंपती को नव जीवन के शुभारंभ पर अपना आशीर्वाद देने अवश्य पधारें।"
+        ]
+       },
+       {
+        "id": "end",
+        "palette": "ivory/cream with gold",
+        "title": "श्रेया & अक्षय",
+        "monogram": "SA",
+        "lines": [
+         "दर्शनाभिलाषी",
+         "सील परिवार एवं झा परिवार"
+        ]
+       }
+      ]
+     },
+     "single_page": {
+      "days": [
+       {
+        "heading": "२५ नवंबर",
+        "date_iso": "2026-11-25",
+        "venue_name_full": "अगोरा बैंक्वेट्स",
+        "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+        "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "events": [
+         {
+          "key": "mehndi",
+          "title": "मेहंदी",
+          "time": "सुबह ११ बजे",
+          "line": "मेहंदी · सुबह ११ बजे"
+         },
+         {
+          "key": "engagement",
+          "title": "सगाई",
+          "time": "संध्या ६ बजे",
+          "line": "सगाई · संध्या ६ बजे"
+         }
+        ]
+       },
+       {
+        "heading": "२६ नवंबर",
+        "date_iso": "2026-11-26",
+        "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं. २",
+        "venue_address": "१९२-बी एवं सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+        "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "events": [
+         {
+          "key": "haldi",
+          "title": "हल्दी",
+          "time": "सुबह १० बजे",
+          "line": "हल्दी · सुबह १० बजे"
+         },
+         {
+          "key": "wedding",
+          "title": "शुभ विवाह",
+          "time": "संध्या ६ बजे",
+          "line": "शुभ विवाह · संध्या ६ बजे"
+         }
+        ]
+       }
+      ],
+      "city": "कोलकाता"
+     }
+    }
+   }
+  },
+  "bn": {
+   "G": {
+    "variant_id": "bn_G",
+    "lang": "bn",
+    "order": "G",
+    "order_desc": "groom side first, Jha family hosts",
+    "meta": {
+     "lang_tag": "bn",
+     "script": "Beng",
+     "numerals": "bengali",
+     "direction": "ltr",
+     "font_hint": "Bengali serif with full juktakkhor support (e.g. Tiro Bangla / Noto Serif Bengali); never a Devanagari font"
+    },
+    "invocation": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+    "invocation_secondary": "শ্রী গণেশায় নমঃ",
+    "shloka": null,
+    "heading": "শুভ বিবাহ",
+    "blessing_line": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে",
+    "host_line": "ঝা পরিবার তাঁদের পুত্রের শুভ বিবাহে আপনাকে সাদর আমন্ত্রণ জানাচ্ছেন।",
+    "names": {
+     "first": "অক্ষয় আনন্দ",
+     "second": "শ্রেয়া শীল",
+     "first_short": "অক্ষয়",
+     "second_short": "শ্রেয়া",
+     "first_honorific": "শ্রীমান",
+     "second_honorific": "কল্যাণীয়া",
+     "first_role": "groom",
+     "second_role": "bride",
+     "pair_full": "অক্ষয় আনন্দ ও শ্রেয়া শীল",
+     "pair_short": "অক্ষয় ও শ্রেয়া"
+    },
+    "joiner_symbol": "ও",
+    "joiner_word": "ও",
+    "card_paragraph": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে ঝা পরিবারের পুত্র শ্রীমান অক্ষয় আনন্দের সঙ্গে শীল পরিবারের কন্যা কল্যাণীয়া শ্রেয়া শীলের শুভ বিবাহ স্থির হয়েছে। এই শুভ অনুষ্ঠানে আপনাকে সপরিবারে সাদর আমন্ত্রণ জানাই।",
+    "monogram": {
+     "latin": "AS",
+     "native": "অশ",
+     "recommended": "latin"
+    },
+    "labels": {
+     "date": "তারিখ",
+     "time": "সময়",
+     "venue": "স্থান",
+     "at": "সময়",
+     "schedule": "অনুষ্ঠানসূচি",
+     "map_label": "ম্যাপে খুঁজুন"
+    },
+    "city": "কলকাতা · সহরসা",
+    "events_order": [
+     "mehndi",
+     "engagement",
+     "haldi",
+     "wedding",
+     "reception"
+    ],
+    "events": {
+     "mehndi": {
+      "title": "মেহেন্দি",
+      "title_full": "মেহেন্দি অনুষ্ঠান",
+      "tagline": "মেহেন্দির রঙে, গানে আর হাসিতে",
+      "day": "২৫",
+      "date": "২৫শে নভেম্বর",
+      "time": "সকাল ১১টা",
+      "time_label_style": "সময়: সকাল ১১টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "আগোরা ব্যাঙ্কোয়েটস",
+      "venue_gate": null,
+      "venue_name_full": "আগোরা ব্যাঙ্কোয়েটস",
+      "venue_address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "২৫শে নভেম্বর · সকাল ১১টা"
+     },
+     "engagement": {
+      "title": "বাগদান",
+      "title_full": "বাগদান অনুষ্ঠান",
+      "tagline": "দুটি হৃদয়, একটি অঙ্গীকার",
+      "day": "২৫",
+      "date": "২৫শে নভেম্বর",
+      "time": "সন্ধ্যা ৬টা",
+      "time_label_style": "সময়: সন্ধ্যা ৬টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "আগোরা ব্যাঙ্কোয়েটস",
+      "venue_gate": null,
+      "venue_name_full": "আগোরা ব্যাঙ্কোয়েটস",
+      "venue_address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "২৫শে নভেম্বর · সন্ধ্যা ৬টা"
+     },
+     "haldi": {
+      "title": "গায়ে হলুদ",
+      "title_full": "গায়ে হলুদ",
+      "tagline": "হলুদ রঙে রাঙা সকাল",
+      "day": "২৬",
+      "date": "২৬শে নভেম্বর",
+      "time": "সকাল ১০টা",
+      "time_label_style": "সময়: সকাল ১০টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "রায়বাড়ি ইভেন্টস",
+      "venue_gate": "গেট নং ২",
+      "venue_name_full": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+      "venue_address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "২৬শে নভেম্বর · সকাল ১০টা"
+     },
+     "wedding": {
+      "title": "শুভ বিবাহ",
+      "title_full": "শুভ বিবাহ",
+      "tagline": "সাত পাকে বাঁধা, চিরকালের সাথী",
+      "day": "২৬",
+      "date": "২৬শে নভেম্বর",
+      "time": "সন্ধ্যা ৬টা",
+      "time_label_style": "সময়: সন্ধ্যা ৬টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "রায়বাড়ি ইভেন্টস",
+      "venue_gate": "গেট নং ২",
+      "venue_name_full": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+      "venue_address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "২৬শে নভেম্বর · সন্ধ্যা ৬টা"
+     },
+     "reception": {
+      "title": "প্রীতিভোজ",
+      "title_full": "প্রীতিভোজ",
+      "tagline": "মিথিলায় আশীর্বাদে ভরা সন্ধ্যা",
+      "day": "২৯",
+      "date": "২৯শে নভেম্বর",
+      "time": "সন্ধ্যা ৭টা",
+      "time_label_style": "সময়: সন্ধ্যা ৭টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "দেব রিসর্ট",
+      "venue_gate": null,
+      "venue_name_full": "দেব রিসর্ট",
+      "venue_address": "গংজলা চক ঢালা, বাস স্ট্যান্ডের কাছে, সন্ত নগর, সহরসা, বিহার ৮৫২২০১",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29",
+      "date_time": "২৯শে নভেম্বর · সন্ধ্যা ৭টা"
+     }
+    },
+    "closing_big": "আপনার উপস্থিতি একান্ত কাম্য",
+    "closing_small": "সপরিবারে উপস্থিত থেকে নতুন জীবনের শুভ সূচনায় নবদম্পতিকে আশীর্বাদ করে বাধিত করবেন।",
+    "regards": "বিনীত",
+    "regards_families": "ঝা পরিবার ও শীল পরিবার",
+    "regards_families_lines": [
+     "ঝা পরিবার",
+     "ও",
+     "শীল পরিবার"
+    ],
+    "save_the_date": {
+     "title": "তারিখটি মনে রাখবেন",
+     "line": "২৫, ২৬ ও ২৯শে নভেম্বর · কলকাতা · সহরসা"
+    },
+    "blank_name": {
+     "prefix": "শ্রী / শ্রীমতী",
+     "suffix": "",
+     "line": "শ্রী / শ্রীমতী ______________________",
+     "sub": "সপরিবারে সাদর আমন্ত্রিত"
+    },
+    "video": {
+     "canvases": [
+      {
+       "id": "opening",
+       "palette": "ivory/cream with gold",
+       "kicker": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+       "kicker_secondary": "শ্রী গণেশায় নমঃ",
+       "title": "শুভ বিবাহ",
+       "lines": [
+        "২৫, ২৬ ও ২৯শে নভেম্বর · কলকাতা · সহরসা"
+       ]
+      },
+      {
+       "id": "invitation",
+       "palette": "ivory/cream",
+       "title": "অক্ষয় আনন্দ ও শ্রেয়া শীল",
+       "title_honorifics": [
+        "শ্রীমান",
+        "কল্যাণীয়া"
+       ],
+       "lines": [
+        "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে",
+        "ঝা পরিবার তাঁদের পুত্রের শুভ বিবাহে আপনাকে সাদর আমন্ত্রণ জানাচ্ছেন।"
+       ],
+       "lines_position": "before_title"
+      },
+      {
+       "id": "mehndi",
+       "palette": "sage",
+       "title": "মেহেন্দি",
+       "lines": [
+        "মেহেন্দির রঙে, গানে আর হাসিতে"
+       ],
+       "facts": {
+        "date_time": "২৫শে নভেম্বর · সকাল ১১টা",
+        "venue": "আগোরা ব্যাঙ্কোয়েটস",
+        "address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা"
+       }
+      },
+      {
+       "id": "engagement",
+       "palette": "dusty rose/lilac",
+       "title": "বাগদান",
+       "lines": [
+        "দুটি হৃদয়, একটি অঙ্গীকার"
+       ],
+       "facts": {
+        "date_time": "২৫শে নভেম্বর · সন্ধ্যা ৬টা",
+        "venue": "আগোরা ব্যাঙ্কোয়েটস",
+        "address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা"
+       }
+      },
+      {
+       "id": "haldi",
+       "palette": "turmeric/ochre",
+       "title": "গায়ে হলুদ",
+       "lines": [
+        "হলুদ রঙে রাঙা সকাল"
+       ],
+       "facts": {
+        "date_time": "২৬শে নভেম্বর · সকাল ১০টা",
+        "venue": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+        "address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা"
+       }
+      },
+      {
+       "id": "wedding",
+       "palette": "vermilion/red",
+       "title": "শুভ বিবাহ",
+       "lines": [
+        "সাত পাকে বাঁধা, চিরকালের সাথী"
+       ],
+       "facts": {
+        "date_time": "২৬শে নভেম্বর · সন্ধ্যা ৬টা",
+        "venue": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+        "address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা"
+       }
+      },
+      {
+       "id": "reception",
+       "palette": "peacock teal with soft gold",
+       "title": "প্রীতিভোজ",
+       "lines": [
+        "মিথিলায় আশীর্বাদে ভরা সন্ধ্যা"
+       ],
+       "facts": {
+        "date_time": "২৯শে নভেম্বর · সন্ধ্যা ৭টা",
+        "venue": "দেব রিসর্ট",
+        "address": "গংজলা চক ঢালা, বাস স্ট্যান্ডের কাছে, সন্ত নগর, সহরসা, বিহার ৮৫২২০১"
+       }
+      },
+      {
+       "id": "closing",
+       "palette": "ivory/cream with gold",
+       "title": "আপনার উপস্থিতি একান্ত কাম্য",
+       "lines": [
+        "সপরিবারে উপস্থিত থেকে নতুন জীবনের শুভ সূচনায় নবদম্পতিকে আশীর্বাদ করে বাধিত করবেন।"
+       ]
+      },
+      {
+       "id": "end",
+       "palette": "ivory/cream with gold",
+       "title": "অক্ষয় ও শ্রেয়া",
+       "monogram": "AS",
+       "lines": [
+        "বিনীত",
+        "ঝা পরিবার ও শীল পরিবার"
+       ]
+      }
+     ]
+    },
+    "single_page": {
+     "invocation": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+     "invocation_secondary": "শ্রী গণেশায় নমঃ",
+     "heading": "শুভ বিবাহ",
+     "names": "অক্ষয় আনন্দ ও শ্রেয়া শীল",
+     "invitation_paragraph": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে ঝা পরিবারের পুত্র শ্রীমান অক্ষয় আনন্দের সঙ্গে শীল পরিবারের কন্যা কল্যাণীয়া শ্রেয়া শীলের শুভ বিবাহ স্থির হয়েছে। এই শুভ অনুষ্ঠানে আপনাকে সপরিবারে সাদর আমন্ত্রণ জানাই। আপনার উপস্থিতি ও আশীর্বাদ একান্ত কাম্য।",
+     "events_heading": "অনুষ্ঠানসূচি",
+     "days": [
+      {
+       "heading": "২৫শে নভেম্বর",
+       "date_iso": "2026-11-25",
+       "venue_name_full": "আগোরা ব্যাঙ্কোয়েটস",
+       "venue_address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা",
+       "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "events": [
+        {
+         "key": "mehndi",
+         "title": "মেহেন্দি",
+         "time": "সকাল ১১টা",
+         "line": "মেহেন্দি · সকাল ১১টা"
+        },
+        {
+         "key": "engagement",
+         "title": "বাগদান",
+         "time": "সন্ধ্যা ৬টা",
+         "line": "বাগদান · সন্ধ্যা ৬টা"
+        }
+       ]
+      },
+      {
+       "heading": "২৬শে নভেম্বর",
+       "date_iso": "2026-11-26",
+       "venue_name_full": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+       "venue_address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা",
+       "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "events": [
+        {
+         "key": "haldi",
+         "title": "গায়ে হলুদ",
+         "time": "সকাল ১০টা",
+         "line": "গায়ে হলুদ · সকাল ১০টা"
+        },
+        {
+         "key": "wedding",
+         "title": "শুভ বিবাহ",
+         "time": "সন্ধ্যা ৬টা",
+         "line": "শুভ বিবাহ · সন্ধ্যা ৬টা"
+        }
+       ]
+      },
+      {
+       "heading": "২৯শে নভেম্বর",
+       "date_iso": "2026-11-29",
+       "venue_name_full": "দেব রিসর্ট",
+       "venue_address": "গংজলা চক ঢালা, বাস স্ট্যান্ডের কাছে, সন্ত নগর, সহরসা, বিহার ৮৫২২০১",
+       "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+       "events": [
+        {
+         "key": "reception",
+         "title": "প্রীতিভোজ",
+         "time": "সন্ধ্যা ৭টা",
+         "line": "প্রীতিভোজ · সন্ধ্যা ৭টা"
+        }
+       ]
+      }
+     ],
+     "regards": "বিনীত",
+     "regards_families": "ঝা পরিবার ও শীল পরিবার",
+     "city": "কলকাতা · সহরসা"
+    },
+    "salutation": {
+     "multi_page": {
+      "prefix": "শ্রী / শ্রীমতী",
+      "suffix": "",
+      "line": "শ্রী / শ্রীমতী ______________________",
+      "sub": "সপরিবারে সাদর আমন্ত্রিত"
+     },
+     "single_page": {
+      "prefix": "শ্রী / শ্রীমতী",
+      "suffix": "",
+      "line": "শ্রী / শ্রীমতী ______________________",
+      "sub": null,
+      "note": "sub omitted: invitation_paragraph already invites the reader's family"
+     }
+    },
+    "reception_only": {
+     "invocation": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+     "invocation_secondary": "শ্রী গণেশায় নমঃ",
+     "heading": "প্রীতিভোজ",
+     "heading_short": "প্রীতিভোজ",
+     "tagline": "মিথিলায় আশীর্বাদে ভরা সন্ধ্যা",
+     "blessing_line": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে",
+     "host_line": "ঝা পরিবার তাঁদের পুত্র ও পুত্রবধূর শুভ বিবাহ উপলক্ষে প্রীতিভোজে আপনাকে সাদর আমন্ত্রণ জানাচ্ছেন।",
+     "names": {
+      "first": "অক্ষয় আনন্দ",
+      "second": "শ্রেয়া শীল",
+      "first_short": "অক্ষয়",
+      "second_short": "শ্রেয়া",
+      "first_honorific": "শ্রীমান",
+      "second_honorific": "শ্রীমতী",
+      "first_role": "groom",
+      "second_role": "bride",
+      "joiner_symbol": "ও",
+      "pair_full": "অক্ষয় আনন্দ ও শ্রেয়া শীল",
+      "pair_short": "অক্ষয় ও শ্রেয়া"
+     },
+     "venue_note": null,
+     "invitation_paragraph": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে ঝা পরিবারের পুত্র শ্রীমান অক্ষয় আনন্দ ও পুত্রবধূ শ্রীমতী শ্রেয়া শীলের শুভ বিবাহ উপলক্ষে প্রীতিভোজের আয়োজন করা হয়েছে। এই শুভ অনুষ্ঠানে আপনাকে সপরিবারে সাদর আমন্ত্রণ জানাই। আপনার উপস্থিতি ও আশীর্বাদ একান্ত কাম্য।",
+     "event": {
+      "key": "reception",
+      "title": "প্রীতিভোজ",
+      "title_full": "প্রীতিভোজ",
+      "tagline": "মিথিলায় আশীর্বাদে ভরা সন্ধ্যা",
+      "day": "২৯",
+      "date": "২৯শে নভেম্বর",
+      "month": "নভেম্বর",
+      "time": "সন্ধ্যা ৭টা",
+      "time_label_style": "সময়: সন্ধ্যা ৭টা",
+      "date_time": "২৯শে নভেম্বর · সন্ধ্যা ৭টা",
+      "venue_name": "দেব রিসর্ট",
+      "venue_gate": null,
+      "venue_name_full": "দেব রিসর্ট",
+      "venue_address": "গংজলা চক ঢালা, বাস স্ট্যান্ডের কাছে, সন্ত নগর, সহরসা, বিহার ৮৫২২০১",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29"
+     },
+     "labels": {
+      "date": "তারিখ",
+      "time": "সময়",
+      "venue": "স্থান",
+      "map_label": "ম্যাপে খুঁজুন"
+     },
+     "closing_big": "আপনার উপস্থিতি একান্ত কাম্য",
+     "closing_small": "সপরিবারে উপস্থিত থেকে নতুন জীবনের শুভ সূচনায় নবদম্পতিকে আশীর্বাদ করে বাধিত করবেন।",
+     "regards": "বিনীত",
+     "regards_families": "ঝা পরিবার ও শীল পরিবার",
+     "regards_families_lines": [
+      "ঝা পরিবার",
+      "ও",
+      "শীল পরিবার"
+     ],
+     "monogram": {
+      "latin": "AS",
+      "native": "অশ",
+      "recommended": "latin"
+     },
+     "city": "সহরসা",
+     "salutation": {
+      "prefix": "শ্রী / শ্রীমতী",
+      "suffix": "",
+      "line": "শ্রী / শ্রীমতী ______________________",
+      "sub": null
+     }
+    },
+    "without_reception": {
+     "events_order": [
+      "mehndi",
+      "engagement",
+      "haldi",
+      "wedding"
+     ],
+     "events": {
+      "reception": null
+     },
+     "city": "কলকাতা",
+     "save_the_date": {
+      "title": "তারিখটি মনে রাখবেন",
+      "line": "২৫ ও ২৬শে নভেম্বর · কলকাতা"
+     },
+     "video": {
+      "canvases": [
+       {
+        "id": "opening",
+        "palette": "ivory/cream with gold",
+        "kicker": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+        "kicker_secondary": "শ্রী গণেশায় নমঃ",
+        "title": "শুভ বিবাহ",
+        "lines": [
+         "২৫ ও ২৬শে নভেম্বর · কলকাতা"
+        ]
+       },
+       {
+        "id": "invitation",
+        "palette": "ivory/cream",
+        "title": "অক্ষয় আনন্দ ও শ্রেয়া শীল",
+        "title_honorifics": [
+         "শ্রীমান",
+         "কল্যাণীয়া"
+        ],
+        "lines": [
+         "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে",
+         "ঝা পরিবার তাঁদের পুত্রের শুভ বিবাহে আপনাকে সাদর আমন্ত্রণ জানাচ্ছেন।"
+        ],
+        "lines_position": "before_title"
+       },
+       {
+        "id": "mehndi",
+        "palette": "sage",
+        "title": "মেহেন্দি",
+        "lines": [
+         "মেহেন্দির রঙে, গানে আর হাসিতে"
+        ],
+        "facts": {
+         "date_time": "২৫শে নভেম্বর · সকাল ১১টা",
+         "venue": "আগোরা ব্যাঙ্কোয়েটস",
+         "address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা"
+        }
+       },
+       {
+        "id": "engagement",
+        "palette": "dusty rose/lilac",
+        "title": "বাগদান",
+        "lines": [
+         "দুটি হৃদয়, একটি অঙ্গীকার"
+        ],
+        "facts": {
+         "date_time": "২৫শে নভেম্বর · সন্ধ্যা ৬টা",
+         "venue": "আগোরা ব্যাঙ্কোয়েটস",
+         "address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা"
+        }
+       },
+       {
+        "id": "haldi",
+        "palette": "turmeric/ochre",
+        "title": "গায়ে হলুদ",
+        "lines": [
+         "হলুদ রঙে রাঙা সকাল"
+        ],
+        "facts": {
+         "date_time": "২৬শে নভেম্বর · সকাল ১০টা",
+         "venue": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+         "address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা"
+        }
+       },
+       {
+        "id": "wedding",
+        "palette": "vermilion/red",
+        "title": "শুভ বিবাহ",
+        "lines": [
+         "সাত পাকে বাঁধা, চিরকালের সাথী"
+        ],
+        "facts": {
+         "date_time": "২৬শে নভেম্বর · সন্ধ্যা ৬টা",
+         "venue": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+         "address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা"
+        }
+       },
+       {
+        "id": "closing",
+        "palette": "ivory/cream with gold",
+        "title": "আপনার উপস্থিতি একান্ত কাম্য",
+        "lines": [
+         "সপরিবারে উপস্থিত থেকে নতুন জীবনের শুভ সূচনায় নবদম্পতিকে আশীর্বাদ করে বাধিত করবেন।"
+        ]
+       },
+       {
+        "id": "end",
+        "palette": "ivory/cream with gold",
+        "title": "অক্ষয় ও শ্রেয়া",
+        "monogram": "AS",
+        "lines": [
+         "বিনীত",
+         "ঝা পরিবার ও শীল পরিবার"
+        ]
+       }
+      ]
+     },
+     "single_page": {
+      "days": [
+       {
+        "heading": "২৫শে নভেম্বর",
+        "date_iso": "2026-11-25",
+        "venue_name_full": "আগোরা ব্যাঙ্কোয়েটস",
+        "venue_address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা",
+        "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "events": [
+         {
+          "key": "mehndi",
+          "title": "মেহেন্দি",
+          "time": "সকাল ১১টা",
+          "line": "মেহেন্দি · সকাল ১১টা"
+         },
+         {
+          "key": "engagement",
+          "title": "বাগদান",
+          "time": "সন্ধ্যা ৬টা",
+          "line": "বাগদান · সন্ধ্যা ৬টা"
+         }
+        ]
+       },
+       {
+        "heading": "২৬শে নভেম্বর",
+        "date_iso": "2026-11-26",
+        "venue_name_full": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+        "venue_address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা",
+        "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "events": [
+         {
+          "key": "haldi",
+          "title": "গায়ে হলুদ",
+          "time": "সকাল ১০টা",
+          "line": "গায়ে হলুদ · সকাল ১০টা"
+         },
+         {
+          "key": "wedding",
+          "title": "শুভ বিবাহ",
+          "time": "সন্ধ্যা ৬টা",
+          "line": "শুভ বিবাহ · সন্ধ্যা ৬টা"
+         }
+        ]
+       }
+      ],
+      "city": "কলকাতা"
+     }
+    }
+   },
+   "B": {
+    "variant_id": "bn_B",
+    "lang": "bn",
+    "order": "B",
+    "order_desc": "bride side first, Sil family hosts",
+    "meta": {
+     "lang_tag": "bn",
+     "script": "Beng",
+     "numerals": "bengali",
+     "direction": "ltr",
+     "font_hint": "Bengali serif with full juktakkhor support (e.g. Tiro Bangla / Noto Serif Bengali); never a Devanagari font"
+    },
+    "invocation": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+    "invocation_secondary": null,
+    "shloka": null,
+    "heading": "শুভ বিবাহ",
+    "blessing_line": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে",
+    "host_line": "শীল পরিবার তাঁদের কন্যার শুভ বিবাহে আপনাকে সাদর আমন্ত্রণ জানাচ্ছেন।",
+    "names": {
+     "first": "শ্রেয়া শীল",
+     "second": "অক্ষয় আনন্দ",
+     "first_short": "শ্রেয়া",
+     "second_short": "অক্ষয়",
+     "first_honorific": "কল্যাণীয়া",
+     "second_honorific": "শ্রীমান",
+     "first_role": "bride",
+     "second_role": "groom",
+     "pair_full": "শ্রেয়া শীল ও অক্ষয় আনন্দ",
+     "pair_short": "শ্রেয়া ও অক্ষয়"
+    },
+    "joiner_symbol": "ও",
+    "joiner_word": "ও",
+    "card_paragraph": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে শীল পরিবারের কন্যা কল্যাণীয়া শ্রেয়া শীলের সঙ্গে ঝা পরিবারের পুত্র শ্রীমান অক্ষয় আনন্দের শুভ বিবাহ স্থির হয়েছে। এই শুভ অনুষ্ঠানে আপনাকে সপরিবারে সাদর আমন্ত্রণ জানাই।",
+    "monogram": {
+     "latin": "SA",
+     "native": "শঅ",
+     "recommended": "latin"
+    },
+    "labels": {
+     "date": "তারিখ",
+     "time": "সময়",
+     "venue": "স্থান",
+     "at": "সময়",
+     "schedule": "অনুষ্ঠানসূচি",
+     "map_label": "ম্যাপে খুঁজুন"
+    },
+    "city": "কলকাতা · সহরসা",
+    "events_order": [
+     "mehndi",
+     "engagement",
+     "haldi",
+     "wedding",
+     "reception"
+    ],
+    "events": {
+     "mehndi": {
+      "title": "মেহেন্দি",
+      "title_full": "মেহেন্দি অনুষ্ঠান",
+      "tagline": "মেহেন্দির রঙে, গানে আর হাসিতে",
+      "day": "২৫",
+      "date": "২৫শে নভেম্বর",
+      "time": "সকাল ১১টা",
+      "time_label_style": "সময়: সকাল ১১টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "আগোরা ব্যাঙ্কোয়েটস",
+      "venue_gate": null,
+      "venue_name_full": "আগোরা ব্যাঙ্কোয়েটস",
+      "venue_address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "২৫শে নভেম্বর · সকাল ১১টা"
+     },
+     "engagement": {
+      "title": "বাগদান",
+      "title_full": "বাগদান অনুষ্ঠান",
+      "tagline": "দুটি হৃদয়, একটি অঙ্গীকার",
+      "day": "২৫",
+      "date": "২৫শে নভেম্বর",
+      "time": "সন্ধ্যা ৬টা",
+      "time_label_style": "সময়: সন্ধ্যা ৬টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "আগোরা ব্যাঙ্কোয়েটস",
+      "venue_gate": null,
+      "venue_name_full": "আগোরা ব্যাঙ্কোয়েটস",
+      "venue_address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "২৫শে নভেম্বর · সন্ধ্যা ৬টা"
+     },
+     "haldi": {
+      "title": "গায়ে হলুদ",
+      "title_full": "গায়ে হলুদ",
+      "tagline": "হলুদ রঙে রাঙা সকাল",
+      "day": "২৬",
+      "date": "২৬শে নভেম্বর",
+      "time": "সকাল ১০টা",
+      "time_label_style": "সময়: সকাল ১০টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "রায়বাড়ি ইভেন্টস",
+      "venue_gate": "গেট নং ২",
+      "venue_name_full": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+      "venue_address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "২৬শে নভেম্বর · সকাল ১০টা"
+     },
+     "wedding": {
+      "title": "শুভ বিবাহ",
+      "title_full": "শুভ বিবাহ",
+      "tagline": "সাত পাকে বাঁধা, চিরকালের সাথী",
+      "day": "২৬",
+      "date": "২৬শে নভেম্বর",
+      "time": "সন্ধ্যা ৬টা",
+      "time_label_style": "সময়: সন্ধ্যা ৬টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "রায়বাড়ি ইভেন্টস",
+      "venue_gate": "গেট নং ২",
+      "venue_name_full": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+      "venue_address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "২৬শে নভেম্বর · সন্ধ্যা ৬টা"
+     },
+     "reception": {
+      "title": "প্রীতিভোজ",
+      "title_full": "প্রীতিভোজ",
+      "tagline": "মিথিলায় আশীর্বাদে ভরা সন্ধ্যা",
+      "day": "২৯",
+      "date": "২৯শে নভেম্বর",
+      "time": "সন্ধ্যা ৭টা",
+      "time_label_style": "সময়: সন্ধ্যা ৭টা",
+      "month": "নভেম্বর",
+      "month_upper": "নভেম্বর",
+      "venue_name": "দেব রিসর্ট",
+      "venue_gate": null,
+      "venue_name_full": "দেব রিসর্ট",
+      "venue_address": "গংজলা চক ঢালা, বাস স্ট্যান্ডের কাছে, সন্ত নগর, সহরসা, বিহার ৮৫২২০১",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29",
+      "date_time": "২৯শে নভেম্বর · সন্ধ্যা ৭টা"
+     }
+    },
+    "closing_big": "আপনার উপস্থিতি একান্ত কাম্য",
+    "closing_small": "সপরিবারে উপস্থিত থেকে নতুন জীবনের শুভ সূচনায় নবদম্পতিকে আশীর্বাদ করে বাধিত করবেন।",
+    "regards": "বিনীত",
+    "regards_families": "শীল পরিবার ও ঝা পরিবার",
+    "regards_families_lines": [
+     "শীল পরিবার",
+     "ও",
+     "ঝা পরিবার"
+    ],
+    "save_the_date": {
+     "title": "তারিখটি মনে রাখবেন",
+     "line": "২৫, ২৬ ও ২৯শে নভেম্বর · কলকাতা · সহরসা"
+    },
+    "blank_name": {
+     "prefix": "শ্রী / শ্রীমতী",
+     "suffix": "",
+     "line": "শ্রী / শ্রীমতী ______________________",
+     "sub": "সপরিবারে সাদর আমন্ত্রিত"
+    },
+    "video": {
+     "canvases": [
+      {
+       "id": "opening",
+       "palette": "ivory/cream with gold",
+       "kicker": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+       "kicker_secondary": null,
+       "title": "শুভ বিবাহ",
+       "lines": [
+        "২৫, ২৬ ও ২৯শে নভেম্বর · কলকাতা · সহরসা"
+       ]
+      },
+      {
+       "id": "invitation",
+       "palette": "ivory/cream",
+       "title": "শ্রেয়া শীল ও অক্ষয় আনন্দ",
+       "title_honorifics": [
+        "কল্যাণীয়া",
+        "শ্রীমান"
+       ],
+       "lines": [
+        "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে",
+        "শীল পরিবার তাঁদের কন্যার শুভ বিবাহে আপনাকে সাদর আমন্ত্রণ জানাচ্ছেন।"
+       ],
+       "lines_position": "before_title"
+      },
+      {
+       "id": "mehndi",
+       "palette": "sage",
+       "title": "মেহেন্দি",
+       "lines": [
+        "মেহেন্দির রঙে, গানে আর হাসিতে"
+       ],
+       "facts": {
+        "date_time": "২৫শে নভেম্বর · সকাল ১১টা",
+        "venue": "আগোরা ব্যাঙ্কোয়েটস",
+        "address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা"
+       }
+      },
+      {
+       "id": "engagement",
+       "palette": "dusty rose/lilac",
+       "title": "বাগদান",
+       "lines": [
+        "দুটি হৃদয়, একটি অঙ্গীকার"
+       ],
+       "facts": {
+        "date_time": "২৫শে নভেম্বর · সন্ধ্যা ৬টা",
+        "venue": "আগোরা ব্যাঙ্কোয়েটস",
+        "address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা"
+       }
+      },
+      {
+       "id": "haldi",
+       "palette": "turmeric/ochre",
+       "title": "গায়ে হলুদ",
+       "lines": [
+        "হলুদ রঙে রাঙা সকাল"
+       ],
+       "facts": {
+        "date_time": "২৬শে নভেম্বর · সকাল ১০টা",
+        "venue": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+        "address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা"
+       }
+      },
+      {
+       "id": "wedding",
+       "palette": "vermilion/red",
+       "title": "শুভ বিবাহ",
+       "lines": [
+        "সাত পাকে বাঁধা, চিরকালের সাথী"
+       ],
+       "facts": {
+        "date_time": "২৬শে নভেম্বর · সন্ধ্যা ৬টা",
+        "venue": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+        "address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা"
+       }
+      },
+      {
+       "id": "reception",
+       "palette": "peacock teal with soft gold",
+       "title": "প্রীতিভোজ",
+       "lines": [
+        "মিথিলায় আশীর্বাদে ভরা সন্ধ্যা"
+       ],
+       "facts": {
+        "date_time": "২৯শে নভেম্বর · সন্ধ্যা ৭টা",
+        "venue": "দেব রিসর্ট",
+        "address": "গংজলা চক ঢালা, বাস স্ট্যান্ডের কাছে, সন্ত নগর, সহরসা, বিহার ৮৫২২০১"
+       }
+      },
+      {
+       "id": "closing",
+       "palette": "ivory/cream with gold",
+       "title": "আপনার উপস্থিতি একান্ত কাম্য",
+       "lines": [
+        "সপরিবারে উপস্থিত থেকে নতুন জীবনের শুভ সূচনায় নবদম্পতিকে আশীর্বাদ করে বাধিত করবেন।"
+       ]
+      },
+      {
+       "id": "end",
+       "palette": "ivory/cream with gold",
+       "title": "শ্রেয়া ও অক্ষয়",
+       "monogram": "SA",
+       "lines": [
+        "বিনীত",
+        "শীল পরিবার ও ঝা পরিবার"
+       ]
+      }
+     ]
+    },
+    "single_page": {
+     "invocation": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+     "invocation_secondary": null,
+     "heading": "শুভ বিবাহ",
+     "names": "শ্রেয়া শীল ও অক্ষয় আনন্দ",
+     "invitation_paragraph": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে শীল পরিবারের কন্যা কল্যাণীয়া শ্রেয়া শীলের সঙ্গে ঝা পরিবারের পুত্র শ্রীমান অক্ষয় আনন্দের শুভ বিবাহ স্থির হয়েছে। এই শুভ অনুষ্ঠানে আপনাকে সপরিবারে সাদর আমন্ত্রণ জানাই। আপনার উপস্থিতি ও আশীর্বাদ একান্ত কাম্য।",
+     "events_heading": "অনুষ্ঠানসূচি",
+     "days": [
+      {
+       "heading": "২৫শে নভেম্বর",
+       "date_iso": "2026-11-25",
+       "venue_name_full": "আগোরা ব্যাঙ্কোয়েটস",
+       "venue_address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা",
+       "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "events": [
+        {
+         "key": "mehndi",
+         "title": "মেহেন্দি",
+         "time": "সকাল ১১টা",
+         "line": "মেহেন্দি · সকাল ১১টা"
+        },
+        {
+         "key": "engagement",
+         "title": "বাগদান",
+         "time": "সন্ধ্যা ৬টা",
+         "line": "বাগদান · সন্ধ্যা ৬টা"
+        }
+       ]
+      },
+      {
+       "heading": "২৬শে নভেম্বর",
+       "date_iso": "2026-11-26",
+       "venue_name_full": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+       "venue_address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা",
+       "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "events": [
+        {
+         "key": "haldi",
+         "title": "গায়ে হলুদ",
+         "time": "সকাল ১০টা",
+         "line": "গায়ে হলুদ · সকাল ১০টা"
+        },
+        {
+         "key": "wedding",
+         "title": "শুভ বিবাহ",
+         "time": "সন্ধ্যা ৬টা",
+         "line": "শুভ বিবাহ · সন্ধ্যা ৬টা"
+        }
+       ]
+      },
+      {
+       "heading": "২৯শে নভেম্বর",
+       "date_iso": "2026-11-29",
+       "venue_name_full": "দেব রিসর্ট",
+       "venue_address": "গংজলা চক ঢালা, বাস স্ট্যান্ডের কাছে, সন্ত নগর, সহরসা, বিহার ৮৫২২০১",
+       "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+       "events": [
+        {
+         "key": "reception",
+         "title": "প্রীতিভোজ",
+         "time": "সন্ধ্যা ৭টা",
+         "line": "প্রীতিভোজ · সন্ধ্যা ৭টা"
+        }
+       ]
+      }
+     ],
+     "regards": "বিনীত",
+     "regards_families": "শীল পরিবার ও ঝা পরিবার",
+     "city": "কলকাতা · সহরসা"
+    },
+    "salutation": {
+     "multi_page": {
+      "prefix": "শ্রী / শ্রীমতী",
+      "suffix": "",
+      "line": "শ্রী / শ্রীমতী ______________________",
+      "sub": "সপরিবারে সাদর আমন্ত্রিত"
+     },
+     "single_page": {
+      "prefix": "শ্রী / শ্রীমতী",
+      "suffix": "",
+      "line": "শ্রী / শ্রীমতী ______________________",
+      "sub": null,
+      "note": "sub omitted: invitation_paragraph already invites the reader's family"
+     }
+    },
+    "reception_only": {
+     "invocation": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+     "invocation_secondary": null,
+     "heading": "প্রীতিভোজ",
+     "heading_short": "প্রীতিভোজ",
+     "tagline": "মিথিলায় আশীর্বাদে ভরা সন্ধ্যা",
+     "blessing_line": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে",
+     "host_line": "শীল পরিবার তাঁদের কন্যা ও জামাতার শুভ বিবাহ উপলক্ষে প্রীতিভোজে আপনাকে সাদর আমন্ত্রণ জানাচ্ছেন।",
+     "names": {
+      "first": "শ্রেয়া শীল",
+      "second": "অক্ষয় আনন্দ",
+      "first_short": "শ্রেয়া",
+      "second_short": "অক্ষয়",
+      "first_honorific": "শ্রীমতী",
+      "second_honorific": "শ্রীমান",
+      "first_role": "bride",
+      "second_role": "groom",
+      "joiner_symbol": "ও",
+      "pair_full": "শ্রেয়া শীল ও অক্ষয় আনন্দ",
+      "pair_short": "শ্রেয়া ও অক্ষয়"
+     },
+     "venue_note": "বরের নিজের শহর সহরসায়",
+     "invitation_paragraph": "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে শীল পরিবারের কন্যা শ্রীমতী শ্রেয়া শীল ও জামাতা শ্রীমান অক্ষয় আনন্দের শুভ বিবাহ উপলক্ষে বরের নিজের শহর সহরসায় প্রীতিভোজের আয়োজন করা হয়েছে। এই শুভ অনুষ্ঠানে আপনাকে সপরিবারে সাদর আমন্ত্রণ জানাই। আপনার উপস্থিতি ও আশীর্বাদ একান্ত কাম্য।",
+     "event": {
+      "key": "reception",
+      "title": "প্রীতিভোজ",
+      "title_full": "প্রীতিভোজ",
+      "tagline": "মিথিলায় আশীর্বাদে ভরা সন্ধ্যা",
+      "day": "২৯",
+      "date": "২৯শে নভেম্বর",
+      "month": "নভেম্বর",
+      "time": "সন্ধ্যা ৭টা",
+      "time_label_style": "সময়: সন্ধ্যা ৭টা",
+      "date_time": "২৯শে নভেম্বর · সন্ধ্যা ৭টা",
+      "venue_name": "দেব রিসর্ট",
+      "venue_gate": null,
+      "venue_name_full": "দেব রিসর্ট",
+      "venue_address": "গংজলা চক ঢালা, বাস স্ট্যান্ডের কাছে, সন্ত নগর, সহরসা, বিহার ৮৫২২০১",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29"
+     },
+     "labels": {
+      "date": "তারিখ",
+      "time": "সময়",
+      "venue": "স্থান",
+      "map_label": "ম্যাপে খুঁজুন"
+     },
+     "closing_big": "আপনার উপস্থিতি একান্ত কাম্য",
+     "closing_small": "সপরিবারে উপস্থিত থেকে নতুন জীবনের শুভ সূচনায় নবদম্পতিকে আশীর্বাদ করে বাধিত করবেন।",
+     "regards": "বিনীত",
+     "regards_families": "শীল পরিবার ও ঝা পরিবার",
+     "regards_families_lines": [
+      "শীল পরিবার",
+      "ও",
+      "ঝা পরিবার"
+     ],
+     "monogram": {
+      "latin": "SA",
+      "native": "শঅ",
+      "recommended": "latin"
+     },
+     "city": "সহরসা",
+     "salutation": {
+      "prefix": "শ্রী / শ্রীমতী",
+      "suffix": "",
+      "line": "শ্রী / শ্রীমতী ______________________",
+      "sub": null
+     }
+    },
+    "without_reception": {
+     "events_order": [
+      "mehndi",
+      "engagement",
+      "haldi",
+      "wedding"
+     ],
+     "events": {
+      "reception": null
+     },
+     "city": "কলকাতা",
+     "save_the_date": {
+      "title": "তারিখটি মনে রাখবেন",
+      "line": "২৫ ও ২৬শে নভেম্বর · কলকাতা"
+     },
+     "video": {
+      "canvases": [
+       {
+        "id": "opening",
+        "palette": "ivory/cream with gold",
+        "kicker": "শ্রী শ্রী প্রজাপতয়ে নমঃ",
+        "kicker_secondary": null,
+        "title": "শুভ বিবাহ",
+        "lines": [
+         "২৫ ও ২৬শে নভেম্বর · কলকাতা"
+        ]
+       },
+       {
+        "id": "invitation",
+        "palette": "ivory/cream",
+        "title": "শ্রেয়া শীল ও অক্ষয় আনন্দ",
+        "title_honorifics": [
+         "কল্যাণীয়া",
+         "শ্রীমান"
+        ],
+        "lines": [
+         "ঈশ্বরের অশেষ কৃপায় ও প্রিয়জনদের আশীর্বাদে",
+         "শীল পরিবার তাঁদের কন্যার শুভ বিবাহে আপনাকে সাদর আমন্ত্রণ জানাচ্ছেন।"
+        ],
+        "lines_position": "before_title"
+       },
+       {
+        "id": "mehndi",
+        "palette": "sage",
+        "title": "মেহেন্দি",
+        "lines": [
+         "মেহেন্দির রঙে, গানে আর হাসিতে"
+        ],
+        "facts": {
+         "date_time": "২৫শে নভেম্বর · সকাল ১১টা",
+         "venue": "আগোরা ব্যাঙ্কোয়েটস",
+         "address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা"
+        }
+       },
+       {
+        "id": "engagement",
+        "palette": "dusty rose/lilac",
+        "title": "বাগদান",
+        "lines": [
+         "দুটি হৃদয়, একটি অঙ্গীকার"
+        ],
+        "facts": {
+         "date_time": "২৫শে নভেম্বর · সন্ধ্যা ৬টা",
+         "venue": "আগোরা ব্যাঙ্কোয়েটস",
+         "address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা"
+        }
+       },
+       {
+        "id": "haldi",
+        "palette": "turmeric/ochre",
+        "title": "গায়ে হলুদ",
+        "lines": [
+         "হলুদ রঙে রাঙা সকাল"
+        ],
+        "facts": {
+         "date_time": "২৬শে নভেম্বর · সকাল ১০টা",
+         "venue": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+         "address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা"
+        }
+       },
+       {
+        "id": "wedding",
+        "palette": "vermilion/red",
+        "title": "শুভ বিবাহ",
+        "lines": [
+         "সাত পাকে বাঁধা, চিরকালের সাথী"
+        ],
+        "facts": {
+         "date_time": "২৬শে নভেম্বর · সন্ধ্যা ৬টা",
+         "venue": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+         "address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা"
+        }
+       },
+       {
+        "id": "closing",
+        "palette": "ivory/cream with gold",
+        "title": "আপনার উপস্থিতি একান্ত কাম্য",
+        "lines": [
+         "সপরিবারে উপস্থিত থেকে নতুন জীবনের শুভ সূচনায় নবদম্পতিকে আশীর্বাদ করে বাধিত করবেন।"
+        ]
+       },
+       {
+        "id": "end",
+        "palette": "ivory/cream with gold",
+        "title": "শ্রেয়া ও অক্ষয়",
+        "monogram": "SA",
+        "lines": [
+         "বিনীত",
+         "শীল পরিবার ও ঝা পরিবার"
+        ]
+       }
+      ]
+     },
+     "single_page": {
+      "days": [
+       {
+        "heading": "২৫শে নভেম্বর",
+        "date_iso": "2026-11-25",
+        "venue_name_full": "আগোরা ব্যাঙ্কোয়েটস",
+        "venue_address": "৬৭, নলিনীরঞ্জন অ্যাভিনিউ, ব্লক এইচ, নিউ আলিপুর, কলকাতা",
+        "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "events": [
+         {
+          "key": "mehndi",
+          "title": "মেহেন্দি",
+          "time": "সকাল ১১টা",
+          "line": "মেহেন্দি · সকাল ১১টা"
+         },
+         {
+          "key": "engagement",
+          "title": "বাগদান",
+          "time": "সন্ধ্যা ৬টা",
+          "line": "বাগদান · সন্ধ্যা ৬টা"
+         }
+        ]
+       },
+       {
+        "heading": "২৬শে নভেম্বর",
+        "date_iso": "2026-11-26",
+        "venue_name_full": "রায়বাড়ি ইভেন্টস, গেট নং ২",
+        "venue_address": "১৯২বি ও সি, নেতাজি সুভাষচন্দ্র বসু রোড, রিজেন্ট পার্ক, কলকাতা",
+        "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "events": [
+         {
+          "key": "haldi",
+          "title": "গায়ে হলুদ",
+          "time": "সকাল ১০টা",
+          "line": "গায়ে হলুদ · সকাল ১০টা"
+         },
+         {
+          "key": "wedding",
+          "title": "শুভ বিবাহ",
+          "time": "সন্ধ্যা ৬টা",
+          "line": "শুভ বিবাহ · সন্ধ্যা ৬টা"
+         }
+        ]
+       }
+      ],
+      "city": "কলকাতা"
+     }
+    }
+   }
+  },
+  "mai": {
+   "G": {
+    "variant_id": "mai_G",
+    "lang": "mai",
+    "order": "G",
+    "order_desc": "groom side first, Jha family hosts",
+    "meta": {
+     "lang_tag": "mai",
+     "script": "Deva",
+     "numerals": "devanagari",
+     "direction": "ltr",
+     "font_hint": "Same Devanagari face as hi; '०' abbreviation sign (चि०, आयु०) must be the Devanagari digit zero U+0966"
+    },
+    "invocation": "॥ श्री गणेशाय नमः ॥",
+    "invocation_secondary": null,
+    "shloka": "मङ्गलं भगवान् विष्णुः मङ्गलं गरुडध्वजः। मङ्गलं पुण्डरीकाक्षः मङ्गलायतनो हरिः॥",
+    "heading": "शुभ विवाह",
+    "blessing_line": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ",
+    "host_line": "झा परिवार अपन सुपुत्रक शुभ विवाहमे अपनेकेँ सपरिवार सादर आमंत्रित करैत अछि।",
+    "names": {
+     "first": "अक्षय आनंद",
+     "second": "श्रेया सील",
+     "first_short": "अक्षय",
+     "second_short": "श्रेया",
+     "first_honorific": "चि०",
+     "second_honorific": "आयु०",
+     "first_role": "groom",
+     "second_role": "bride",
+     "pair_full": "अक्षय आनंद & श्रेया सील",
+     "pair_short": "अक्षय & श्रेया"
+    },
+    "joiner_symbol": "&",
+    "joiner_word": "संग",
+    "card_paragraph": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ झा परिवारक सुपुत्र चि० अक्षय आनंदक शुभ विवाह सील परिवारक सुपुत्री आयु० श्रेया सीलक संग निश्चित भेल अछि। एहि शुभ अवसर पर अपने सपरिवार सादर आमंत्रित छी।",
+    "monogram": {
+     "latin": "AS",
+     "native": "अश",
+     "recommended": "latin"
+    },
+    "labels": {
+     "date": "तिथि",
+     "time": "समय",
+     "venue": "स्थान",
+     "at": "समय",
+     "schedule": "मांगलिक कार्यक्रम",
+     "map_label": "मैप लेल"
+    },
+    "city": "कोलकाता · सहरसा",
+    "events_order": [
+     "mehndi",
+     "engagement",
+     "haldi",
+     "wedding",
+     "reception"
+    ],
+    "events": {
+     "mehndi": {
+      "title": "मेंहदी",
+      "title_full": "मेंहदीक विध",
+      "tagline": "मेंहदीक रंग, गीत-नादक संग",
+      "day": "२५",
+      "date": "२५ नवम्बर",
+      "time": "दिनक ११ बजे",
+      "time_label_style": "समय: दिनक ११ बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "अगोरा बैंक्वेट्स",
+      "venue_gate": null,
+      "venue_name_full": "अगोरा बैंक्वेट्स",
+      "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "२५ नवम्बर · दिनक ११ बजे"
+     },
+     "engagement": {
+      "title": "सगाई",
+      "title_full": "सगाई समारोह",
+      "tagline": "दू हृदय, एक वचन",
+      "day": "२५",
+      "date": "२५ नवम्बर",
+      "time": "साँझक ६ बजे",
+      "time_label_style": "समय: साँझक ६ बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "अगोरा बैंक्वेट्स",
+      "venue_gate": null,
+      "venue_name_full": "अगोरा बैंक्वेट्स",
+      "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "२५ नवम्बर · साँझक ६ बजे"
+     },
+     "haldi": {
+      "title": "हरदि",
+      "title_full": "हरदिक विध",
+      "tagline": "हरदिक रंगमे रंगल भोर",
+      "day": "२६",
+      "date": "२६ नवम्बर",
+      "time": "दिनक १० बजे",
+      "time_label_style": "समय: दिनक १० बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "रॉय बाड़ी इवेंट्स",
+      "venue_gate": "गेट नं० २",
+      "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+      "venue_address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "२६ नवम्बर · दिनक १० बजे"
+     },
+     "wedding": {
+      "title": "शुभ विवाह",
+      "title_full": "शुभ विवाह",
+      "tagline": "सात फेरा, सात वचन, जनम-जनमक संग",
+      "day": "२६",
+      "date": "२६ नवम्बर",
+      "time": "साँझक ६ बजे",
+      "time_label_style": "समय: साँझक ६ बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "रॉय बाड़ी इवेंट्स",
+      "venue_gate": "गेट नं० २",
+      "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+      "venue_address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "२६ नवम्बर · साँझक ६ बजे"
+     },
+     "reception": {
+      "title": "बहुभोज",
+      "title_full": "बहुभोज सह आशीर्वाद समारोह",
+      "tagline": "मिथिलामे आशीर्वादक साँझ",
+      "day": "२९",
+      "date": "२९ नवम्बर",
+      "time": "साँझक ७ बजे",
+      "time_label_style": "समय: साँझक ७ बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "देव रिसॉर्ट",
+      "venue_gate": null,
+      "venue_name_full": "देव रिसॉर्ट",
+      "venue_address": "गंगजला चौक ढाला, बस स्टैंडक समीप, संत नगर, सहरसा, बिहार ८५२२०१",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29",
+      "date_time": "२९ नवम्बर · साँझक ७ बजे"
+     }
+    },
+    "closing_big": "अपनेक बाट जोहि रहल छी",
+    "closing_small": "वर-कनियाँक नव जीवनक शुभारम्भ पर पधारि हुनका लोकनिकेँ आशीर्वाद देबाक कृपा करी।",
+    "regards": "निवेदक",
+    "regards_families": "झा परिवार आ सील परिवार",
+    "regards_families_lines": [
+     "झा परिवार",
+     "आ",
+     "सील परिवार"
+    ],
+    "save_the_date": {
+     "title": "शुभ तिथि मोन राखब",
+     "line": "२५, २६ आ २९ नवम्बर · कोलकाता · सहरसा"
+    },
+    "blank_name": {
+     "prefix": "श्रीमान / श्रीमती",
+     "suffix": "",
+     "line": "श्रीमान / श्रीमती ______________________",
+     "sub": "अपने सपरिवार सादर आमंत्रित छी।"
+    },
+    "video": {
+     "canvases": [
+      {
+       "id": "opening",
+       "palette": "ivory/cream with gold",
+       "kicker": "॥ श्री गणेशाय नमः ॥",
+       "kicker_secondary": null,
+       "title": "शुभ विवाह",
+       "lines": [
+        "२५, २६ आ २९ नवम्बर · कोलकाता · सहरसा"
+       ]
+      },
+      {
+       "id": "invitation",
+       "palette": "ivory/cream",
+       "title": "अक्षय आनंद & श्रेया सील",
+       "title_honorifics": [
+        "चि०",
+        "आयु०"
+       ],
+       "lines": [
+        "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ",
+        "झा परिवार अपन सुपुत्रक शुभ विवाहमे अपनेकेँ सपरिवार सादर आमंत्रित करैत अछि।"
+       ],
+       "lines_position": "before_title"
+      },
+      {
+       "id": "mehndi",
+       "palette": "sage",
+       "title": "मेंहदी",
+       "lines": [
+        "मेंहदीक रंग, गीत-नादक संग"
+       ],
+       "facts": {
+        "date_time": "२५ नवम्बर · दिनक ११ बजे",
+        "venue": "अगोरा बैंक्वेट्स",
+        "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+       }
+      },
+      {
+       "id": "engagement",
+       "palette": "dusty rose/lilac",
+       "title": "सगाई",
+       "lines": [
+        "दू हृदय, एक वचन"
+       ],
+       "facts": {
+        "date_time": "२५ नवम्बर · साँझक ६ बजे",
+        "venue": "अगोरा बैंक्वेट्स",
+        "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+       }
+      },
+      {
+       "id": "haldi",
+       "palette": "turmeric/ochre",
+       "title": "हरदि",
+       "lines": [
+        "हरदिक रंगमे रंगल भोर"
+       ],
+       "facts": {
+        "date_time": "२६ नवम्बर · दिनक १० बजे",
+        "venue": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+        "address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+       }
+      },
+      {
+       "id": "wedding",
+       "palette": "vermilion/red",
+       "title": "शुभ विवाह",
+       "lines": [
+        "सात फेरा, सात वचन, जनम-जनमक संग"
+       ],
+       "facts": {
+        "date_time": "२६ नवम्बर · साँझक ६ बजे",
+        "venue": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+        "address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+       }
+      },
+      {
+       "id": "reception",
+       "palette": "peacock teal with soft gold",
+       "title": "बहुभोज",
+       "lines": [
+        "मिथिलामे आशीर्वादक साँझ"
+       ],
+       "facts": {
+        "date_time": "२९ नवम्बर · साँझक ७ बजे",
+        "venue": "देव रिसॉर्ट",
+        "address": "गंगजला चौक ढाला, बस स्टैंडक समीप, संत नगर, सहरसा, बिहार ८५२२०१"
+       }
+      },
+      {
+       "id": "closing",
+       "palette": "ivory/cream with gold",
+       "title": "अपनेक बाट जोहि रहल छी",
+       "lines": [
+        "वर-कनियाँक नव जीवनक शुभारम्भ पर पधारि हुनका लोकनिकेँ आशीर्वाद देबाक कृपा करी।"
+       ]
+      },
+      {
+       "id": "end",
+       "palette": "ivory/cream with gold",
+       "title": "अक्षय & श्रेया",
+       "monogram": "AS",
+       "lines": [
+        "निवेदक",
+        "झा परिवार आ सील परिवार"
+       ]
+      }
+     ]
+    },
+    "single_page": {
+     "invocation": "॥ श्री गणेशाय नमः ॥",
+     "invocation_secondary": null,
+     "heading": "शुभ विवाह",
+     "names": "अक्षय आनंद & श्रेया सील",
+     "invitation_paragraph": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ झा परिवारक सुपुत्र चि० अक्षय आनंदक शुभ विवाह सील परिवारक सुपुत्री आयु० श्रेया सीलक संग निश्चित भेल अछि। एहि शुभ अवसर पर अपने सपरिवार सादर आमंत्रित छी। पधारि वर-कनियाँकेँ आशीर्वाद देबाक कृपा करी।",
+     "events_heading": "मांगलिक कार्यक्रम",
+     "days": [
+      {
+       "heading": "२५ नवम्बर",
+       "date_iso": "2026-11-25",
+       "venue_name_full": "अगोरा बैंक्वेट्स",
+       "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+       "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "events": [
+        {
+         "key": "mehndi",
+         "title": "मेंहदी",
+         "time": "दिनक ११ बजे",
+         "line": "मेंहदी · दिनक ११ बजे"
+        },
+        {
+         "key": "engagement",
+         "title": "सगाई",
+         "time": "साँझक ६ बजे",
+         "line": "सगाई · साँझक ६ बजे"
+        }
+       ]
+      },
+      {
+       "heading": "२६ नवम्बर",
+       "date_iso": "2026-11-26",
+       "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+       "venue_address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+       "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "events": [
+        {
+         "key": "haldi",
+         "title": "हरदि",
+         "time": "दिनक १० बजे",
+         "line": "हरदि · दिनक १० बजे"
+        },
+        {
+         "key": "wedding",
+         "title": "शुभ विवाह",
+         "time": "साँझक ६ बजे",
+         "line": "शुभ विवाह · साँझक ६ बजे"
+        }
+       ]
+      },
+      {
+       "heading": "२९ नवम्बर",
+       "date_iso": "2026-11-29",
+       "venue_name_full": "देव रिसॉर्ट",
+       "venue_address": "गंगजला चौक ढाला, बस स्टैंडक समीप, संत नगर, सहरसा, बिहार ८५२२०१",
+       "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+       "events": [
+        {
+         "key": "reception",
+         "title": "बहुभोज",
+         "time": "साँझक ७ बजे",
+         "line": "बहुभोज · साँझक ७ बजे"
+        }
+       ]
+      }
+     ],
+     "regards": "निवेदक",
+     "regards_families": "झा परिवार आ सील परिवार",
+     "city": "कोलकाता · सहरसा"
+    },
+    "salutation": {
+     "multi_page": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": "अपने सपरिवार सादर आमंत्रित छी।"
+     },
+     "single_page": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": null,
+      "note": "sub omitted: invitation_paragraph already invites the reader's family"
+     }
+    },
+    "reception_only": {
+     "invocation": "॥ श्री गणेशाय नमः ॥",
+     "invocation_secondary": null,
+     "heading": "बहुभोज सह आशीर्वाद समारोह",
+     "heading_short": "बहुभोज",
+     "tagline": "मिथिलामे आशीर्वादक साँझ",
+     "blessing_line": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ",
+     "host_line": "झा परिवार अपन सुपुत्र आ पुत्रवधूक आशीर्वाद समारोहमे अपनेकेँ सपरिवार सादर आमंत्रित करैत अछि।",
+     "names": {
+      "first": "अक्षय आनंद",
+      "second": "श्रेया सील",
+      "first_short": "अक्षय",
+      "second_short": "श्रेया",
+      "first_honorific": "चि०",
+      "second_honorific": "सौ०",
+      "first_role": "groom",
+      "second_role": "bride",
+      "joiner_symbol": "&",
+      "pair_full": "अक्षय आनंद & श्रेया सील",
+      "pair_short": "अक्षय & श्रेया"
+     },
+     "venue_note": null,
+     "invitation_paragraph": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ झा परिवारक सुपुत्र चि० अक्षय आनंद आ पुत्रवधू सौ० श्रेया सीलक शुभ विवाहक उपलक्ष्यमे बहुभोज सह आशीर्वाद समारोहक आयोजन कएल गेल अछि। एहि शुभ अवसर पर अपने सपरिवार सादर आमंत्रित छी। पधारि वर-कनियाँकेँ आशीर्वाद देबाक कृपा करी।",
+     "event": {
+      "key": "reception",
+      "title": "बहुभोज",
+      "title_full": "बहुभोज सह आशीर्वाद समारोह",
+      "tagline": "मिथिलामे आशीर्वादक साँझ",
+      "day": "२९",
+      "date": "२९ नवम्बर",
+      "month": "नवम्बर",
+      "time": "साँझक ७ बजे",
+      "time_label_style": "समय: साँझक ७ बजे",
+      "date_time": "२९ नवम्बर · साँझक ७ बजे",
+      "venue_name": "देव रिसॉर्ट",
+      "venue_gate": null,
+      "venue_name_full": "देव रिसॉर्ट",
+      "venue_address": "गंगजला चौक ढाला, बस स्टैंडक समीप, संत नगर, सहरसा, बिहार ८५२२०१",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29"
+     },
+     "labels": {
+      "date": "तिथि",
+      "time": "समय",
+      "venue": "स्थान",
+      "map_label": "मैप पर देखल जाओ"
+     },
+     "closing_big": "अपनेक बाट जोहि रहल छी",
+     "closing_small": "वर-कनियाँक नव जीवनक शुभारम्भ पर पधारि हुनका लोकनिकेँ आशीर्वाद देबाक कृपा करी।",
+     "regards": "निवेदक",
+     "regards_families": "झा परिवार आ सील परिवार",
+     "regards_families_lines": [
+      "झा परिवार",
+      "आ",
+      "सील परिवार"
+     ],
+     "monogram": {
+      "latin": "AS",
+      "native": "अश",
+      "recommended": "latin"
+     },
+     "city": "सहरसा",
+     "salutation": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": null
+     }
+    },
+    "without_reception": {
+     "events_order": [
+      "mehndi",
+      "engagement",
+      "haldi",
+      "wedding"
+     ],
+     "events": {
+      "reception": null
+     },
+     "city": "कोलकाता",
+     "save_the_date": {
+      "title": "शुभ तिथि मोन राखब",
+      "line": "२५–२६ नवम्बर · कोलकाता"
+     },
+     "video": {
+      "canvases": [
+       {
+        "id": "opening",
+        "palette": "ivory/cream with gold",
+        "kicker": "॥ श्री गणेशाय नमः ॥",
+        "kicker_secondary": null,
+        "title": "शुभ विवाह",
+        "lines": [
+         "२५–२६ नवम्बर · कोलकाता"
+        ]
+       },
+       {
+        "id": "invitation",
+        "palette": "ivory/cream",
+        "title": "अक्षय आनंद & श्रेया सील",
+        "title_honorifics": [
+         "चि०",
+         "आयु०"
+        ],
+        "lines": [
+         "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ",
+         "झा परिवार अपन सुपुत्रक शुभ विवाहमे अपनेकेँ सपरिवार सादर आमंत्रित करैत अछि।"
+        ],
+        "lines_position": "before_title"
+       },
+       {
+        "id": "mehndi",
+        "palette": "sage",
+        "title": "मेंहदी",
+        "lines": [
+         "मेंहदीक रंग, गीत-नादक संग"
+        ],
+        "facts": {
+         "date_time": "२५ नवम्बर · दिनक ११ बजे",
+         "venue": "अगोरा बैंक्वेट्स",
+         "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+        }
+       },
+       {
+        "id": "engagement",
+        "palette": "dusty rose/lilac",
+        "title": "सगाई",
+        "lines": [
+         "दू हृदय, एक वचन"
+        ],
+        "facts": {
+         "date_time": "२५ नवम्बर · साँझक ६ बजे",
+         "venue": "अगोरा बैंक्वेट्स",
+         "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+        }
+       },
+       {
+        "id": "haldi",
+        "palette": "turmeric/ochre",
+        "title": "हरदि",
+        "lines": [
+         "हरदिक रंगमे रंगल भोर"
+        ],
+        "facts": {
+         "date_time": "२६ नवम्बर · दिनक १० बजे",
+         "venue": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+         "address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+        }
+       },
+       {
+        "id": "wedding",
+        "palette": "vermilion/red",
+        "title": "शुभ विवाह",
+        "lines": [
+         "सात फेरा, सात वचन, जनम-जनमक संग"
+        ],
+        "facts": {
+         "date_time": "२६ नवम्बर · साँझक ६ बजे",
+         "venue": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+         "address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+        }
+       },
+       {
+        "id": "closing",
+        "palette": "ivory/cream with gold",
+        "title": "अपनेक बाट जोहि रहल छी",
+        "lines": [
+         "वर-कनियाँक नव जीवनक शुभारम्भ पर पधारि हुनका लोकनिकेँ आशीर्वाद देबाक कृपा करी।"
+        ]
+       },
+       {
+        "id": "end",
+        "palette": "ivory/cream with gold",
+        "title": "अक्षय & श्रेया",
+        "monogram": "AS",
+        "lines": [
+         "निवेदक",
+         "झा परिवार आ सील परिवार"
+        ]
+       }
+      ]
+     },
+     "single_page": {
+      "days": [
+       {
+        "heading": "२५ नवम्बर",
+        "date_iso": "2026-11-25",
+        "venue_name_full": "अगोरा बैंक्वेट्स",
+        "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+        "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "events": [
+         {
+          "key": "mehndi",
+          "title": "मेंहदी",
+          "time": "दिनक ११ बजे",
+          "line": "मेंहदी · दिनक ११ बजे"
+         },
+         {
+          "key": "engagement",
+          "title": "सगाई",
+          "time": "साँझक ६ बजे",
+          "line": "सगाई · साँझक ६ बजे"
+         }
+        ]
+       },
+       {
+        "heading": "२६ नवम्बर",
+        "date_iso": "2026-11-26",
+        "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+        "venue_address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+        "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "events": [
+         {
+          "key": "haldi",
+          "title": "हरदि",
+          "time": "दिनक १० बजे",
+          "line": "हरदि · दिनक १० बजे"
+         },
+         {
+          "key": "wedding",
+          "title": "शुभ विवाह",
+          "time": "साँझक ६ बजे",
+          "line": "शुभ विवाह · साँझक ६ बजे"
+         }
+        ]
+       }
+      ],
+      "city": "कोलकाता"
+     }
+    }
+   },
+   "B": {
+    "variant_id": "mai_B",
+    "lang": "mai",
+    "order": "B",
+    "order_desc": "bride side first, Sil family hosts",
+    "meta": {
+     "lang_tag": "mai",
+     "script": "Deva",
+     "numerals": "devanagari",
+     "direction": "ltr",
+     "font_hint": "Same Devanagari face as hi; '०' abbreviation sign (चि०, आयु०) must be the Devanagari digit zero U+0966"
+    },
+    "invocation": "॥ श्री गणेशाय नमः ॥",
+    "invocation_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+    "shloka": "मङ्गलं भगवान् विष्णुः मङ्गलं गरुडध्वजः। मङ्गलं पुण्डरीकाक्षः मङ्गलायतनो हरिः॥",
+    "heading": "शुभ विवाह",
+    "blessing_line": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ",
+    "host_line": "सील परिवार अपन सुपुत्रीक शुभ विवाहमे अपनेकेँ सपरिवार सादर आमंत्रित करैत अछि।",
+    "names": {
+     "first": "श्रेया सील",
+     "second": "अक्षय आनंद",
+     "first_short": "श्रेया",
+     "second_short": "अक्षय",
+     "first_honorific": "आयु०",
+     "second_honorific": "चि०",
+     "first_role": "bride",
+     "second_role": "groom",
+     "pair_full": "श्रेया सील & अक्षय आनंद",
+     "pair_short": "श्रेया & अक्षय"
+    },
+    "joiner_symbol": "&",
+    "joiner_word": "संग",
+    "card_paragraph": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ सील परिवारक सुपुत्री आयु० श्रेया सीलक शुभ विवाह झा परिवारक सुपुत्र चि० अक्षय आनंदक संग निश्चित भेल अछि। एहि शुभ अवसर पर अपने सपरिवार सादर आमंत्रित छी।",
+    "monogram": {
+     "latin": "SA",
+     "native": "शअ",
+     "recommended": "latin"
+    },
+    "labels": {
+     "date": "तिथि",
+     "time": "समय",
+     "venue": "स्थान",
+     "at": "समय",
+     "schedule": "मांगलिक कार्यक्रम",
+     "map_label": "मैप लेल"
+    },
+    "city": "कोलकाता · सहरसा",
+    "events_order": [
+     "mehndi",
+     "engagement",
+     "haldi",
+     "wedding",
+     "reception"
+    ],
+    "events": {
+     "mehndi": {
+      "title": "मेंहदी",
+      "title_full": "मेंहदीक विध",
+      "tagline": "मेंहदीक रंग, गीत-नादक संग",
+      "day": "२५",
+      "date": "२५ नवम्बर",
+      "time": "दिनक ११ बजे",
+      "time_label_style": "समय: दिनक ११ बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "अगोरा बैंक्वेट्स",
+      "venue_gate": null,
+      "venue_name_full": "अगोरा बैंक्वेट्स",
+      "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "२५ नवम्बर · दिनक ११ बजे"
+     },
+     "engagement": {
+      "title": "सगाई",
+      "title_full": "सगाई समारोह",
+      "tagline": "दू हृदय, एक वचन",
+      "day": "२५",
+      "date": "२५ नवम्बर",
+      "time": "साँझक ६ बजे",
+      "time_label_style": "समय: साँझक ६ बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "अगोरा बैंक्वेट्स",
+      "venue_gate": null,
+      "venue_name_full": "अगोरा बैंक्वेट्स",
+      "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+      "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+      "date_iso": "2026-11-25",
+      "date_time": "२५ नवम्बर · साँझक ६ बजे"
+     },
+     "haldi": {
+      "title": "हरदि",
+      "title_full": "हरदिक विध",
+      "tagline": "हरदिक रंगमे रंगल भोर",
+      "day": "२६",
+      "date": "२६ नवम्बर",
+      "time": "दिनक १० बजे",
+      "time_label_style": "समय: दिनक १० बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "रॉय बाड़ी इवेंट्स",
+      "venue_gate": "गेट नं० २",
+      "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+      "venue_address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "२६ नवम्बर · दिनक १० बजे"
+     },
+     "wedding": {
+      "title": "शुभ विवाह",
+      "title_full": "शुभ विवाह",
+      "tagline": "सात फेरा, सात वचन, जनम-जनमक संग",
+      "day": "२६",
+      "date": "२६ नवम्बर",
+      "time": "साँझक ६ बजे",
+      "time_label_style": "समय: साँझक ६ बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "रॉय बाड़ी इवेंट्स",
+      "venue_gate": "गेट नं० २",
+      "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+      "venue_address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+      "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+      "date_iso": "2026-11-26",
+      "date_time": "२६ नवम्बर · साँझक ६ बजे"
+     },
+     "reception": {
+      "title": "बहुभोज",
+      "title_full": "बहुभोज सह आशीर्वाद समारोह",
+      "tagline": "मिथिलामे आशीर्वादक साँझ",
+      "day": "२९",
+      "date": "२९ नवम्बर",
+      "time": "साँझक ७ बजे",
+      "time_label_style": "समय: साँझक ७ बजे",
+      "month": "नवम्बर",
+      "month_upper": "नवम्बर",
+      "venue_name": "देव रिसॉर्ट",
+      "venue_gate": null,
+      "venue_name_full": "देव रिसॉर्ट",
+      "venue_address": "गंगजला चौक ढाला, बस स्टैंडक समीप, संत नगर, सहरसा, बिहार ८५२२०१",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29",
+      "date_time": "२९ नवम्बर · साँझक ७ बजे"
+     }
+    },
+    "closing_big": "अपनेक बाट जोहि रहल छी",
+    "closing_small": "वर-कनियाँक नव जीवनक शुभारम्भ पर पधारि हुनका लोकनिकेँ आशीर्वाद देबाक कृपा करी।",
+    "regards": "निवेदक",
+    "regards_families": "सील परिवार आ झा परिवार",
+    "regards_families_lines": [
+     "सील परिवार",
+     "आ",
+     "झा परिवार"
+    ],
+    "save_the_date": {
+     "title": "शुभ तिथि मोन राखब",
+     "line": "२५, २६ आ २९ नवम्बर · कोलकाता · सहरसा"
+    },
+    "blank_name": {
+     "prefix": "श्रीमान / श्रीमती",
+     "suffix": "",
+     "line": "श्रीमान / श्रीमती ______________________",
+     "sub": "अपने सपरिवार सादर आमंत्रित छी।"
+    },
+    "video": {
+     "canvases": [
+      {
+       "id": "opening",
+       "palette": "ivory/cream with gold",
+       "kicker": "॥ श्री गणेशाय नमः ॥",
+       "kicker_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+       "title": "शुभ विवाह",
+       "lines": [
+        "२५, २६ आ २९ नवम्बर · कोलकाता · सहरसा"
+       ]
+      },
+      {
+       "id": "invitation",
+       "palette": "ivory/cream",
+       "title": "श्रेया सील & अक्षय आनंद",
+       "title_honorifics": [
+        "आयु०",
+        "चि०"
+       ],
+       "lines": [
+        "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ",
+        "सील परिवार अपन सुपुत्रीक शुभ विवाहमे अपनेकेँ सपरिवार सादर आमंत्रित करैत अछि।"
+       ],
+       "lines_position": "before_title"
+      },
+      {
+       "id": "mehndi",
+       "palette": "sage",
+       "title": "मेंहदी",
+       "lines": [
+        "मेंहदीक रंग, गीत-नादक संग"
+       ],
+       "facts": {
+        "date_time": "२५ नवम्बर · दिनक ११ बजे",
+        "venue": "अगोरा बैंक्वेट्स",
+        "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+       }
+      },
+      {
+       "id": "engagement",
+       "palette": "dusty rose/lilac",
+       "title": "सगाई",
+       "lines": [
+        "दू हृदय, एक वचन"
+       ],
+       "facts": {
+        "date_time": "२५ नवम्बर · साँझक ६ बजे",
+        "venue": "अगोरा बैंक्वेट्स",
+        "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+       }
+      },
+      {
+       "id": "haldi",
+       "palette": "turmeric/ochre",
+       "title": "हरदि",
+       "lines": [
+        "हरदिक रंगमे रंगल भोर"
+       ],
+       "facts": {
+        "date_time": "२६ नवम्बर · दिनक १० बजे",
+        "venue": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+        "address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+       }
+      },
+      {
+       "id": "wedding",
+       "palette": "vermilion/red",
+       "title": "शुभ विवाह",
+       "lines": [
+        "सात फेरा, सात वचन, जनम-जनमक संग"
+       ],
+       "facts": {
+        "date_time": "२६ नवम्बर · साँझक ६ बजे",
+        "venue": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+        "address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+       }
+      },
+      {
+       "id": "reception",
+       "palette": "peacock teal with soft gold",
+       "title": "बहुभोज",
+       "lines": [
+        "मिथिलामे आशीर्वादक साँझ"
+       ],
+       "facts": {
+        "date_time": "२९ नवम्बर · साँझक ७ बजे",
+        "venue": "देव रिसॉर्ट",
+        "address": "गंगजला चौक ढाला, बस स्टैंडक समीप, संत नगर, सहरसा, बिहार ८५२२०१"
+       }
+      },
+      {
+       "id": "closing",
+       "palette": "ivory/cream with gold",
+       "title": "अपनेक बाट जोहि रहल छी",
+       "lines": [
+        "वर-कनियाँक नव जीवनक शुभारम्भ पर पधारि हुनका लोकनिकेँ आशीर्वाद देबाक कृपा करी।"
+       ]
+      },
+      {
+       "id": "end",
+       "palette": "ivory/cream with gold",
+       "title": "श्रेया & अक्षय",
+       "monogram": "SA",
+       "lines": [
+        "निवेदक",
+        "सील परिवार आ झा परिवार"
+       ]
+      }
+     ]
+    },
+    "single_page": {
+     "invocation": "॥ श्री गणेशाय नमः ॥",
+     "invocation_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+     "heading": "शुभ विवाह",
+     "names": "श्रेया सील & अक्षय आनंद",
+     "invitation_paragraph": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ सील परिवारक सुपुत्री आयु० श्रेया सीलक शुभ विवाह झा परिवारक सुपुत्र चि० अक्षय आनंदक संग निश्चित भेल अछि। एहि शुभ अवसर पर अपने सपरिवार सादर आमंत्रित छी। पधारि वर-कनियाँकेँ आशीर्वाद देबाक कृपा करी।",
+     "events_heading": "मांगलिक कार्यक्रम",
+     "days": [
+      {
+       "heading": "२५ नवम्बर",
+       "date_iso": "2026-11-25",
+       "venue_name_full": "अगोरा बैंक्वेट्स",
+       "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+       "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+       "events": [
+        {
+         "key": "mehndi",
+         "title": "मेंहदी",
+         "time": "दिनक ११ बजे",
+         "line": "मेंहदी · दिनक ११ बजे"
+        },
+        {
+         "key": "engagement",
+         "title": "सगाई",
+         "time": "साँझक ६ बजे",
+         "line": "सगाई · साँझक ६ बजे"
+        }
+       ]
+      },
+      {
+       "heading": "२६ नवम्बर",
+       "date_iso": "2026-11-26",
+       "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+       "venue_address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+       "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+       "events": [
+        {
+         "key": "haldi",
+         "title": "हरदि",
+         "time": "दिनक १० बजे",
+         "line": "हरदि · दिनक १० बजे"
+        },
+        {
+         "key": "wedding",
+         "title": "शुभ विवाह",
+         "time": "साँझक ६ बजे",
+         "line": "शुभ विवाह · साँझक ६ बजे"
+        }
+       ]
+      },
+      {
+       "heading": "२९ नवम्बर",
+       "date_iso": "2026-11-29",
+       "venue_name_full": "देव रिसॉर्ट",
+       "venue_address": "गंगजला चौक ढाला, बस स्टैंडक समीप, संत नगर, सहरसा, बिहार ८५२२०१",
+       "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+       "events": [
+        {
+         "key": "reception",
+         "title": "बहुभोज",
+         "time": "साँझक ७ बजे",
+         "line": "बहुभोज · साँझक ७ बजे"
+        }
+       ]
+      }
+     ],
+     "regards": "निवेदक",
+     "regards_families": "सील परिवार आ झा परिवार",
+     "city": "कोलकाता · सहरसा"
+    },
+    "salutation": {
+     "multi_page": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": "अपने सपरिवार सादर आमंत्रित छी।"
+     },
+     "single_page": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": null,
+      "note": "sub omitted: invitation_paragraph already invites the reader's family"
+     }
+    },
+    "reception_only": {
+     "invocation": "॥ श्री गणेशाय नमः ॥",
+     "invocation_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+     "heading": "प्रीतिभोज सह आशीर्वाद समारोह",
+     "heading_short": "प्रीतिभोज",
+     "tagline": "मिथिलामे आशीर्वादक साँझ",
+     "blessing_line": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ",
+     "host_line": "सील परिवार अपन सुपुत्री आ जामाताक आशीर्वाद समारोहमे अपनेकेँ सपरिवार सादर आमंत्रित करैत अछि।",
+     "names": {
+      "first": "श्रेया सील",
+      "second": "अक्षय आनंद",
+      "first_short": "श्रेया",
+      "second_short": "अक्षय",
+      "first_honorific": "सौ०",
+      "second_honorific": "चि०",
+      "first_role": "bride",
+      "second_role": "groom",
+      "joiner_symbol": "&",
+      "pair_full": "श्रेया सील & अक्षय आनंद",
+      "pair_short": "श्रेया & अक्षय"
+     },
+     "venue_note": "वरक गृहनगर सहरसामे",
+     "invitation_paragraph": "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ सील परिवारक सुपुत्री सौ० श्रेया सील आ जामाता चि० अक्षय आनंदक शुभ विवाहक उपलक्ष्यमे वरक गृहनगर सहरसामे प्रीतिभोज सह आशीर्वाद समारोहक आयोजन कएल गेल अछि। एहि शुभ अवसर पर अपने सपरिवार सादर आमंत्रित छी। पधारि वर-कनियाँकेँ आशीर्वाद देबाक कृपा करी।",
+     "event": {
+      "key": "reception",
+      "title": "प्रीतिभोज",
+      "title_full": "प्रीतिभोज सह आशीर्वाद समारोह",
+      "tagline": "मिथिलामे आशीर्वादक साँझ",
+      "day": "२९",
+      "date": "२९ नवम्बर",
+      "month": "नवम्बर",
+      "time": "साँझक ७ बजे",
+      "time_label_style": "समय: साँझक ७ बजे",
+      "date_time": "२९ नवम्बर · साँझक ७ बजे",
+      "venue_name": "देव रिसॉर्ट",
+      "venue_gate": null,
+      "venue_name_full": "देव रिसॉर्ट",
+      "venue_address": "गंगजला चौक ढाला, बस स्टैंडक समीप, संत नगर, सहरसा, बिहार ८५२२०१",
+      "map_line_en": "Dev Resort, Gangjala Chowk Dhala, near Bus Stand, Sant Nagar, Saharsa, Bihar 852201",
+      "date_iso": "2026-11-29"
+     },
+     "labels": {
+      "date": "तिथि",
+      "time": "समय",
+      "venue": "स्थान",
+      "map_label": "मैप पर देखल जाओ"
+     },
+     "closing_big": "अपनेक बाट जोहि रहल छी",
+     "closing_small": "वर-कनियाँक नव जीवनक शुभारम्भ पर पधारि हुनका लोकनिकेँ आशीर्वाद देबाक कृपा करी।",
+     "regards": "निवेदक",
+     "regards_families": "सील परिवार आ झा परिवार",
+     "regards_families_lines": [
+      "सील परिवार",
+      "आ",
+      "झा परिवार"
+     ],
+     "monogram": {
+      "latin": "SA",
+      "native": "शअ",
+      "recommended": "latin"
+     },
+     "city": "सहरसा",
+     "salutation": {
+      "prefix": "श्रीमान / श्रीमती",
+      "suffix": "",
+      "line": "श्रीमान / श्रीमती ______________________",
+      "sub": null
+     }
+    },
+    "without_reception": {
+     "events_order": [
+      "mehndi",
+      "engagement",
+      "haldi",
+      "wedding"
+     ],
+     "events": {
+      "reception": null
+     },
+     "city": "कोलकाता",
+     "save_the_date": {
+      "title": "शुभ तिथि मोन राखब",
+      "line": "२५–२६ नवम्बर · कोलकाता"
+     },
+     "video": {
+      "canvases": [
+       {
+        "id": "opening",
+        "palette": "ivory/cream with gold",
+        "kicker": "॥ श्री गणेशाय नमः ॥",
+        "kicker_secondary": "॥ श्री श्री प्रजापतये नमः ॥",
+        "title": "शुभ विवाह",
+        "lines": [
+         "२५–२६ नवम्बर · कोलकाता"
+        ]
+       },
+       {
+        "id": "invitation",
+        "palette": "ivory/cream",
+        "title": "श्रेया सील & अक्षय आनंद",
+        "title_honorifics": [
+         "आयु०",
+         "चि०"
+        ],
+        "lines": [
+         "ईश्वरक असीम कृपा आ गुरुजन-परिजनक आशीर्वादसँ",
+         "सील परिवार अपन सुपुत्रीक शुभ विवाहमे अपनेकेँ सपरिवार सादर आमंत्रित करैत अछि।"
+        ],
+        "lines_position": "before_title"
+       },
+       {
+        "id": "mehndi",
+        "palette": "sage",
+        "title": "मेंहदी",
+        "lines": [
+         "मेंहदीक रंग, गीत-नादक संग"
+        ],
+        "facts": {
+         "date_time": "२५ नवम्बर · दिनक ११ बजे",
+         "venue": "अगोरा बैंक्वेट्स",
+         "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+        }
+       },
+       {
+        "id": "engagement",
+        "palette": "dusty rose/lilac",
+        "title": "सगाई",
+        "lines": [
+         "दू हृदय, एक वचन"
+        ],
+        "facts": {
+         "date_time": "२५ नवम्बर · साँझक ६ बजे",
+         "venue": "अगोरा बैंक्वेट्स",
+         "address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता"
+        }
+       },
+       {
+        "id": "haldi",
+        "palette": "turmeric/ochre",
+        "title": "हरदि",
+        "lines": [
+         "हरदिक रंगमे रंगल भोर"
+        ],
+        "facts": {
+         "date_time": "२६ नवम्बर · दिनक १० बजे",
+         "venue": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+         "address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+        }
+       },
+       {
+        "id": "wedding",
+        "palette": "vermilion/red",
+        "title": "शुभ विवाह",
+        "lines": [
+         "सात फेरा, सात वचन, जनम-जनमक संग"
+        ],
+        "facts": {
+         "date_time": "२६ नवम्बर · साँझक ६ बजे",
+         "venue": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+         "address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता"
+        }
+       },
+       {
+        "id": "closing",
+        "palette": "ivory/cream with gold",
+        "title": "अपनेक बाट जोहि रहल छी",
+        "lines": [
+         "वर-कनियाँक नव जीवनक शुभारम्भ पर पधारि हुनका लोकनिकेँ आशीर्वाद देबाक कृपा करी।"
+        ]
+       },
+       {
+        "id": "end",
+        "palette": "ivory/cream with gold",
+        "title": "श्रेया & अक्षय",
+        "monogram": "SA",
+        "lines": [
+         "निवेदक",
+         "सील परिवार आ झा परिवार"
+        ]
+       }
+      ]
+     },
+     "single_page": {
+      "days": [
+       {
+        "heading": "२५ नवम्बर",
+        "date_iso": "2026-11-25",
+        "venue_name_full": "अगोरा बैंक्वेट्स",
+        "venue_address": "६७, नलिनी रंजन एवेन्यू, ब्लॉक एच, न्यू अलीपुर, कोलकाता",
+        "map_line_en": "Agora Banquets, 67 Nalini Ranjan Ave, Block H, New Alipore, Kolkata",
+        "events": [
+         {
+          "key": "mehndi",
+          "title": "मेंहदी",
+          "time": "दिनक ११ बजे",
+          "line": "मेंहदी · दिनक ११ बजे"
+         },
+         {
+          "key": "engagement",
+          "title": "सगाई",
+          "time": "साँझक ६ बजे",
+          "line": "सगाई · साँझक ६ बजे"
+         }
+        ]
+       },
+       {
+        "heading": "२६ नवम्बर",
+        "date_iso": "2026-11-26",
+        "venue_name_full": "रॉय बाड़ी इवेंट्स, गेट नं० २",
+        "venue_address": "१९२-बी आ सी, नेताजी सुभाष चंद्र बोस रोड, रीजेंट पार्क, कोलकाता",
+        "map_line_en": "Roy Bari Events (Gate No. 2), 192B & C, Netaji Subhas Chandra Bose Rd, Regent Park, Kolkata",
+        "events": [
+         {
+          "key": "haldi",
+          "title": "हरदि",
+          "time": "दिनक १० बजे",
+          "line": "हरदि · दिनक १० बजे"
+         },
+         {
+          "key": "wedding",
+          "title": "शुभ विवाह",
+          "time": "साँझक ६ बजे",
+          "line": "शुभ विवाह · साँझक ६ बजे"
+         }
+        ]
+       }
+      ],
+      "city": "कोलकाता"
+     }
+    }
+   }
+  }
+ }
+}

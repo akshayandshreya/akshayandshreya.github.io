@@ -1,0 +1,122 @@
+/* Design tokens (spec 1.6, 1.8, 3.2): the card's proportions, spacing, frame, surfaces, layers and motion as custom
+   properties. Palette colours live in palettes.css (one class per section), type roles in typography.css.
+
+   Breakpoints (custom media are not native: every media query repeats the literal; mirrored in src/lib/breakpoints.ts)
+   | name  | media                                                     | plate frame      | devices                         |
+   | tall  | (max-aspect-ratio: 3/5)                                   | tall 1080x2340   | phones in portrait              |
+   | mid   | (min-aspect-ratio: 3/5) and (max-aspect-ratio: 5/4)       | mid 1080x1350    | tablets in portrait, squares    |
+   | wide  | (min-aspect-ratio: 5/4)                                   | wide 1920x1080   | laptops, desktops, landscape    |
+   | short | (max-height: 520px) and (orientation: landscape)          | wide             | phones in landscape             |
+   Width steps inside a frame: xs < 480 | sm 480-767 | md 768-1023 | lg 1024-1439 | xl >= 1440.
+   The event two-column layout needs `wide` and (min-width: 900px). */
+:root {
+  /* ---- spacing (px scale) and section padding ---- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+  --pad-y: clamp(72px, 12svh, 160px);
+  --pad-x: clamp(20px, 6vw, 96px);
+
+  /* ---- columns ---- */
+  --col: min(88vw, 620px);
+  --col-wide: clamp(420px, 38vw, 600px);
+  --max: 1280px;
+
+  /* ---- the card's fine gold frame (1.1, 1.6): outer 3.3% / inner 4.35% of the width on the A5 card; on screens the
+     insets are clamped so phones keep a visible margin and desktops do not frame a cinema screen ---- */
+  --frame-in: clamp(10px, 3.3vw, 32px);
+  --frame-gap: clamp(6px, 1.05vw, 13px);
+  --frame-in-2: calc(var(--frame-in) + var(--frame-gap));
+  --frame-mid: calc(var(--frame-in) + var(--frame-gap) / 2);
+  --hairline: 1px;
+  --hairline-inner-alpha: 0.6;
+  --diamond: clamp(6px, 0.9vw, 9px);
+  /* the same frame in miniature on paper-band cards (countdown, venues) */
+  --card-gap: 8px;
+  --card-diamond: 6px;
+
+  /* ---- surfaces ---- */
+  --r-frame: 0;
+  --r-card: 2px;
+  --r-pill: 999px;
+  --shadow-card: 0 14px 40px -26px rgba(60, 40, 20, 0.35);
+  /* glaze behind text blocks on plates (card.js glazeText): an ellipse 60 px wider and 34 px taller than the text */
+  --glaze-x: clamp(16px, 6vw, 60px);
+  --glaze-y: 34px;
+  /* gilt pill buttons */
+  --btn-h: 44px;
+  --btn-px: 20px;
+  --btn-blur: 6px;
+  /* focus ring (6.1) */
+  --focus-w: 2px;
+  --focus-offset: 3px;
+  --focus-halo: 5px;
+  /* paper grain over paper bands (1.3): the tileable texture in soft-light */
+  --grain-alpha: 0.18;
+  --grain-size: 512px;
+
+  /* ---- textures (src/assets/textures, made by tools/plates/export.mjs textures; Vite fingerprints them) ---- */
+  --tex-paper: url('../assets/textures/paper-512.webp');
+  --tex-gold-leaf: url('../assets/textures/gold-leaf-256.webp');
+  --tex-brush-wipe: url('../assets/textures/brush-wipe.webp');
+  --tex-brush-edge: url('../assets/textures/brush-edge.webp');
+
+  /* ---- chrome ---- */
+  --bar-h: 56px;
+  --tap: 44px;
+
+  /* ---- z-index scale (1.8) ---- */
+  --z-plate: 0;
+  --z-edge: 10;
+  --z-reveal: 15;
+  --z-content: 20;
+  --z-bar: 50;
+  --z-sheet: 60;
+  --z-skip: 100;
+
+  /* ---- motion (3.2; mirrored in src/lib/motion.ts) ---- */
+  --beat: 627ms;
+  --phrase: 10.031s;
+  --half-phrase: 5.016s;
+  --ease-silk: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-swift: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-sine: cubic-bezier(0.37, 0, 0.63, 1);
+  --t-text: 560ms;
+  --t-reveal: 1254ms;
+  --t-title: 900ms;
+  --t-hover: 200ms;
+
+  /* ---- fixed ivory references for chrome that does not follow the section palette ---- */
+  --paper-ivory: #f2e8d8;
+  --ink-ivory: #6f4f22;
+  --gold-ink-ivory: #7e5a22;
+  --sep-ivory: #bf9644;
+  --theme-color: #f2e8d8;
+
+  /* ---- font fallbacks: the metric-matched '<Family> Fallback' faces come with src/assets/fonts/fonts.<lang>.css;
+     the system families after them are the last resort when the font CSS is not linked ---- */
+  --font-latin-fallback:
+    'Cormorant Garamond Fallback', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --font-hand-fallback: 'Pinyon Script Fallback', 'Snell Roundhand', 'Apple Chancery', cursive;
+  --font-deva-fallback: 'Noto Serif Devanagari', 'Kohinoor Devanagari', 'Nirmala UI', 'Mangal', serif;
+  --font-beng-fallback: 'Noto Serif Bengali', 'Kohinoor Bangla', 'Nirmala UI', 'Vrinda', serif;
+}
+
+/* top bar (5.2): 56 px on tall / mid frames, 64 px on wide, 48 px on short landscape phones */
+@media (min-aspect-ratio: 5/4) {
+  :root {
+    --bar-h: 64px;
+  }
+}
+@media (max-height: 520px) and (orientation: landscape) {
+  :root {
+    --bar-h: 48px;
+  }
+}

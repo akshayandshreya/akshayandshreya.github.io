@@ -1,0 +1,70 @@
+{
+  "name": "akshay-shreya-wedding",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Akshay & Shreya: wedding website (static, four languages)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "npm run gen:i18n && npm run check:content && npm run build:client && npm run build:ssr && node scripts/prerender.mjs && node scripts/check-budget.mjs",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "test": "vitest run && npm run check:content",
+    "e2e": "playwright test",
+    "shots": "node tools/shots/shots.mjs",
+    "assets": "npm run assets:motifs && npm run assets:fonts && npm run assets:glyphs && node tools/plates/export.mjs all && npm run assets:og && npm run assets:report",
+    "assets:plates": "node tools/plates/export.mjs plates",
+    "assets:sprites": "node tools/plates/export.mjs textures && node tools/plates/export.mjs sprites",
+    "assets:motifs": "node tools/motifs/optimize.mjs",
+    "assets:fonts": "node scripts/subset-fonts.mjs",
+    "assets:glyphs": "node tools/glyphs/tirhuta.mjs",
+    "assets:og": "node tools/og/og.mjs",
+    "assets:report": "node tools/plates/report.mjs",
+    "gen:i18n": "node scripts/gen-i18n.mjs",
+    "check:content": "node scripts/check-content.mjs",
+    "build:client": "vite build",
+    "build:ssr": "vite build --ssr src/entry-server.tsx --outDir dist-ssr",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.28.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.1",
+    "@eslint/js": "9.39.5",
+    "@playwright/test": "1.48.2",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@types/node": "20.19.43",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "9.1.2",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-refresh": "0.4.26",
+    "globals": "15.15.0",
+    "harfbuzzjs": "0.4.12",
+    "jsdom": "25.0.1",
+    "prettier": "3.9.10",
+    "sharp": "0.33.5",
+    "svgo": "3.3.2",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "5.4.21",
+    "vitest": "2.1.9"
+  },
+  "overrides": {
+    "playwright-core": "1.48.2"
+  }
+}

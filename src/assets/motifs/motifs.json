@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "note": "line art for draw-on; see src/assets/README.md",
+ "motifs": {
+  "ganesh": {
+   "raw": 17117,
+   "out": 13618,
+   "gzip": 3853,
+   "strokes": 21,
+   "viewBox": [
+    90,
+    50,
+    720,
+    700
+   ]
+  },
+  "shehnai": {
+   "raw": 14668,
+   "out": 11743,
+   "gzip": 2996,
+   "strokes": 21,
+   "viewBox": [
+    110,
+    140,
+    1200,
+    500
+   ]
+  },
+  "aripan": {
+   "raw": 99259,
+   "out": 73472,
+   "gzip": 17711,
+   "strokes": 135,
+   "viewBox": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  "alpana": {
+   "raw": 142126,
+   "out": 80131,
+   "gzip": 15269,
+   "strokes": 202,
+   "viewBox": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  "paag": {
+   "raw": 20866,
+   "out": 16929,
+   "gzip": 4065,
+   "strokes": 32,
+   "viewBox": [
+    160,
+    30,
+    580,
+    610
+   ]
+  },
+  "topor": {
+   "raw": 53105,
+   "out": 42927,
+   "gzip": 6831,
+   "strokes": 92,
+   "viewBox": [
+    70,
+    0,
+    460,
+    1000
+   ]
+  },
+  "lotus_open": {
+   "raw": 21470,
+   "out": 17961,
+   "gzip": 4457,
+   "strokes": 31,
+   "viewBox": [
+    170,
+    300,
+    660,
+    680
+   ]
+  },
+  "shankha": {
+   "raw": 11900,
+   "out": 9424,
+   "gzip": 3079,
+   "strokes": 12,
+   "viewBox": [
+    100,
+    190,
+    760,
+    420
+   ]
+  }
+ }
+}

@@ -1,0 +1,4082 @@
+{
+ "schema": 1,
+ "frames": {
+  "tall": {
+   "W": 1080,
+   "H": 2340,
+   "media": "(max-aspect-ratio: 3/5)",
+   "widths": [
+    540,
+    828,
+    1170
+   ]
+  },
+  "mid": {
+   "W": 1080,
+   "H": 1350,
+   "media": "(min-aspect-ratio: 3/5) and (max-aspect-ratio: 5/4)",
+   "widths": [
+    768,
+    1152,
+    1536
+   ]
+  },
+  "wide": {
+   "W": 1920,
+   "H": 1080,
+   "media": "(min-aspect-ratio: 5/4)",
+   "widths": [
+    1280,
+    1920,
+    2560
+   ]
+  }
+ },
+ "plates": {
+  "opening": {
+   "palette": "ivory",
+   "paper": "rgb(242,232,216)",
+   "groundMid": "rgb(235,220,195)",
+   "deep": false,
+   "focal": "50% 30%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/opening/mid-768.avif",
+       "1152": "plates/opening/mid-1152.avif",
+       "1536": "plates/opening/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/opening/mid-768.webp",
+       "1152": "plates/opening/mid-1152.webp",
+       "1536": "plates/opening/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 9690,
+       "1152": 18724,
+       "1536": 28947
+      },
+      "webp": {
+       "768": 19990,
+       "1152": 40888,
+       "1536": 65048
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAwCdASoQABQAPu1iqU2ppaQiMAgBMB2JZQCdACxpltYAAP7vQVEvkrKvsHMRjPzx5q86EGD8udFh5+ldEAAA",
+     "gold": {
+      "file": "plates/opening/mid-gold.webp",
+      "width": 1152,
+      "bytes": 17404
+     },
+     "veil": {
+      "file": "plates/opening/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 43670
+     },
+     "strokes": {
+      "file": "plates/opening/mid-strokes.webp",
+      "width": 144,
+      "height": 474,
+      "bytes": 7358,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         144,
+         168
+        ],
+        "frame": [
+         -0.0326,
+         0.2988,
+         0.1332,
+         0.1244
+        ],
+        "from": [
+         0.7598,
+         0.7943
+        ],
+        "to": [
+         0.2402,
+         0.2057
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         172,
+         124,
+         161
+        ],
+        "frame": [
+         0.915,
+         0.0992,
+         0.1147,
+         0.1195
+        ],
+        "from": [
+         0.2527,
+         0.1941
+        ],
+        "to": [
+         0.7473,
+         0.8059
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         337,
+         107,
+         132
+        ],
+        "frame": [
+         0.3731,
+         0.9264,
+         0.0995,
+         0.098
+        ],
+        "from": [
+         0.7078,
+         0.2372
+        ],
+        "to": [
+         0.2922,
+         0.7628
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.24,
+       "r": 0.28,
+       "k": 0.82
+      },
+      {
+       "x": 0.5,
+       "y": 0.6,
+       "rx": 0.44,
+       "ry": 0.3,
+       "k": 0.8
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.25,
+      "r": 0.57,
+      "k": 0.7
+     },
+     "couple": null,
+     "floor": null
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/opening/tall-540.avif",
+       "828": "plates/opening/tall-828.avif",
+       "1170": "plates/opening/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/opening/tall-540.webp",
+       "828": "plates/opening/tall-828.webp",
+       "1170": "plates/opening/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 9450,
+       "828": 20094,
+       "1170": 35933
+      },
+      "webp": {
+       "540": 19066,
+       "828": 41342,
+       "1170": 76380
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAwCdASoQACMAPu1mqE8ppaOiKqwBMB2JZWhwUI8Ju5jUOtA0MAD+3qxKF+tSxA/ojn8TH1VbigE2HRVHze27MaIAAA==",
+     "gold": {
+      "file": "plates/opening/tall-gold.webp",
+      "width": 1170,
+      "bytes": 19092
+     },
+     "veil": {
+      "file": "plates/opening/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 35896
+     },
+     "strokes": {
+      "file": "plates/opening/tall-strokes.webp",
+      "width": 268,
+      "height": 567,
+      "bytes": 13114,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         267,
+         149
+        ],
+        "frame": [
+         0.5719,
+         0.0583,
+         0.2473,
+         0.0637
+        ],
+        "from": [
+         0.9158,
+         0.8491
+        ],
+        "to": [
+         0.0842,
+         0.1509
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         153,
+         218,
+         151
+        ],
+        "frame": [
+         0.8312,
+         0.3116,
+         0.2014,
+         0.0646
+        ],
+        "from": [
+         0.1606,
+         0.2312
+        ],
+        "to": [
+         0.8394,
+         0.7525
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         308,
+         194,
+         254
+        ],
+        "frame": [
+         0.8274,
+         0.9047,
+         0.1793,
+         0.1086
+        ],
+        "from": [
+         0.1527,
+         0.1163
+        ],
+        "to": [
+         0.8473,
+         0.8837
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.24,
+       "r": 0.28,
+       "k": 0.82
+      },
+      {
+       "x": 0.5,
+       "y": 0.6,
+       "rx": 0.44,
+       "ry": 0.3,
+       "k": 0.8
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.25,
+      "r": 0.57,
+      "k": 0.7
+     },
+     "couple": null,
+     "floor": null
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/opening/wide-1280.avif",
+       "1920": "plates/opening/wide-1920.avif",
+       "2560": "plates/opening/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/opening/wide-1280.webp",
+       "1920": "plates/opening/wide-1920.webp",
+       "2560": "plates/opening/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 13820,
+       "1920": 27184,
+       "2560": 42487
+      },
+      "webp": {
+       "1280": 27420,
+       "1920": 57960,
+       "2560": 93478
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAABQAQCdASoQAAkACUBaJQBOgCgAAP7wl06Dlvf2kavJ6wgAAAA=",
+     "gold": {
+      "file": "plates/opening/wide-gold.webp",
+      "width": 1920,
+      "bytes": 19782
+     },
+     "veil": {
+      "file": "plates/opening/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 47034
+     },
+     "strokes": {
+      "file": "plates/opening/wide-strokes.webp",
+      "width": 279,
+      "height": 839,
+      "bytes": 20638,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         279,
+         185
+        ],
+        "frame": [
+         0.8589,
+         0.1117,
+         0.1452,
+         0.1717
+        ],
+        "from": [
+         0.1342,
+         0.2017
+        ],
+        "to": [
+         0.8658,
+         0.7983
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         189,
+         176,
+         293
+        ],
+        "frame": [
+         0.8157,
+         0.0796,
+         0.0916,
+         0.2713
+        ],
+        "from": [
+         0.7561,
+         0.1436
+        ],
+        "to": [
+         0.8088,
+         0.8852
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         487,
+         137,
+         348
+        ],
+        "frame": [
+         0.8286,
+         0.4438,
+         0.0712,
+         0.3226
+        ],
+        "from": [
+         0.7747,
+         0.0799
+        ],
+        "to": [
+         0.2627,
+         0.9201
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.26,
+       "r": 0.28,
+       "k": 0.82
+      },
+      {
+       "x": 0.5,
+       "y": 0.66,
+       "rx": 0.3,
+       "ry": 0.3,
+       "k": 0.8
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.27,
+      "r": 0.57,
+      "k": 0.7
+     },
+     "couple": null,
+     "floor": null
+    }
+   }
+  },
+  "invitation": {
+   "palette": "blush",
+   "paper": "rgb(243,230,220)",
+   "groundMid": "rgb(238,219,208)",
+   "deep": false,
+   "focal": "50% 45%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/invitation/mid-768.avif",
+       "1152": "plates/invitation/mid-1152.avif",
+       "1536": "plates/invitation/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/invitation/mid-768.webp",
+       "1152": "plates/invitation/mid-1152.webp",
+       "1536": "plates/invitation/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 5177,
+       "1152": 9952,
+       "1536": 16749
+      },
+      "webp": {
+       "768": 12782,
+       "1152": 27988,
+       "1536": 46214
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAwCdASoQABQAPu1iqU2ppaQiMAgBMB2JZQCdMoAEeAAA/u9Dts+Epu8pyL1HxUvj3cYcQAA=",
+     "gold": {
+      "file": "plates/invitation/mid-gold.webp",
+      "width": 1152,
+      "bytes": 7358
+     },
+     "veil": {
+      "file": "plates/invitation/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 35884
+     },
+     "strokes": {
+      "file": "plates/invitation/mid-strokes.webp",
+      "width": 394,
+      "height": 434,
+      "bytes": 16104,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         393,
+         143
+        ],
+        "frame": [
+         0.4172,
+         -0.0017,
+         0.364,
+         0.1057
+        ],
+        "from": [
+         0.9145,
+         0.7643
+        ],
+        "to": [
+         0.0855,
+         0.3167
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         147,
+         170,
+         154
+        ],
+        "frame": [
+         0.8743,
+         0.7966,
+         0.1575,
+         0.1139
+        ],
+        "from": [
+         0.1823,
+         0.2016
+        ],
+        "to": [
+         0.8177,
+         0.7984
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         305,
+         337,
+         125
+        ],
+        "frame": [
+         -0.0387,
+         0.7863,
+         0.3121,
+         0.0922
+        ],
+        "from": [
+         0.8878,
+         0.3037
+        ],
+        "to": [
+         0.1122,
+         0.6864
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.52,
+       "rx": 0.48,
+       "ry": 0.34,
+       "k": 0.88
+      }
+     ],
+     "glow": null,
+     "couple": null,
+     "floor": null
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/invitation/tall-540.avif",
+       "828": "plates/invitation/tall-828.avif",
+       "1170": "plates/invitation/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/invitation/tall-540.webp",
+       "828": "plates/invitation/tall-828.webp",
+       "1170": "plates/invitation/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 5043,
+       "828": 10744,
+       "1170": 20293
+      },
+      "webp": {
+       "540": 11306,
+       "828": 26964,
+       "1170": 52882
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAABwAwCdASoQACMAPu1qrFEtJaQiqqgBoB2JZwCw7B2DxN8+xAAA/u9D5KLDO6Eodfsh8HF8CL9Mc8ziT8AAAA==",
+     "gold": {
+      "file": "plates/invitation/tall-gold.webp",
+      "width": 1170,
+      "bytes": 9762
+     },
+     "veil": {
+      "file": "plates/invitation/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 32216
+     },
+     "strokes": {
+      "file": "plates/invitation/tall-strokes.webp",
+      "width": 428,
+      "height": 475,
+      "bytes": 18562,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         428,
+         171
+        ],
+        "frame": [
+         0.1635,
+         0.8183,
+         0.3959,
+         0.0731
+        ],
+        "from": [
+         0.9098,
+         0.7745
+        ],
+        "to": [
+         0.0902,
+         0.4904
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         175,
+         346,
+         164
+        ],
+        "frame": [
+         0.2958,
+         0.0657,
+         0.32,
+         0.07
+        ],
+        "from": [
+         0.9328,
+         0.2077
+        ],
+        "to": [
+         0.0672,
+         0.8581
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         343,
+         242,
+         127
+        ],
+        "frame": [
+         0.1874,
+         0.0439,
+         0.2245,
+         0.0544
+        ],
+        "from": [
+         0.0861,
+         0.836
+        ],
+        "to": [
+         0.9139,
+         0.164
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.52,
+       "rx": 0.48,
+       "ry": 0.34,
+       "k": 0.88
+      }
+     ],
+     "glow": null,
+     "couple": null,
+     "floor": null
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/invitation/wide-1280.avif",
+       "1920": "plates/invitation/wide-1920.avif",
+       "2560": "plates/invitation/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/invitation/wide-1280.webp",
+       "1920": "plates/invitation/wide-1920.webp",
+       "2560": "plates/invitation/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 6708,
+       "1920": 13678,
+       "2560": 22719
+      },
+      "webp": {
+       "1280": 16012,
+       "1920": 37334,
+       "2560": 58656
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAABwAQCdASoQAAkACUBaJYwCdAFAAAD+8JQumPN9u/Woon4AAAA=",
+     "gold": {
+      "file": "plates/invitation/wide-gold.webp",
+      "width": 1920,
+      "bytes": 8670
+     },
+     "veil": {
+      "file": "plates/invitation/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 28432
+     },
+     "strokes": {
+      "file": "plates/invitation/wide-strokes.webp",
+      "width": 402,
+      "height": 477,
+      "bytes": 15904,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         401,
+         157
+        ],
+        "frame": [
+         -0.0166,
+         0.038,
+         0.209,
+         0.1455
+        ],
+        "from": [
+         0.9257,
+         0.1898
+        ],
+        "to": [
+         0.0743,
+         0.8102
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         161,
+         293,
+         209
+        ],
+        "frame": [
+         0.1326,
+         0.1165,
+         0.1528,
+         0.1938
+        ],
+        "from": [
+         0.094,
+         0.8682
+        ],
+        "to": [
+         0.906,
+         0.1318
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         374,
+         160,
+         98
+        ],
+        "frame": [
+         -0.0198,
+         0.1605,
+         0.0831,
+         0.0907
+        ],
+        "from": [
+         0.7725,
+         0.3707
+        ],
+        "to": [
+         0.2275,
+         0.6293
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.52,
+       "rx": 0.34,
+       "ry": 0.4,
+       "k": 0.88
+      }
+     ],
+     "glow": null,
+     "couple": null,
+     "floor": null
+    }
+   }
+  },
+  "mehndi": {
+   "palette": "sage",
+   "paper": "rgb(227,231,212)",
+   "groundMid": "rgb(205,214,184)",
+   "deep": false,
+   "focal": "50% 45%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/mehndi/mid-768.avif",
+       "1152": "plates/mehndi/mid-1152.avif",
+       "1536": "plates/mehndi/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/mehndi/mid-768.webp",
+       "1152": "plates/mehndi/mid-1152.webp",
+       "1536": "plates/mehndi/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 15163,
+       "1152": 27916,
+       "1536": 41843
+      },
+      "webp": {
+       "768": 28830,
+       "1152": 56842,
+       "1536": 89410
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JZQANgwG+8bdMv/g7gAD+1gVlAGqBuvGi4xOVJt747fKwIYYjoKwm6hpaWYAA",
+     "gold": {
+      "file": "plates/mehndi/mid-gold.webp",
+      "width": 1152,
+      "bytes": 5994
+     },
+     "veil": {
+      "file": "plates/mehndi/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 48440
+     },
+     "strokes": {
+      "file": "plates/mehndi/mid-strokes.webp",
+      "width": 142,
+      "height": 700,
+      "bytes": 12398,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         99,
+         299
+        ],
+        "frame": [
+         0.8354,
+         0.4205,
+         0.0919,
+         0.2215
+        ],
+        "from": [
+         0.5539,
+         0.1116
+        ],
+        "to": [
+         0.3363,
+         0.8884
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         303,
+         137,
+         173
+        ],
+        "frame": [
+         0.9013,
+         0.3508,
+         0.1273,
+         0.1278
+        ],
+        "from": [
+         0.2218,
+         0.8232
+        ],
+        "to": [
+         0.7782,
+         0.1768
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         480,
+         141,
+         216
+        ],
+        "frame": [
+         0.8013,
+         0.4667,
+         0.1306,
+         0.1601
+        ],
+        "from": [
+         0.6608,
+         0.1252
+        ],
+        "to": [
+         0.1918,
+         0.8748
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/mehndi/tall-540.avif",
+       "828": "plates/mehndi/tall-828.avif",
+       "1170": "plates/mehndi/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/mehndi/tall-540.webp",
+       "828": "plates/mehndi/tall-828.webp",
+       "1170": "plates/mehndi/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 14908,
+       "828": 30303,
+       "1170": 51977
+      },
+      "webp": {
+       "540": 27234,
+       "828": 58110,
+       "1170": 104334
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoQACMAPu1mqE8ppaOiKqwBMB2JZVL5ACcbPUq4cxAIAAD+7Xp4rOuznK/jtWW9gP3JxJdPVWF1VyR1qRIb0Q3c3z8fVku2Uh1l0mRIwAA=",
+     "gold": {
+      "file": "plates/mehndi/tall-gold.webp",
+      "width": 1170,
+      "bytes": 8182
+     },
+     "veil": {
+      "file": "plates/mehndi/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 31742
+     },
+     "strokes": {
+      "file": "plates/mehndi/tall-strokes.webp",
+      "width": 323,
+      "height": 676,
+      "bytes": 17782,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         117,
+         289
+        ],
+        "frame": [
+         0.8293,
+         0.5378,
+         0.1087,
+         0.1234
+        ],
+        "from": [
+         0.3952,
+         0.0703
+        ],
+        "to": [
+         0.827,
+         0.9297
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         293,
+         322,
+         94
+        ],
+        "frame": [
+         0.2949,
+         0.9106,
+         0.2984,
+         0.0401
+        ],
+        "from": [
+         0.1145,
+         0.6064
+        ],
+        "to": [
+         0.8855,
+         0.3936
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         390,
+         291,
+         281
+        ],
+        "frame": [
+         0.7658,
+         0.2104,
+         0.2698,
+         0.1201
+        ],
+        "from": [
+         0.1301,
+         0.8651
+        ],
+        "to": [
+         0.8699,
+         0.1349
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/mehndi/wide-1280.avif",
+       "1920": "plates/mehndi/wide-1920.avif",
+       "2560": "plates/mehndi/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/mehndi/wide-1280.webp",
+       "1920": "plates/mehndi/wide-1920.webp",
+       "2560": "plates/mehndi/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 19068,
+       "1920": 36503,
+       "2560": 55735
+      },
+      "webp": {
+       "1280": 35724,
+       "1920": 73244,
+       "2560": 114472
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoQAAkAA4BaJQBdgCHf+kLFOAD+6tW1Sd1W5TMOQAjFEyXIAAA=",
+     "gold": {
+      "file": "plates/mehndi/wide-gold.webp",
+      "width": 1920,
+      "bytes": 7624
+     },
+     "veil": {
+      "file": "plates/mehndi/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 24240
+     },
+     "strokes": {
+      "file": "plates/mehndi/wide-strokes.webp",
+      "width": 354,
+      "height": 520,
+      "bytes": 16410,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         282,
+         161
+        ],
+        "frame": [
+         0.3767,
+         0.0566,
+         0.1469,
+         0.149
+        ],
+        "from": [
+         0.1323,
+         0.7681
+        ],
+        "to": [
+         0.8677,
+         0.2319
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         165,
+         354,
+         70
+        ],
+        "frame": [
+         0.2739,
+         0.889,
+         0.1843,
+         0.065
+        ],
+        "from": [
+         0.0698,
+         0.6171
+        ],
+        "to": [
+         0.9302,
+         0.3523
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         239,
+         249,
+         277
+        ],
+        "frame": [
+         0.8378,
+         -0.0384,
+         0.1299,
+         0.2563
+        ],
+        "from": [
+         0.8521,
+         0.8668
+        ],
+        "to": [
+         0.1479,
+         0.1332
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.3,
+       "y": 0.55,
+       "rx": 0.18,
+       "ry": 0.35,
+       "k": 0.7
+      },
+      {
+       "x": 0.7,
+       "y": 0.5,
+       "rx": 0.25,
+       "ry": 0.38,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.3,
+      "y": 0.5,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.3,
+      0.55
+     ],
+     "floor": 0.86
+    }
+   }
+  },
+  "engagement": {
+   "palette": "rose",
+   "paper": "rgb(238,224,223)",
+   "groundMid": "rgb(227,200,204)",
+   "deep": false,
+   "focal": "50% 45%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/engagement/mid-768.avif",
+       "1152": "plates/engagement/mid-1152.avif",
+       "1536": "plates/engagement/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/engagement/mid-768.webp",
+       "1152": "plates/engagement/mid-1152.webp",
+       "1536": "plates/engagement/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 13762,
+       "1152": 24917,
+       "1536": 37595
+      },
+      "webp": {
+       "768": 25672,
+       "1152": 50668,
+       "1536": 77652
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABwAwCdASoQABQAPu1iqU2ppaQiMAgBMB2JZQAAWoVBvnxgEAAA/uC70tDimqGYnS9YAYxNzH3aanT9dZmIlorT/MHI+gAA",
+     "gold": {
+      "file": "plates/engagement/mid-gold.webp",
+      "width": 1152,
+      "bytes": 5822
+     },
+     "veil": {
+      "file": "plates/engagement/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 23186
+     },
+     "strokes": {
+      "file": "plates/engagement/mid-strokes.webp",
+      "width": 292,
+      "height": 543,
+      "bytes": 14424,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         291,
+         129
+        ],
+        "frame": [
+         0.1473,
+         -0.0086,
+         0.2699,
+         0.0954
+        ],
+        "from": [
+         0.1072,
+         0.7575
+        ],
+        "to": [
+         0.8928,
+         0.4344
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         133,
+         193,
+         292
+        ],
+        "frame": [
+         0.8488,
+         0.3817,
+         0.1786,
+         0.2163
+        ],
+        "from": [
+         0.1502,
+         0.9008
+        ],
+        "to": [
+         0.8498,
+         0.0992
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         429,
+         259,
+         110
+        ],
+        "frame": [
+         -0.0336,
+         0.5138,
+         0.2402,
+         0.0812
+        ],
+        "from": [
+         0.8649,
+         0.6804
+        ],
+        "to": [
+         0.1351,
+         0.3196
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/engagement/tall-540.avif",
+       "828": "plates/engagement/tall-828.avif",
+       "1170": "plates/engagement/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/engagement/tall-540.webp",
+       "828": "plates/engagement/tall-828.webp",
+       "1170": "plates/engagement/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 13127,
+       "828": 26996,
+       "1170": 46447
+      },
+      "webp": {
+       "540": 23786,
+       "828": 51302,
+       "1170": 92074
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQBACdASoQACMAPu1kq04ppaQiKqwBMB2JZwDH5BZi1CNeaI5PdTCm+NX8AP7TESfDXnfbHNd4LOZyAqHG0RjaQ55blV7+mNBR8aurgAA=",
+     "gold": {
+      "file": "plates/engagement/tall-gold.webp",
+      "width": 1170,
+      "bytes": 7916
+     },
+     "veil": {
+      "file": "plates/engagement/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 25726
+     },
+     "strokes": {
+      "file": "plates/engagement/tall-strokes.webp",
+      "width": 336,
+      "height": 641,
+      "bytes": 16164,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         335,
+         255
+        ],
+        "frame": [
+         0.0494,
+         0.2036,
+         0.3105,
+         0.109
+        ],
+        "from": [
+         0.9188,
+         0.1068
+        ],
+        "to": [
+         0.0812,
+         0.8932
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         259,
+         260,
+         185
+        ],
+        "frame": [
+         0.6397,
+         0.238,
+         0.241,
+         0.0791
+        ],
+        "from": [
+         0.908,
+         0.1294
+        ],
+        "to": [
+         0.092,
+         0.8706
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         448,
+         154,
+         188
+        ],
+        "frame": [
+         -0.0414,
+         0.4928,
+         0.143,
+         0.0804
+        ],
+        "from": [
+         0.7258,
+         0.7751
+        ],
+        "to": [
+         0.2742,
+         0.2249
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/engagement/wide-1280.avif",
+       "1920": "plates/engagement/wide-1920.avif",
+       "2560": "plates/engagement/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/engagement/wide-1280.webp",
+       "1920": "plates/engagement/wide-1920.webp",
+       "2560": "plates/engagement/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 17539,
+       "1920": 34120,
+       "2560": 52767
+      },
+      "webp": {
+       "1280": 33740,
+       "1920": 70150,
+       "2560": 109830
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoQAAkAA4BaJQAAYvbZv2rlAAD+7XHEHULlwpDnn2uxt4+Y9uYAAA==",
+     "gold": {
+      "file": "plates/engagement/wide-gold.webp",
+      "width": 1920,
+      "bytes": 7898
+     },
+     "veil": {
+      "file": "plates/engagement/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 46380
+     },
+     "strokes": {
+      "file": "plates/engagement/wide-strokes.webp",
+      "width": 368,
+      "height": 500,
+      "bytes": 17486,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         367,
+         221
+        ],
+        "frame": [
+         0.5745,
+         0.1339,
+         0.1914,
+         0.2043
+        ],
+        "from": [
+         0.8935,
+         0.3251
+        ],
+        "to": [
+         0.1065,
+         0.8226
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         225,
+         197,
+         129
+        ],
+        "frame": [
+         0.8552,
+         0.3744,
+         0.1024,
+         0.1193
+        ],
+        "from": [
+         0.8717,
+         0.8317
+        ],
+        "to": [
+         0.1103,
+         0.3449
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         357,
+         340,
+         138
+        ],
+        "frame": [
+         0.4925,
+         0.033,
+         0.1772,
+         0.1282
+        ],
+        "from": [
+         0.0592,
+         0.4109
+        ],
+        "to": [
+         0.9408,
+         0.1454
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.7,
+       "y": 0.55,
+       "rx": 0.18,
+       "ry": 0.35,
+       "k": 0.7
+      },
+      {
+       "x": 0.30000000000000004,
+       "y": 0.5,
+       "rx": 0.25,
+       "ry": 0.38,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.7,
+      "y": 0.5,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.7,
+      0.55
+     ],
+     "floor": 0.86
+    }
+   }
+  },
+  "haldi": {
+   "palette": "turmeric",
+   "paper": "rgb(242,222,170)",
+   "groundMid": "rgb(236,203,120)",
+   "deep": false,
+   "focal": "50% 45%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/haldi/mid-768.avif",
+       "1152": "plates/haldi/mid-1152.avif",
+       "1536": "plates/haldi/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/haldi/mid-768.webp",
+       "1152": "plates/haldi/mid-1152.webp",
+       "1536": "plates/haldi/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 10879,
+       "1152": 20297,
+       "1536": 31447
+      },
+      "webp": {
+       "768": 23654,
+       "1152": 47030,
+       "1536": 75816
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoQABQAPu1iqU2ppaQiMAgBMB2JZgCdMoRwADeYfm9QauAA/u6dGIs64/bbdG6cS8NQ9myQ6V0febnjF79hAOaC0MBtAVoAAAA=",
+     "gold": {
+      "file": "plates/haldi/mid-gold.webp",
+      "width": 1152,
+      "bytes": 6722
+     },
+     "veil": {
+      "file": "plates/haldi/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 41700
+     },
+     "strokes": {
+      "file": "plates/haldi/mid-strokes.webp",
+      "width": 398,
+      "height": 337,
+      "bytes": 14172,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         398,
+         99
+        ],
+        "frame": [
+         -0.0243,
+         0.6507,
+         0.3681,
+         0.073
+        ],
+        "from": [
+         0.9025,
+         0.4364
+        ],
+        "to": [
+         0.0975,
+         0.3931
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         103,
+         193,
+         70
+        ],
+        "frame": [
+         -0.0302,
+         0.6199,
+         0.1784,
+         0.0517
+        ],
+        "from": [
+         0.8467,
+         0.4529
+        ],
+        "to": [
+         0.1533,
+         0.4228
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         176,
+         259,
+         156
+        ],
+        "frame": [
+         0.1813,
+         0.194,
+         0.2395,
+         0.1154
+        ],
+        "from": [
+         0.8929,
+         0.1779
+        ],
+        "to": [
+         0.1071,
+         0.8221
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/haldi/tall-540.avif",
+       "828": "plates/haldi/tall-828.avif",
+       "1170": "plates/haldi/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/haldi/tall-540.webp",
+       "828": "plates/haldi/tall-828.webp",
+       "1170": "plates/haldi/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 10460,
+       "828": 21626,
+       "1170": 38112
+      },
+      "webp": {
+       "540": 21362,
+       "828": 46780,
+       "1170": 83044
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACwBACdASoQACMAPu1aqE2ppKOiNVgIATAdiWJXn0YWIgCkEeSYw93kRkXPRfrYAP7uOrPIs0XTqQO0u0EhEh6lfiAqicrdnlDCV9lQLah1dDaCMUqbR5OJwOqUVBTOnzyYUQZc4AA=",
+     "gold": {
+      "file": "plates/haldi/tall-gold.webp",
+      "width": 1170,
+      "bytes": 8488
+     },
+     "veil": {
+      "file": "plates/haldi/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 34082
+     },
+     "strokes": {
+      "file": "plates/haldi/tall-strokes.webp",
+      "width": 400,
+      "height": 573,
+      "bytes": 23212,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         399,
+         162
+        ],
+        "frame": [
+         0.2319,
+         0.2009,
+         0.3696,
+         0.0691
+        ],
+        "from": [
+         0.0954,
+         0.7645
+        ],
+        "to": [
+         0.9046,
+         0.2355
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         166,
+         274,
+         116
+        ],
+        "frame": [
+         -0.0328,
+         0.2989,
+         0.2542,
+         0.0496
+        ],
+        "from": [
+         0.8755,
+         0.2944
+        ],
+        "to": [
+         0.1245,
+         0.5361
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         286,
+         314,
+         283
+        ],
+        "frame": [
+         -0.041,
+         0.5653,
+         0.2905,
+         0.121
+        ],
+        "from": [
+         0.8719,
+         0.8581
+        ],
+        "to": [
+         0.1281,
+         0.1419
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/haldi/wide-1280.avif",
+       "1920": "plates/haldi/wide-1920.avif",
+       "2560": "plates/haldi/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/haldi/wide-1280.webp",
+       "1920": "plates/haldi/wide-1920.webp",
+       "2560": "plates/haldi/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 13660,
+       "1920": 26950,
+       "2560": 42119
+      },
+      "webp": {
+       "1280": 29252,
+       "1920": 59962,
+       "2560": 97560
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAABwAQCdASoQAAkAA4BaJbACdAFAAAD+7x6/6O/GLUqB+trksderIODfX3vq9153NlA16IAA",
+     "gold": {
+      "file": "plates/haldi/wide-gold.webp",
+      "width": 1920,
+      "bytes": 7612
+     },
+     "veil": {
+      "file": "plates/haldi/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 37704
+     },
+     "strokes": {
+      "file": "plates/haldi/wide-strokes.webp",
+      "width": 443,
+      "height": 341,
+      "bytes": 17348,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         262,
+         120
+        ],
+        "frame": [
+         -0.02,
+         0.2338,
+         0.1364,
+         0.1112
+        ],
+        "from": [
+         0.8607,
+         0.5325
+        ],
+        "to": [
+         0.1393,
+         0.304
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         124,
+         301,
+         76
+        ],
+        "frame": [
+         0.4647,
+         0.007,
+         0.1569,
+         0.0706
+        ],
+        "from": [
+         0.9078,
+         0.6355
+        ],
+        "to": [
+         0.0922,
+         0.3829
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         204,
+         442,
+         132
+        ],
+        "frame": [
+         0.5524,
+         0.0235,
+         0.2303,
+         0.1221
+        ],
+        "from": [
+         0.9104,
+         0.6995
+        ],
+        "to": [
+         0.0896,
+         0.3342
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.3,
+       "y": 0.55,
+       "rx": 0.18,
+       "ry": 0.35,
+       "k": 0.7
+      },
+      {
+       "x": 0.7,
+       "y": 0.5,
+       "rx": 0.25,
+       "ry": 0.38,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.3,
+      "y": 0.5,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.3,
+      0.55
+     ],
+     "floor": 0.86
+    }
+   }
+  },
+  "wedding": {
+   "palette": "vermilion",
+   "paper": "rgb(160,32,36)",
+   "groundMid": "rgb(154,30,35)",
+   "deep": true,
+   "focal": "50% 45%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/wedding/mid-768.avif",
+       "1152": "plates/wedding/mid-1152.avif",
+       "1536": "plates/wedding/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/wedding/mid-768.webp",
+       "1152": "plates/wedding/mid-1152.webp",
+       "1536": "plates/wedding/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 10938,
+       "1152": 20737,
+       "1536": 31689
+      },
+      "webp": {
+       "768": 23130,
+       "1152": 44810,
+       "1536": 70584
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JZF/2RhYh+AAb5gv45oAA/uYfvaV8UDXaLrDFuOwdxO/kkCQsjGYDqTgjjir/SDwAAA==",
+     "gold": {
+      "file": "plates/wedding/mid-gold.webp",
+      "width": 1152,
+      "bytes": 15972
+     },
+     "veil": {
+      "file": "plates/wedding/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 46262
+     },
+     "strokes": {
+      "file": "plates/wedding/mid-strokes.webp",
+      "width": 193,
+      "height": 732,
+      "bytes": 14214,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         192,
+         320
+        ],
+        "frame": [
+         0.8027,
+         0.3577,
+         0.178,
+         0.2367
+        ],
+        "from": [
+         0.2013,
+         0.8789
+        ],
+        "to": [
+         0.7987,
+         0.1211
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         324,
+         83,
+         240
+        ],
+        "frame": [
+         0.0241,
+         0.3826,
+         0.0772,
+         0.178
+        ],
+        "from": [
+         0.3614,
+         0.1025
+        ],
+        "to": [
+         0.7046,
+         0.8975
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         568,
+         134,
+         160
+        ],
+        "frame": [
+         -0.0349,
+         0.3366,
+         0.1241,
+         0.1186
+        ],
+        "from": [
+         0.7264,
+         0.7835
+        ],
+        "to": [
+         0.2585,
+         0.2165
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/wedding/tall-540.avif",
+       "828": "plates/wedding/tall-828.avif",
+       "1170": "plates/wedding/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/wedding/tall-540.webp",
+       "828": "plates/wedding/tall-828.webp",
+       "1170": "plates/wedding/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 11679,
+       "828": 23738,
+       "1170": 41186
+      },
+      "webp": {
+       "540": 22166,
+       "828": 47718,
+       "1170": 86930
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwBACdASoQACMAPuVipk2pJaOiNVgIASAciUAVgALNzJrtUNKR4iMaLdAA/tkJeOMSDHOOXWMJpJ0ftT8rPd+nGYTF47F0AHnEnLkbvdRyDSshYAA=",
+     "gold": {
+      "file": "plates/wedding/tall-gold.webp",
+      "width": 1170,
+      "bytes": 18242
+     },
+     "veil": {
+      "file": "plates/wedding/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 33050
+     },
+     "strokes": {
+      "file": "plates/wedding/tall-strokes.webp",
+      "width": 312,
+      "height": 482,
+      "bytes": 13110,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         190,
+         138
+        ],
+        "frame": [
+         -0.0404,
+         0.6673,
+         0.1762,
+         0.0591
+        ],
+        "from": [
+         0.7873,
+         0.2927
+        ],
+        "to": [
+         0.2127,
+         0.6777
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         142,
+         312,
+         117
+        ],
+        "frame": [
+         -0.0323,
+         0.2934,
+         0.2886,
+         0.0501
+        ],
+        "from": [
+         0.8905,
+         0.7087
+        ],
+        "to": [
+         0.1095,
+         0.3409
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         263,
+         114,
+         214
+        ],
+        "frame": [
+         -0.022,
+         0.6049,
+         0.1052,
+         0.0915
+        ],
+        "from": [
+         0.6458,
+         0.8967
+        ],
+        "to": [
+         0.1947,
+         0.1033
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/wedding/wide-1280.avif",
+       "1920": "plates/wedding/wide-1920.avif",
+       "2560": "plates/wedding/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/wedding/wide-1280.webp",
+       "1920": "plates/wedding/wide-1920.webp",
+       "2560": "plates/wedding/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 15178,
+       "1920": 29374,
+       "2560": 45499
+      },
+      "webp": {
+       "1280": 29508,
+       "1920": 61502,
+       "2560": 98300
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAkAA4BaJagCdAELYL6C4AD+5AZAQzkVvdyDVux7vVVPNX7/cH9MP6guQAAA",
+     "gold": {
+      "file": "plates/wedding/wide-gold.webp",
+      "width": 1920,
+      "bytes": 22586
+     },
+     "veil": {
+      "file": "plates/wedding/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 51852
+     },
+     "strokes": {
+      "file": "plates/wedding/wide-strokes.webp",
+      "width": 388,
+      "height": 555,
+      "bytes": 15316,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         119,
+         250
+        ],
+        "frame": [
+         0.5814,
+         -0.0147,
+         0.0618,
+         0.2312
+        ],
+        "from": [
+         0.364,
+         0.8909
+        ],
+        "to": [
+         0.2296,
+         0.1091
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         254,
+         255,
+         241
+        ],
+        "frame": [
+         0.7483,
+         0.0875,
+         0.1326,
+         0.2233
+        ],
+        "from": [
+         0.1189,
+         0.1255
+        ],
+        "to": [
+         0.8811,
+         0.8626
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         499,
+         387,
+         51
+        ],
+        "frame": [
+         0.6689,
+         0.8843,
+         0.2016,
+         0.0474
+        ],
+        "from": [
+         0.0551,
+         0.4666
+        ],
+        "to": [
+         0.9449,
+         0.4166
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.7,
+       "y": 0.55,
+       "rx": 0.18,
+       "ry": 0.35,
+       "k": 0.7
+      },
+      {
+       "x": 0.30000000000000004,
+       "y": 0.5,
+       "rx": 0.25,
+       "ry": 0.38,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.7,
+      "y": 0.5,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.7,
+      0.55
+     ],
+     "floor": 0.86
+    }
+   }
+  },
+  "reception": {
+   "palette": "teal-evening",
+   "paper": "rgb(33,72,74)",
+   "groundMid": "rgb(33,72,74)",
+   "deep": true,
+   "focal": "50% 45%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/reception/mid-768.avif",
+       "1152": "plates/reception/mid-1152.avif",
+       "1536": "plates/reception/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/reception/mid-768.webp",
+       "1152": "plates/reception/mid-1152.webp",
+       "1536": "plates/reception/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 7902,
+       "1152": 15893,
+       "1536": 24754
+      },
+      "webp": {
+       "768": 17530,
+       "1152": 36234,
+       "1536": 57672
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAwCdASoQABQAPu1kqU2ppaQiMAgBMB2JQBWABER67tLhpVrSKUAA/tzRN0CKUUzn0hy1fvr5zSDFdvYBjVQAAAA=",
+     "gold": {
+      "file": "plates/reception/mid-gold.webp",
+      "width": 1152,
+      "bytes": 6422
+     },
+     "veil": {
+      "file": "plates/reception/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 29746
+     },
+     "strokes": {
+      "file": "plates/reception/mid-strokes.webp",
+      "width": 352,
+      "height": 323,
+      "bytes": 9732,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         121,
+         92
+        ],
+        "frame": [
+         -0.0348,
+         0.5166,
+         0.1118,
+         0.0684
+        ],
+        "from": [
+         0.696,
+         0.6024
+        ],
+        "to": [
+         0.304,
+         0.3976
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         96,
+         163,
+         112
+        ],
+        "frame": [
+         0.8901,
+         0.2416,
+         0.151,
+         0.0829
+        ],
+        "from": [
+         0.253,
+         0.631
+        ],
+        "to": [
+         0.747,
+         0.369
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         212,
+         352,
+         107
+        ],
+        "frame": [
+         0.6404,
+         0.6245,
+         0.3255,
+         0.0791
+        ],
+        "from": [
+         0.0941,
+         0.335
+        ],
+        "to": [
+         0.9059,
+         0.6902
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/reception/tall-540.avif",
+       "828": "plates/reception/tall-828.avif",
+       "1170": "plates/reception/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/reception/tall-540.webp",
+       "828": "plates/reception/tall-828.webp",
+       "1170": "plates/reception/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 7661,
+       "828": 16568,
+       "1170": 30371
+      },
+      "webp": {
+       "540": 15632,
+       "828": 36236,
+       "1170": 67584
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQBACdASoQACMAPt1apE2opSOiNUgBEBuJZQC7ACh8+XwPewZvrOrtgAD+6PFjY2NguZxNvs6wwmCRS7GUQ1mnxq/aYD5JBF3yAAAA",
+     "gold": {
+      "file": "plates/reception/tall-gold.webp",
+      "width": 1170,
+      "bytes": 8190
+     },
+     "veil": {
+      "file": "plates/reception/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 28110
+     },
+     "strokes": {
+      "file": "plates/reception/tall-strokes.webp",
+      "width": 358,
+      "height": 321,
+      "bytes": 12018,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         356,
+         112
+        ],
+        "frame": [
+         0.2927,
+         0.6712,
+         0.3294,
+         0.048
+        ],
+        "from": [
+         0.9228,
+         0.6881
+        ],
+        "to": [
+         0.0772,
+         0.2444
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         116,
+         155,
+         99
+        ],
+        "frame": [
+         -0.0379,
+         0.5933,
+         0.1435,
+         0.0425
+        ],
+        "from": [
+         0.7421,
+         0.4022
+        ],
+        "to": [
+         0.2579,
+         0.5978
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         220,
+         357,
+         97
+        ],
+        "frame": [
+         0.6882,
+         0.2927,
+         0.331,
+         0.0415
+        ],
+        "from": [
+         0.0563,
+         0.207
+        ],
+        "to": [
+         0.9437,
+         0.754
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.13,
+       "rx": 0.44,
+       "ry": 0.07,
+       "k": 0.8
+      },
+      {
+       "x": 0.5,
+       "y": 0.47,
+       "rx": 0.36,
+       "ry": 0.2,
+       "k": 0.74
+      },
+      {
+       "x": 0.5,
+       "y": 0.82,
+       "rx": 0.46,
+       "ry": 0.1,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.46,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.5,
+      0.47
+     ],
+     "floor": 0.74
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/reception/wide-1280.avif",
+       "1920": "plates/reception/wide-1920.avif",
+       "2560": "plates/reception/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/reception/wide-1280.webp",
+       "1920": "plates/reception/wide-1920.webp",
+       "2560": "plates/reception/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 10275,
+       "1920": 21295,
+       "2560": 33904
+      },
+      "webp": {
+       "1280": 22836,
+       "1920": 46514,
+       "2560": 77374
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoQAAkAA4BaJQBOgCHfYf4AAP7p8nDbHZuqG9bC7bXZhyahEAAAAA==",
+     "gold": {
+      "file": "plates/reception/wide-gold.webp",
+      "width": 1920,
+      "bytes": 6516
+     },
+     "veil": {
+      "file": "plates/reception/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 36932
+     },
+     "strokes": {
+      "file": "plates/reception/wide-strokes.webp",
+      "width": 386,
+      "height": 424,
+      "bytes": 16312,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         385,
+         57
+        ],
+        "frame": [
+         0.2612,
+         0.9258,
+         0.2006,
+         0.0527
+        ],
+        "from": [
+         0.9396,
+         0.5438
+        ],
+        "to": [
+         0.0604,
+         0.4084
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         61,
+         219,
+         251
+        ],
+        "frame": [
+         0.3564,
+         -0.0311,
+         0.1141,
+         0.2326
+        ],
+        "from": [
+         0.1534,
+         0.8662
+        ],
+        "to": [
+         0.8466,
+         0.1338
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         316,
+         344,
+         103
+        ],
+        "frame": [
+         0.1107,
+         0.913,
+         0.1793,
+         0.0958
+        ],
+        "from": [
+         0.1044,
+         0.3474
+        ],
+        "to": [
+         0.8956,
+         0.6526
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.3,
+       "y": 0.55,
+       "rx": 0.18,
+       "ry": 0.35,
+       "k": 0.7
+      },
+      {
+       "x": 0.7,
+       "y": 0.5,
+       "rx": 0.25,
+       "ry": 0.38,
+       "k": 0.88
+      }
+     ],
+     "glow": {
+      "x": 0.3,
+      "y": 0.5,
+      "r": 0.76,
+      "k": 0.55
+     },
+     "couple": [
+      0.3,
+      0.55
+     ],
+     "floor": 0.86
+    }
+   }
+  },
+  "cultures": {
+   "palette": "ivory",
+   "paper": "rgb(242,232,216)",
+   "groundMid": "rgb(235,220,195)",
+   "deep": false,
+   "focal": "50% 45%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/cultures/mid-768.avif",
+       "1152": "plates/cultures/mid-1152.avif",
+       "1536": "plates/cultures/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/cultures/mid-768.webp",
+       "1152": "plates/cultures/mid-1152.webp",
+       "1536": "plates/cultures/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 7625,
+       "1152": 14650,
+       "1536": 23545
+      },
+      "webp": {
+       "768": 16810,
+       "1152": 34572,
+       "1536": 56834
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JYwCdADBdhJTgAP7vaBoxwNc8k/wIOkdTWsFZ1l3W7vAA",
+     "gold": {
+      "file": "plates/cultures/mid-gold.webp",
+      "width": 1152,
+      "bytes": 7052
+     },
+     "veil": {
+      "file": "plates/cultures/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 32966
+     },
+     "strokes": {
+      "file": "plates/cultures/mid-strokes.webp",
+      "width": 265,
+      "height": 433,
+      "bytes": 10480,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         211,
+         100
+        ],
+        "frame": [
+         -0.0217,
+         0.005,
+         0.1952,
+         0.074
+        ],
+        "from": [
+         0.896,
+         0.7804
+        ],
+        "to": [
+         0.104,
+         0.2196
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         104,
+         265,
+         173
+        ],
+        "frame": [
+         0.1963,
+         -0.0046,
+         0.245,
+         0.1278
+        ],
+        "from": [
+         0.0767,
+         0.8823
+        ],
+        "to": [
+         0.9233,
+         0.1177
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         280,
+         216,
+         148
+        ],
+        "frame": [
+         -0.0335,
+         0.7763,
+         0.1997,
+         0.1098
+        ],
+        "from": [
+         0.8467,
+         0.7771
+        ],
+        "to": [
+         0.1533,
+         0.2229
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.3,
+       "rx": 0.42,
+       "ry": 0.2,
+       "k": 0.85
+      },
+      {
+       "x": 0.5,
+       "y": 0.72,
+       "rx": 0.42,
+       "ry": 0.2,
+       "k": 0.85
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.5,
+      "r": 0.7,
+      "k": 0.5
+     },
+     "couple": null,
+     "floor": null
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/cultures/tall-540.avif",
+       "828": "plates/cultures/tall-828.avif",
+       "1170": "plates/cultures/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/cultures/tall-540.webp",
+       "828": "plates/cultures/tall-828.webp",
+       "1170": "plates/cultures/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 7700,
+       "828": 15644,
+       "1170": 28339
+      },
+      "webp": {
+       "540": 15698,
+       "828": 34794,
+       "1170": 65534
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAwCdASoQACMAPu1qrlCtJaQiqqgBoB2JZWoUS0eNG4AA/u9qglsTxyLgpGAJ9YpP7gn/xg19t/HoR7QAAA==",
+     "gold": {
+      "file": "plates/cultures/tall-gold.webp",
+      "width": 1170,
+      "bytes": 10928
+     },
+     "veil": {
+      "file": "plates/cultures/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 32692
+     },
+     "strokes": {
+      "file": "plates/cultures/tall-strokes.webp",
+      "width": 381,
+      "height": 559,
+      "bytes": 13054,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         380,
+         176
+        ],
+        "frame": [
+         0.4649,
+         0.0781,
+         0.3519,
+         0.0753
+        ],
+        "from": [
+         0.9205,
+         0.8286
+        ],
+        "to": [
+         0.0795,
+         0.2321
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         180,
+         108,
+         290
+        ],
+        "frame": [
+         0.0429,
+         0.4573,
+         0.0998,
+         0.1239
+        ],
+        "from": [
+         0.2968,
+         0.1104
+        ],
+        "to": [
+         0.3323,
+         0.8896
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         474,
+         117,
+         80
+        ],
+        "frame": [
+         -0.0225,
+         0.2651,
+         0.1084,
+         0.0342
+        ],
+        "from": [
+         0.8011,
+         0.707
+        ],
+        "to": [
+         0.1989,
+         0.2913
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.3,
+       "rx": 0.42,
+       "ry": 0.2,
+       "k": 0.85
+      },
+      {
+       "x": 0.5,
+       "y": 0.72,
+       "rx": 0.42,
+       "ry": 0.2,
+       "k": 0.85
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.5,
+      "r": 0.7,
+      "k": 0.5
+     },
+     "couple": null,
+     "floor": null
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/cultures/wide-1280.avif",
+       "1920": "plates/cultures/wide-1920.avif",
+       "2560": "plates/cultures/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/cultures/wide-1280.webp",
+       "1920": "plates/cultures/wide-1920.webp",
+       "2560": "plates/cultures/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 9977,
+       "1920": 19831,
+       "2560": 32237
+      },
+      "webp": {
+       "1280": 21184,
+       "1920": 46324,
+       "2560": 76428
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAABQAQCdASoQAAkAA4BaJQBOgCgAAP7w0LO1YPYpAUZyD4yHOHgAAA==",
+     "gold": {
+      "file": "plates/cultures/wide-gold.webp",
+      "width": 1920,
+      "bytes": 10588
+     },
+     "veil": {
+      "file": "plates/cultures/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 30896
+     },
+     "strokes": {
+      "file": "plates/cultures/wide-strokes.webp",
+      "width": 308,
+      "height": 464,
+      "bytes": 10666,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         102,
+         183
+        ],
+        "frame": [
+         0.8346,
+         0.8721,
+         0.0531,
+         0.1691
+        ],
+        "from": [
+         0.5965,
+         0.225
+        ],
+        "to": [
+         0.4035,
+         0.775
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         187,
+         165,
+         168
+        ],
+        "frame": [
+         0.03,
+         0.8754,
+         0.0858,
+         0.1554
+        ],
+        "from": [
+         0.19,
+         0.1865
+        ],
+        "to": [
+         0.81,
+         0.8135
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         358,
+         308,
+         101
+        ],
+        "frame": [
+         0.4205,
+         0.7595,
+         0.1602,
+         0.0935
+        ],
+        "from": [
+         0.1387,
+         0.527
+        ],
+        "to": [
+         0.8613,
+         0.5771
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.28,
+       "y": 0.5,
+       "rx": 0.22,
+       "ry": 0.36,
+       "k": 0.85
+      },
+      {
+       "x": 0.72,
+       "y": 0.5,
+       "rx": 0.22,
+       "ry": 0.36,
+       "k": 0.85
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.5,
+      "r": 0.7,
+      "k": 0.5
+     },
+     "couple": null,
+     "floor": null
+    }
+   }
+  },
+  "closing": {
+   "palette": "ivory",
+   "paper": "rgb(242,232,216)",
+   "groundMid": "rgb(235,220,195)",
+   "deep": false,
+   "focal": "50% 70%",
+   "frames": {
+    "mid": {
+     "W": 1080,
+     "H": 1350,
+     "base": {
+      "avif": {
+       "768": "plates/closing/mid-768.avif",
+       "1152": "plates/closing/mid-1152.avif",
+       "1536": "plates/closing/mid-1536.avif"
+      },
+      "webp": {
+       "768": "plates/closing/mid-768.webp",
+       "1152": "plates/closing/mid-1152.webp",
+       "1536": "plates/closing/mid-1536.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "768": 9510,
+       "1152": 18416,
+       "1536": 28689
+      },
+      "webp": {
+       "768": 19840,
+       "1152": 40680,
+       "1536": 65916
+      }
+     },
+     "height": {
+      "768": 960,
+      "1152": 1440,
+      "1536": 1920
+     },
+     "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACQAwCdASoQABQAPu1iqk2ppaQiMAgBMB2JZQCw7C0KTedRJ1AAAP7vG3l70Ju+HiBafHcobXY1idu29AAAAA==",
+     "gold": {
+      "file": "plates/closing/mid-gold.webp",
+      "width": 1152,
+      "bytes": 18302
+     },
+     "veil": {
+      "file": "plates/closing/mid-veil.webp",
+      "width": 768,
+      "height": 960,
+      "bytes": 46552
+     },
+     "strokes": {
+      "file": "plates/closing/mid-strokes.webp",
+      "width": 295,
+      "height": 676,
+      "bytes": 15076,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         174,
+         327
+        ],
+        "frame": [
+         0.8202,
+         0.7252,
+         0.1616,
+         0.2422
+        ],
+        "from": [
+         0.4887,
+         0.1272
+        ],
+        "to": [
+         0.2384,
+         0.8728
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         331,
+         141,
+         138
+        ],
+        "frame": [
+         -0.0346,
+         0.8455,
+         0.1307,
+         0.1022
+        ],
+        "from": [
+         0.7442,
+         0.7381
+        ],
+        "to": [
+         0.2558,
+         0.2619
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         473,
+         295,
+         199
+        ],
+        "frame": [
+         0.6883,
+         0.8227,
+         0.2728,
+         0.1474
+        ],
+        "from": [
+         0.0668,
+         0.8936
+        ],
+        "to": [
+         0.9332,
+         0.099
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.42,
+       "rx": 0.46,
+       "ry": 0.3,
+       "k": 0.92
+      },
+      {
+       "x": 0.5,
+       "y": 0.86,
+       "rx": 0.24,
+       "ry": 0.08,
+       "k": 0.7
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.86,
+      "r": 0.5,
+      "k": 0.7
+     },
+     "couple": null,
+     "floor": null
+    },
+    "tall": {
+     "W": 1080,
+     "H": 2340,
+     "base": {
+      "avif": {
+       "540": "plates/closing/tall-540.avif",
+       "828": "plates/closing/tall-828.avif",
+       "1170": "plates/closing/tall-1170.avif"
+      },
+      "webp": {
+       "540": "plates/closing/tall-540.webp",
+       "828": "plates/closing/tall-828.webp",
+       "1170": "plates/closing/tall-1170.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "540": 9678,
+       "828": 20147,
+       "1170": 35765
+      },
+      "webp": {
+       "540": 19078,
+       "828": 41540,
+       "1170": 76462
+      }
+     },
+     "height": {
+      "540": 1170,
+      "828": 1794,
+      "1170": 2535
+     },
+     "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAwCdASoQACMAPu1qrVCzpaQiqqgCcB2JZWlCUWMNG4AA/u8bvA8PS8nFZ5rjHExNWaAE16sdRgfiE0K4aOns0hLmEPQygAA=",
+     "gold": {
+      "file": "plates/closing/tall-gold.webp",
+      "width": 1170,
+      "bytes": 15940
+     },
+     "veil": {
+      "file": "plates/closing/tall-veil.webp",
+      "width": 585,
+      "height": 1268,
+      "bytes": 31590
+     },
+     "strokes": {
+      "file": "plates/closing/tall-strokes.webp",
+      "width": 217,
+      "height": 800,
+      "bytes": 15508,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         216,
+         281
+        ],
+        "frame": [
+         0.1931,
+         0.8901,
+         0.2,
+         0.12
+        ],
+        "from": [
+         0.1024,
+         0.0787
+        ],
+        "to": [
+         0.8976,
+         0.9213
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         285,
+         217,
+         236
+        ],
+        "frame": [
+         -0.0391,
+         0.6589,
+         0.2006,
+         0.1006
+        ],
+        "from": [
+         0.8112,
+         0.1737
+        ],
+        "to": [
+         0.1888,
+         0.8263
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         524,
+         98,
+         272
+        ],
+        "frame": [
+         0.8513,
+         0.8436,
+         0.0909,
+         0.1161
+        ],
+        "from": [
+         0.5711,
+         0.1086
+        ],
+        "to": [
+         0.3004,
+         0.8914
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.42,
+       "rx": 0.46,
+       "ry": 0.3,
+       "k": 0.92
+      },
+      {
+       "x": 0.5,
+       "y": 0.86,
+       "rx": 0.24,
+       "ry": 0.08,
+       "k": 0.7
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.86,
+      "r": 0.5,
+      "k": 0.7
+     },
+     "couple": null,
+     "floor": null
+    },
+    "wide": {
+     "W": 1920,
+     "H": 1080,
+     "base": {
+      "avif": {
+       "1280": "plates/closing/wide-1280.avif",
+       "1920": "plates/closing/wide-1920.avif",
+       "2560": "plates/closing/wide-2560.avif"
+      },
+      "webp": {
+       "1280": "plates/closing/wide-1280.webp",
+       "1920": "plates/closing/wide-1920.webp",
+       "2560": "plates/closing/wide-2560.webp"
+      }
+     },
+     "bytes": {
+      "avif": {
+       "1280": 14163,
+       "1920": 27832,
+       "2560": 43006
+      },
+      "webp": {
+       "1280": 27788,
+       "1920": 59422,
+       "2560": 95800
+      }
+     },
+     "height": {
+      "1280": 720,
+      "1920": 1080,
+      "2560": 1440
+     },
+     "lqip": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAABQAQCdASoQAAkABIBaJQBOgCgAAP7wlBQFIq/KA1RrgYAA",
+     "gold": {
+      "file": "plates/closing/wide-gold.webp",
+      "width": 1920,
+      "bytes": 18936
+     },
+     "veil": {
+      "file": "plates/closing/wide-veil.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 48688
+     },
+     "strokes": {
+      "file": "plates/closing/wide-strokes.webp",
+      "width": 158,
+      "height": 919,
+      "bytes": 14464,
+      "scale": 1,
+      "items": [
+       {
+        "atlas": [
+         0,
+         0,
+         81,
+         298
+        ],
+        "frame": [
+         0.8753,
+         -0.03,
+         0.0421,
+         0.276
+        ],
+        "from": [
+         0.5851,
+         0.8914
+        ],
+        "to": [
+         0.5081,
+         0.1086
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         302,
+         82,
+         361
+        ],
+        "frame": [
+         0.0406,
+         0.471,
+         0.043,
+         0.3339
+        ],
+        "from": [
+         0.2898,
+         0.9467
+        ],
+        "to": [
+         0.5979,
+         0.0533
+        ]
+       },
+       {
+        "atlas": [
+         0,
+         667,
+         157,
+         248
+        ],
+        "frame": [
+         0.9281,
+         0.301,
+         0.0819,
+         0.2294
+        ],
+        "from": [
+         0.1959,
+         0.1243
+        ],
+        "to": [
+         0.8041,
+         0.8757
+        ]
+       }
+      ]
+     },
+     "calm": [
+      {
+       "x": 0.5,
+       "y": 0.42,
+       "rx": 0.3,
+       "ry": 0.34,
+       "k": 0.92
+      },
+      {
+       "x": 0.5,
+       "y": 0.86,
+       "rx": 0.14,
+       "ry": 0.1,
+       "k": 0.7
+      }
+     ],
+     "glow": {
+      "x": 0.5,
+      "y": 0.86,
+      "r": 0.5,
+      "k": 0.7
+     },
+     "couple": null,
+     "floor": null
+    }
+   }
+  }
+ }
+}
