@@ -1,0 +1,18 @@
+# Netlify and Cloudflare Pages (spec 9.5). Copied to dist/; scripts/prerender.mjs prefixes every rule with VITE_BASE
+# when it is not "/". The query string passes through to the target and browsers keep the #hash across a redirect.
+#
+# Only exact alias paths live here, never splats. Measured 2026-11-02 (wrangler 4.86.0 `pages dev`, netlify-cli
+# 26.2.0 `dev --offline`): Cloudflare Pages applies _redirects even when a file matches, so "/* /en/ 302" redirected
+# every request there, /en/ itself and every asset included; Netlify never fired "/en/* /en/"; and a catch-all sends
+# /BN/ to English. Unknown paths therefore go to 404.html on every host: its redirect.js sends the guest to /{lang}/
+# (aliases in any letter case, else /en/) with query and hash.
+/english    /en/   301
+/english/   /en/   301
+/hindi      /hi/   301
+/hindi/     /hi/   301
+/maithili   /mai/  301
+/maithili/  /mai/  301
+/bangla     /bn/   301
+/bangla/    /bn/   301
+/bengali    /bn/   301
+/bengali/   /bn/   301
