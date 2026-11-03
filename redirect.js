@@ -61,6 +61,17 @@
     } catch {
       /* keep raw */
     }
+    // the hidden invitation-card page (/invite/, a file of its own): /Invite, /INVITE/ and /{lang}/invite go there,
+    // the language prefix as its UI language
+    var second = String(segments[1] || '').toLowerCase();
+    if (seg.toLowerCase() === 'invite' || ((ALIASES[seg.toLowerCase()] || ALIASES[seg]) && second === 'invite')) {
+      if (path === 'invite/') return;
+      var ui = seg.toLowerCase() === 'invite' ? '' : ALIASES[seg.toLowerCase()] || ALIASES[seg];
+      var q = location.search ? location.search.slice(1) : '';
+      if (ui && !/(^|&)ui=/.test(q)) q = 'ui=' + ui + (q ? '&' + q : '');
+      location.replace(base + 'invite/' + (q ? '?' + q : '') + location.hash);
+      return;
+    }
     lang = ALIASES[seg.toLowerCase()] || ALIASES[seg] || 'en';
     var slug = ALIASES[seg.toLowerCase()] || ALIASES[seg] ? SLUGS[String(segments[1] || '').toLowerCase()] : '';
     target = lang + '/' + (slug ? slug + '/' : '');
