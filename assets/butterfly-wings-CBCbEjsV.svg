@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 150" width="200" height="150">
+  <!-- A blue butterfly's open wings, seen from above (blue morpho / bluebottle family, painted). Body axis x = 100: the
+       site folds the pair about it (scaleX). Hand-built for the Engagement page; polish 3, 2026-11-04. -->
+  <defs>
+    <radialGradient id="g" gradientUnits="userSpaceOnUse" cx="96" cy="76" r="94">
+      <stop offset="0" stop-color="#b4e2ff"/>
+      <stop offset="0.17" stop-color="#6cbcf8"/>
+      <stop offset="0.4" stop-color="#3584e4"/>
+      <stop offset="0.64" stop-color="#2259c4"/>
+      <stop offset="0.84" stop-color="#1a3d91"/>
+      <stop offset="1" stop-color="#121f57"/>
+    </radialGradient>
+    <path id="fw" d="M97 60C80 40 50 18 20 14C12 13 7 20 11 29C17 47 24 62 34 72C52 80 78 78 97 72Z"/>
+    <path id="hw" d="M97 76C78 78 52 82 38 96C28 108 32 126 48 134C62 141 82 132 92 114C96 104 98 92 97 80Z"/>
+    <clipPath id="cf"><use href="#fw" xlink:href="#fw"/></clipPath>
+    <clipPath id="ch"><use href="#hw" xlink:href="#hw"/></clipPath>
+    <filter id="paint" x="-6%" y="-6%" width="112%" height="112%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.1" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feColorMatrix in="n" type="luminanceToAlpha" result="na"/>
+      <feFlood flood-color="#0c1a46" flood-opacity="0.22"/>
+      <feComposite in2="na" operator="in"/>
+      <feComposite in2="d" operator="in" result="grain"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="grain"/></feMerge>
+    </filter>
+    <g id="wing">
+      <use href="#hw" xlink:href="#hw" fill="url(#g)"/>
+      <g clip-path="url(#ch)" fill="none">
+        <use href="#hw" xlink:href="#hw" stroke="#13235a" stroke-width="13" opacity="0.6"/>
+        <path d="M96 82Q70 92 44 106M96 86Q76 104 56 128M96 84Q86 110 80 130" stroke="#0e1d4a" stroke-width="0.9" opacity="0.45"/>
+      </g>
+      <use href="#fw" xlink:href="#fw" fill="url(#g)"/>
+      <g clip-path="url(#cf)" fill="none">
+        <use href="#fw" xlink:href="#fw" stroke="#13235a" stroke-width="13" opacity="0.6"/>
+        <path d="M96 64Q60 40 24 22M96 66Q60 52 19 38M96 68Q62 62 28 58M96 70Q70 72 44 74" stroke="#0e1d4a" stroke-width="0.9" opacity="0.45"/>
+      </g>
+      <g fill="none" stroke="#141b3e" stroke-width="2.6" stroke-linejoin="round">
+        <use href="#fw" xlink:href="#fw"/>
+        <use href="#hw" xlink:href="#hw"/>
+      </g>
+      <g fill="#f7efdf" opacity="0.92">
+        <circle cx="17" cy="23" r="1.7"/><circle cx="15.5" cy="33" r="1.5"/><circle cx="19.5" cy="44" r="1.5"/>
+        <circle cx="25" cy="55" r="1.3"/><circle cx="31" cy="64" r="1.2"/>
+        <circle cx="39" cy="104" r="1.5"/><circle cx="37.5" cy="117" r="1.6"/><circle cx="47" cy="127.5" r="1.5"/>
+        <circle cx="61" cy="132" r="1.3"/><circle cx="76" cy="129" r="1.1"/>
+      </g>
+    </g>
+  </defs>
+  <g filter="url(#paint)">
+    <use href="#wing" xlink:href="#wing"/>
+    <use href="#wing" xlink:href="#wing" transform="matrix(-1 0 0 1 200 0)"/>
+  </g>
+</svg>

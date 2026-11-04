@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 44" width="64" height="44">
+  <!-- The bee's wings mid-beat, the motion blur painted in (in bee-body.svg's box) -->
+  <defs>
+    <filter id="b" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur stdDeviation="1.1"/></filter>
+  </defs>
+  <g filter="url(#b)">
+    <ellipse cx="33" cy="12" rx="10" ry="5.6" transform="rotate(-24 33 12)" fill="#fffaf0" opacity="0.5"/>
+    <ellipse cx="42" cy="13" rx="7.6" ry="4.6" transform="rotate(16 42 13)" fill="#fffaf0" opacity="0.42"/>
+  </g>
+  <g fill="none" stroke="#fffdf6" stroke-width="0.6" opacity="0.7">
+    <path d="M38 19C34 14 30 10 25 8"/>
+    <path d="M40 19C42 15 45 12 49 11"/>
+  </g>
+</svg>

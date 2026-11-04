@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 150" width="200" height="150">
+  <!-- The iridescent lift of the wings (laid over butterfly-wings.svg; its opacity follows the wing's angle) -->
+  <defs>
+    <linearGradient id="s" gradientUnits="userSpaceOnUse" x1="98" y1="120" x2="14" y2="16">
+      <stop offset="0" stop-color="#d6fbff"/>
+      <stop offset="0.35" stop-color="#7fe6ff"/>
+      <stop offset="0.7" stop-color="#9aa6ff"/>
+      <stop offset="1" stop-color="#c7b6ff"/>
+    </linearGradient>
+    <radialGradient id="fade" gradientUnits="userSpaceOnUse" cx="94" cy="76" r="80">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0.75"/>
+      <stop offset="0.85" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="150">
+      <rect width="200" height="150" fill="url(#fade)"/>
+    </mask>
+    <g id="w">
+      <path d="M97 60C80 40 50 18 20 14C12 13 7 20 11 29C17 47 24 62 34 72C52 80 78 78 97 72Z"/>
+      <path d="M97 76C78 78 52 82 38 96C28 108 32 126 48 134C62 141 82 132 92 114C96 104 98 92 97 80Z"/>
+    </g>
+  </defs>
+  <g fill="url(#s)" mask="url(#m)">
+    <use href="#w" xlink:href="#w"/>
+    <use href="#w" xlink:href="#w" transform="matrix(-1 0 0 1 200 0)"/>
+  </g>
+</svg>

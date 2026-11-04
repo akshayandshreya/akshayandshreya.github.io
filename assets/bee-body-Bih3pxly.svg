@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 44" width="64" height="44">
+  <!-- A honeybee seen from the side, facing right (turmeric gold, umber bands). Hand-built for the Haldi page. -->
+  <defs>
+    <radialGradient id="ab" cx="0.42" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#ffd76a"/>
+      <stop offset="0.55" stop-color="#e8a628"/>
+      <stop offset="1" stop-color="#b8741a"/>
+    </radialGradient>
+    <radialGradient id="th" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#e9b45a"/>
+      <stop offset="1" stop-color="#9a6420"/>
+    </radialGradient>
+    <clipPath id="c"><ellipse cx="25" cy="28" rx="13.5" ry="9.6"/></clipPath>
+  </defs>
+  <g fill="none" stroke="#2c2015" stroke-width="1.3" stroke-linecap="round">
+    <path d="M36 33L33 40M40 34L39.5 41M44 33L46 39.5"/>
+    <path d="M52 21C54 16 57 13 60 12"/>
+  </g>
+  <path d="M12 29L7.5 30.2L12 31.4Z" fill="#2c2015"/>
+  <ellipse cx="25" cy="28" rx="13.5" ry="9.6" fill="url(#ab)"/>
+  <g clip-path="url(#c)" fill="#2c2015">
+    <path d="M15.5 16C17.5 22 17.5 34 15.5 40L11 40L11 16Z"/>
+    <path d="M21.2 16C23.6 22 23.6 34 21.2 40L18.4 40C20.6 34 20.6 22 18.4 16Z"/>
+    <path d="M28 16C30.4 22 30.4 34 28 40L25 40C27.2 34 27.2 22 25 16Z"/>
+  </g>
+  <ellipse cx="40.5" cy="26" rx="7.4" ry="7" fill="url(#th)"/>
+  <circle cx="49.5" cy="26.5" r="5.6" fill="#2c2015"/>
+  <ellipse cx="51.3" cy="25" rx="1.6" ry="2.2" fill="#5a4630"/>
+  <circle cx="51.8" cy="24.2" r="0.7" fill="#f6ead0"/>
+  <path d="M19 20.5C23 19 28 19 31 20.2" fill="none" stroke="#fff3c8" stroke-width="1.1" opacity="0.55" stroke-linecap="round"/>
+</svg>

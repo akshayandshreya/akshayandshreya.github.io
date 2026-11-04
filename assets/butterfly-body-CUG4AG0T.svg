@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <!-- The butterfly's body and antennae, in the wings' box (it does not fold) -->
+  <g fill="none" stroke="#1d1a2b" stroke-width="1.5" stroke-linecap="round">
+    <path d="M98.6 55C96 45 92 35 85 27"/>
+    <path d="M101.4 55C104 45 108 35 115 27"/>
+  </g>
+  <g fill="#1d1a2b">
+    <circle cx="84.6" cy="26.4" r="2"/>
+    <circle cx="115.4" cy="26.4" r="2"/>
+    <ellipse cx="100" cy="58" rx="4.6" ry="4.4"/>
+    <ellipse cx="100" cy="72" rx="5" ry="11"/>
+    <path d="M100 82C103.6 82 104.2 92 103.4 104C102.8 114 101.6 121 100 122C98.4 121 97.2 114 96.6 104C95.8 92 96.4 82 100 82Z"/>
+  </g>
+  <g fill="none" stroke="#c9a65e" stroke-width="0.9" opacity="0.7" stroke-linecap="round">
+    <path d="M98.4 64C97.6 70 97.8 76 98.6 80"/>
+    <path d="M98.8 88L101.2 88M98.6 96L101.4 96M98.8 104L101.2 104M99.1 112L100.9 112"/>
+  </g>
+  <circle cx="98.2" cy="56.8" r="1" fill="#f3e6c8" opacity="0.8"/>
+</svg>
